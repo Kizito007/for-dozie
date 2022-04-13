@@ -15,3 +15,28 @@
     left: 10%;
     top: 12px;
 }
+.nav-list {
+    list-style-type: none;
+    /* Responsive */
+    margin: 20px 57%;
+    padding: 0;
+    display: flex;
+}
+.nav-list li {
+    position: static;
+    width: 52px;
+    height: 26px;
+    /* left: 16px;
+    top: 9px;
+    text-decoration: none; */
+    line-height: 26px;
+    padding-left: 40px;
+}
+.nav-list li a {
+    color: #494949;
+    text-decoration: none;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
