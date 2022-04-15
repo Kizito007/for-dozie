@@ -13,3 +13,28 @@
         margin: 0 4%;
     }
 }
+.skills {
+    list-style-type: none;
+    /* Responsive */
+    /* margin: 20px 57%; */
+    padding: 0;
+    display: flex;
+}
+.skills li {
+    margin: 0 5px;
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 17px 48px;
+
+/* position: absolute; */
+width: 184px;
+height: 50px;
+/* left: 0px;
+top: 20px; */
+
+border: 1.8px solid #959595;
+box-sizing: border-box;
+border-radius: 25px;
+}

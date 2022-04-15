@@ -20,6 +20,18 @@ const HomeScreen = () => {
     </div>
     <div>
       <h2 className='text-head'>My Skills.</h2>
+      <ul className='skills'>
+        <li>Visual Design</li>
+        <li>UI Design</li>
+        <li>Communication</li>
+        <li>Decision Making</li>
+        <li>User Research</li>
+        <li>Efficiency</li>
+        <li>Collaboration</li>
+        <li>UX Design</li>
+        <li>User Focus</li>
+        <li>Prototyping</li>
+      </ul>
     </div>
     </div>
   )
