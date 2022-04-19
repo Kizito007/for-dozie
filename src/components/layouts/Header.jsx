@@ -2,6 +2,7 @@ import React from 'react'
 import logo from "./logo.svg"
 import icon from "./icon.svg"
 import "./layout.css"
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -12,9 +13,9 @@ const Header = () => {
             </div>
         </a>
         <ul className='nav-list'>
-          <li><a href="#home">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#resume">Resume</a></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
+          <li><Link to="/resume">Resume</Link></li>
           <li><img src={icon} class="img-icon"/></li>
         </ul>
     </nav>
