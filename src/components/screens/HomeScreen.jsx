@@ -8,13 +8,12 @@ const HomeScreen = () => {
     <div className='intro'>
       <h2 className='text-head'>
           Hi, I'm Nwaka Dozie. <br/>
-          A product designer based in Nigeria.
+          A <span style={{color: "#f50000"}} >product designer</span>  & <span style={{color: "#f5b500"}}>visual artist</span>.
       </h2> <br/>
       <p>
-        I'm a Product Designer with over 3 years experience <br/>
-        conceptualizing and crafting digital products, <br/>
-        helping businesses and non-profits expand their <br/>
-        capacity for impact.
+        With over 3 years experience conceptualizing and<br/>
+        crafting digital products,helping businesses and<br/>
+        non-profits expand their capacity for impact.
       </p>
       <img src={dozie} class="intro-img"/>
     </div>

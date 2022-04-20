@@ -1,11 +1,11 @@
 .text-head {
-    margin-top: 85px;
+    margin-top: 107px;
 }
 .intro-img {
     position: absolute;
     width: 370px;
     height: 400px;
-    right: 8%;
+    right: 9%;
     top: 50px;
     z-index: -1;
 }
@@ -42,7 +42,7 @@
     box-sizing: border-box;
     border-radius: 25px;
 }
-.about h2 {
+.myself {
     position: absolute;
     width: 414px;
     height: 64px;
@@ -76,4 +76,7 @@ text-align: center;
 
 color: #959595;
 
+}
+.about hr {
+    border: 1.2px solid rgba(0, 0, 0, 0.25);
 }
