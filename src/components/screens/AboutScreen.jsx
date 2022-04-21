@@ -1,13 +1,16 @@
 import React from 'react'
 import dozie from "./dozie.png"
+import art1 from "./art1.png"
+import nft1 from "./nft1.png"
+import { Link } from 'react-router-dom'
 
 const AboutScreen = () => {
   return (
     <>
         <div className='about'>
-            <img style={{ left: "35%", top: "45px "}} src={dozie} class="intro-img"/>
-            <h2 className='myself'>A little bit about myself.</h2><br/>
-            <p>
+            <img style={{ position: "relative", left: "31%", top: "95px" }} src={dozie} className="intro-img"/>
+            <h2 className='myself'>A little bit about myself.</h2>
+            <div>
                 My name is Nwaka Chiedozie Mario and I'm passionate about improving the everyday lives of others through <br/>
                 design. I'm constantly learning new things everyday and love meeting people who are motivated and unafraid <br/>
                 to explore and share their ideas with the world. <br/><br/>
@@ -25,7 +28,19 @@ const AboutScreen = () => {
                 around me, I try to interpret all the messages behind the physical things that we see everyday. I also stay <br/>
                 current on the latest trends in design, both social and aesthetic. I prefer subtle over loud, like my personality <br/>
                 😁😊.
-            </p>
+            </div>
+        </div>
+        <div className='artworks'>
+            <br/><br/>
+            <h2 style={{color: "#f9f9f9", textAlign: "center"}}>Some art works of mine</h2>
+            <br/><br/>
+            <img src={art1} className="art"/>
+            <img src={nft1} className="art"/>
+            <Link to="/view-more">
+                <button>
+                    View More
+                </button>
+            </Link>
         </div>
     </>
   )

@@ -15,7 +15,7 @@ const HomeScreen = () => {
         crafting digital products,helping businesses and<br/>
         non-profits expand their capacity for impact.
       </p>
-      <img src={dozie} class="intro-img"/>
+      <img src={dozie} className="intro-img"/>
     </div>
     <div>
       <h2 className='text-head'>My Skills.</h2>
