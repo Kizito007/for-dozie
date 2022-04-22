@@ -1,5 +1,5 @@
 import React from 'react'
-import "../screens/screens.css"
+import "./layout.css"
 import { Link } from 'react-router-dom'
 import beh from "./beh.svg"
 import drib from "./drib.svg"
@@ -16,7 +16,7 @@ const Footer = () => {
             Contact me
           </button>
         </Link>
-        <p style={{ padding: "70px 0" }}>
+        <p style={{ paddingTop: "70px" }}>
           <Link to="/be">
             <img src={beh}/>
           </Link>

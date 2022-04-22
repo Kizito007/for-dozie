@@ -137,22 +137,3 @@
     background: #494949;
     border-radius: 12px;
 }
-.bottom {
-    text-align: center;
-}
-.bottom button {
-    width: 241px;
-    height: 55px;
-    left: 599px;
-    top: 212px;
-    font-size: 16px;
-    border: 2px solid #494949;
-    box-sizing: border-box;
-    border-radius: 12px;
-}
-.bottom p {
-    padding: 10px 0;
-}
-.bottom img {
-    margin: 0 10px;
-}
