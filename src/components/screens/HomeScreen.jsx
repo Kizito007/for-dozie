@@ -3,10 +3,7 @@ import "./screens.css"
 import dozie from "./dozie.png"
 import art1 from "./art1.png"
 import arrow4 from "./arrow4.svg"
-import beh from "./beh.svg"
-import drib from "./drib.svg"
-import twit from "./twit.svg"
-import linked from "./in.svg"
+import Footer from '../layouts/Footer'
 import { Link } from 'react-router-dom'
 
 const HomeScreen = () => {
@@ -104,29 +101,7 @@ const HomeScreen = () => {
         </Link>
       </div><br/><br/>
       <hr/>
-      <div className='bottom'>
-        <h2 className='text-head'>Let's create excellent work together!</h2>
-        <p style={{fontSize: "21px"}}>Get in touch for opportunities or just to say hi! 👋</p><br/>
-        <Link to="/contact">
-          <button className='contact'>
-            Contact me
-          </button>
-        </Link>
-        <p style={{ padding: "70px 0" }}>
-          <Link to="/be">
-            <img src={beh}/>
-          </Link>
-          <Link to="/drib">
-            <img src={drib}/>
-          </Link>
-          <Link to="/twit">
-            <img src={twit}/>
-          </Link>
-          <Link to="/ln">
-            <img src={linked}/>
-          </Link>
-        </p>
-      </div>
+      <Footer />
     </div>
   )
 }
