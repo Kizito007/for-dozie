@@ -1,20 +1,91 @@
 .text-head {
     margin-top: 107px;
+    font-size: 25px;
+}
+.text-header {
+    margin-top: 107px;
+    /* font-size: 25px; */
 }
 .about {
     margin-top: -75px;
 }
 .intro-img {
     position: absolute;
-    width: 370px;
-    height: 400px;
-    right: 9%;
-    top: 50px;
+    width: 200px;
+    height: 200px;
+    right: 17%;
+    top: 110px;
+    border-radius: 235px;
     z-index: -1;
 }
-@media only screen and (min-width: 800px){
+/* .home {
+    margin: 0 -13px;
+} */
+/* @media only screen and (min-width: 800px){
     .home {
         margin: 0 4%;
+    }
+} */
+/* @media only screen and (max-width: 720px){
+    .intro-img {
+        right: 15%
+    }
+} */
+/* @media only screen and (max-width: 916px){
+    .text-head {
+        font-size: 26px;
+    }
+    .intro-img {
+        width: 150px;
+        height: 150px;
+        top: 147px;
+        right: 5%;
+    }.container {
+        padding: 50px 30px;
+    }
+} */
+.projectdiv {
+    display: contents;
+}
+.principles {
+    display: flex;
+}
+.good-design {
+    margin-right: 140px;
+}
+.principles img {
+    border-radius: 12px;
+}
+.principles h2 {
+    margin: 40px 0;
+}
+@media only screen and (max-width: 400px){
+    .container {
+        padding: 30px;
+    }
+}
+@media only screen and (max-width: 925px){
+    /* .home {
+        margin: 0 5%;
+    } */
+    .intro div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 48%;
+    }
+    .intro-img {
+        /* margin-left: 40%; */
+        position: relative;
+        top: 60px;
+        height: 150px;
+        width: 150px;
+    }
+    .intro-text {
+        text-align: center;
+    }
+    .text-head {
+        text-align: center;
     }
 }
 .skills {
@@ -32,7 +103,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0 48px;
+    padding: 0 20px;
     /* position: absolute; */
     font-size: 14px;
     width: auto;
@@ -40,8 +111,25 @@
     /* left: 0px;
     top: 20px; */
     border: 1.8px solid #959595;
+    transition: all 0.5s ease-in-out;
     box-sizing: border-box;
     border-radius: 25px;
+}
+.reds:hover {
+    border: 2px solid #EA1B1B;
+    font-size: 15px;
+}
+.greens:hover {
+    border: 2px solid #97DC04;
+    font-size: 15px;
+}
+.purples:hover {
+    border: 2px solid #AE12E4;
+    font-size: 15px;
+}
+.blues:hover {
+    border: 2px solid #A1E6FC;
+    font-size: 15px;
 }
 .myself {
     /* position: relative;
@@ -110,12 +198,15 @@
     background: #EEEEEE;
     border-radius: 12px;
 }
+.project {
+    margin-bottom: 15px;
+}
 .project img {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     left: 0px;
-    top: 32px;
+    top: 25px;
     z-index: -1;
     /* background: #CEEA21; */
     mix-blend-mode: normal;
@@ -124,9 +215,9 @@
 .text {
     display: inline-block;
     margin-left: 10%;
-    position: relative;
-    z-index: -1;
-    bottom: 40px;
+}
+.text p {
+    padding: 24px 0;
 }
 .text button {
     width: 241px;
@@ -136,4 +227,50 @@
     color: #f9f9f9;
     background: #494949;
     border-radius: 12px;
+}
+@media only screen and (max-width: 1026px) {
+    .projectdiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 48%;
+    }
+    .text {
+        display: grid;
+        margin: 0 23%;
+        text-align: center;
+        justify-content: center;
+    }
+    .text h2 {
+        margin-top: 60px;
+    }
+
+}
+@media only screen and (max-width: 800px) {
+    .projectdiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 48%;
+    }
+    .text {
+        display: grid;
+        margin: 0 23%;
+        text-align: center;
+        justify-content: center;
+    }
+    .text h2 {
+        margin-top: 60px;
+    }
+    .principles {
+        display: contents;
+        text-align: left;
+    }
+    .principles img {
+        width: 170px;
+    }
+    .good-design {
+        margin-right: 0px;
+        margin-bottom: 70px;
+    }
 }

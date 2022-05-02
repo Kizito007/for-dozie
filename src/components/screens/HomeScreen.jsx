@@ -2,6 +2,8 @@ import React from 'react'
 import "./screens.css"
 import dozie from "./dozie.png"
 import art1 from "./art1.png"
+import goodes from "./goodes.png"
+import humandes from "./humandes.png"
 import arrow4 from "./arrow4.svg"
 import Footer from '../layouts/Footer'
 import { Link } from 'react-router-dom'
@@ -10,82 +12,118 @@ const HomeScreen = () => {
   return (
     <div className='home'>
       <div className='intro'>
+        <div>
+          <img src={dozie} className="intro-img"/>
+        </div>
         <h2 className='text-head'>
             Hi, I'm Nwaka Dozie. <br/>
             A <span style={{color: "#f50000"}} >product designer</span>  & <span style={{color: "#f5b500"}}>visual artist</span>.
         </h2> <br/>
-        <p>
-          With over 3 years experience conceptualizing and<br/>
-          crafting digital products,helping businesses and<br/>
+        <p className='intro-text'>
+          With over 3 years experience conceptualizing<br/> and
+          crafting digital products,helping<br/> businesses and
           non-profits expand their capacity for impact.
         </p>
-        <img src={dozie} className="intro-img"/>
       </div>
       <div>
-        <h2 className='text-head'>My Skills.</h2>
+        <h2 className='text-header'>My Skills.</h2><br /><br />
         <ul className='skills'>
-          <li>Visual Design</li>
-          <li>UI Design</li>
-          <li>Communication</li>
-          <li>Decision Making</li>
-          <li>User Research</li>
-          <li>Efficiency</li>
-          <li>Collaboration</li>
-          <li>UX Design</li>
-          <li>User Focus</li>
-          <li>Prototyping</li>
+          <li className='reds'>Visual Design</li>
+          <li className='greens'>UI Design</li>
+          <li className='purples'>Communication</li>
+          <li className='blues'>Decision Making</li>
+          <li className='greens'>User Research</li>
+          <li className='purples'>Efficiency</li>
+          <li className='blues'>Collaboration</li>
+          <li className='reds'>UX Design</li>
+          <li className='greens'>User Focus</li>
+          <li className='reds'>Prototyping</li>
         </ul>
       </div>
       <div>
-        <h2 className='text-head'>Projects</h2>
+        <h2 className='text-header'>My Design Principles</h2><br /><br />
+        <div className='principles'>
+          <div className='good-design'>
+            <img src={goodes} className=""/>
+            <div className='princi-text'>
+              <h2>Good design solves real problems.</h2>
+              <p>
+                I have a good understanding in tech, business and design. I start every
+                project by comprehending the business and customers before
+                diving into design.
+              </p>
+            </div>
+          </div>
+          <div className='human-design'>
+            <img src={humandes} className=""/>
+            <div className='princi-text'>
+              <h2>Design for humans, not users.</h2>
+              <p>
+                Strike a balance between aesthetics and functionality. Good 
+                micro-copy brings massive results. Let's build products with meaningful 
+                experiences that pay attention to design details.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2 className='text-header'>Projects</h2>
+        <p style={{marginTop: "20px", marginBottom: "60px"}}>
+          I’ve worked with start-ups and small companies, and also 
+          created some concepts for my personal side projects.
+        </p>
         <div className='project'>
-          <img src={art1} className=""/>
+          <div className='projectdiv'><img src={art1} className=""/></div>
+          
           <div className='text'>
             <h2>Project Title</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing <br/>
               elit. Varius id porta ornare adipiscing morbi integer <br/>
               lectus eget. 
-            </p>
+            </p><br /><br />
             <Link to="/case-study/1">
               <button>
                 Read Case Study
               </button>
             </Link>
           </div>   
-        </div><br/>
+        </div><br/><br/><br/>
         <div className='project'>
-          <img src={art1} className=""/>
+          <div className='projectdiv'><img src={art1} className=""/></div>
+          
           <div className='text'>
             <h2>Project Title</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing <br/>
               elit. Varius id porta ornare adipiscing morbi integer <br/>
               lectus eget. 
-            </p>
+            </p><br /><br />
             <Link to="/case-study/1">
               <button>
                 Read Case Study
               </button>
             </Link>
-          </div>  
-        </div><br/>
+          </div>   
+        </div><br/><br/><br/>
         <div className='project'>
-          <img src={art1} className=""/>
+          <div className='projectdiv'><img src={art1} className=""/></div>
+          
           <div className='text'>
             <h2>Project Title</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing <br/>
               elit. Varius id porta ornare adipiscing morbi integer <br/>
               lectus eget. 
-            </p>
+            </p><br /><br />
             <Link to="/case-study/1">
               <button>
                 Read Case Study
               </button>
             </Link>
-          </div>         
-        </div><br/><br/>
+          </div>   
+        </div><br/><br/><br/><br/>
         <Link 
           to="/projects"
           style={{
@@ -99,7 +137,7 @@ const HomeScreen = () => {
             <img src={arrow4} />
           </p>
         </Link>
-      </div><br/><br/>
+      </div><br/><br/><br /><br /><br />
       <hr/>
       <Footer />
     </div>

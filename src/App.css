@@ -5,9 +5,19 @@ html {
 .container {
   padding: 50px;
   padding-bottom: 0;
-  margin: 0 4%;
+  margin: 0 11%;
 }
 .ellipse {
-  height: 200px;
+  height: 140px;
   float: right;
+}
+.elllipse {
+      /* position: relative; */
+    /* width: 742px; */
+    height: 100px;
+    /* left: 974px; */
+    /* top: 183px; */
+    background: linear-gradient(124.24deg, #A1E6FC 14.51%, rgba(255, 171, 46, 0.5) 46.64%, #AE12E4 85.1%);
+    /* opacity: 0.57; */
+    filter: blur(220px);
 }

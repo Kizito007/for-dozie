@@ -9,26 +9,26 @@ import linked from "./in.svg"
 const Footer = () => {
   return (
     <div className='bottom'>
-        <h2 className='text-head'>Let's create excellent work together!</h2>
+        <h2 className='text-header'>Let's create excellent work together!</h2>
         <p style={{fontSize: "21px"}}>Get in touch for opportunities or just to say hi! 👋</p><br/>
-        <Link to="/contact">
+        <Link id="contact" to="/contact">
           <button className='contact'>
             Contact me
           </button>
         </Link>
         <p style={{ paddingTop: "70px" }}>
-          <Link to="/be">
+          <a href="https://behance.net/marioedgar">
             <img src={beh}/>
-          </Link>
-          <Link to="/drib">
+          </a>
+          <a href="https://dribbble.com/Doziiie">
             <img src={drib}/>
-          </Link>
-          <Link to="/twit">
+          </a>
+          <a href="https://twitter.com/Doziiie">
             <img src={twit}/>
-          </Link>
-          <Link to="/ln">
+          </a>
+          <a href="https://www.linkedin.com/in/nwaka-chiedozie-67a073142/">
             <img src={linked}/>
-          </Link>
+          </a>
         </p>
     </div>
   )
