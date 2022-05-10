@@ -44,7 +44,7 @@ const HomeScreen = () => {
         <h2 className='text-header'>My Design Principles</h2><br /><br />
         <div className='principles'>
           <div className='good-design'>
-            <img src={goodes} className=""/>
+            <img src={goodes} style={{marginTop: "15px"}} />
             <div className='princi-text'>
               <h2>Good design solves real problems.</h2>
               <p>
@@ -55,7 +55,7 @@ const HomeScreen = () => {
             </div>
           </div>
           <div className='human-design'>
-            <img src={humandes} className=""/>
+            <img src={humandes} />
             <div className='princi-text'>
               <h2>Design for humans, not users.</h2>
               <p>
