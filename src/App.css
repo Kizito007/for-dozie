@@ -27,7 +27,7 @@ html {
     height: 100px;
     background: linear-gradient(124.24deg, #FFAB2E 45.39%, #AE12E4 85.1%);
     opacity: 0.57;
-    filter: blur(200px);
+    filter: blur(100px);
     
 }
 @media only screen and (max-width: 800px) {
@@ -35,7 +35,7 @@ html {
     position: relative;
     top: -250px;
     background: conic-gradient(from 180deg at 50% 50%, #FFA800 0deg, #FF01B7 360deg);
-    filter: blur(190px);
+    filter: blur(150px);
     transform: matrix(0.55, -0.72, 1.04, 0.45, 0, 0);
   }
 }
