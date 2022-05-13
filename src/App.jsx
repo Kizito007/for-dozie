@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import HomeScreen from './components/screens/HomeScreen'
 import AboutScreen from './components/screens/AboutScreen'
 import ProjectScreen from './components/screens/ProjectScreen'
+import WebhubScreen from './components/screens/WebhubScreen'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<HomeScreen />} />
         <Route path="about" element={<AboutScreen />} />
         <Route path="projects" element={<ProjectScreen />} />
+        <Route path="case-study/1" element={<WebhubScreen />} />
       </Routes>
     </div>
     {/* <img className='ellipse' src={ellipseGr}/> */}
