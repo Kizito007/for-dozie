@@ -252,6 +252,53 @@
     background: #494949;
     border-radius: 12px;
 }
+.webhub-overview {
+    background: #f4f4f4;
+    position: absolute;
+    width: 100%;
+    height: 183px;
+    left: 0;
+    margin-top: 412px;
+    z-index: -1;
+}
+.webhub-overview ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+.webhub-nav {
+    list-style-type: none;
+    position: absolute;
+    left: 4%;
+    margin-top: 115vh;
+    z-index: -1;
+}
+.webhub-nav li {
+    margin: 35px 0;
+}
+.overview-text li {
+    color: #6D0EB8;
+    font-size: 24px;
+    margin-right: 35px;
+}
+.duration {
+    margin-left: 2%;
+}
+.duration2 {
+    margin: 0 35px;
+}
+.sub-text span {
+    margin: 0 50px;
+}
+.tools {
+    margin: 0 50px;
+}
+.tools2 {
+    margin-right: 20px;
+}
+.contrs {
+    margin-left: 75px;
+}
 @media only screen and (max-width: 1026px) {
     .projectdiv {
         display: flex;
