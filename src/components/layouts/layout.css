@@ -56,6 +56,7 @@
     border: 2px solid #494949;
     box-sizing: border-box;
     border-radius: 12px;
+    font-family: 'DM Sans', sans-serif;
 }
 .bottom p {
     padding: 10px 0;
