@@ -11,6 +11,9 @@ import { Link } from 'react-router-dom'
 const HomeScreen = () => {
   return (
     <div className='home'>
+      <div className='invincible'>
+        <h1>Good design is invincible.</h1>
+      </div>
       <div className='intro'>
         <div>
           <img src={dozie} className="intro-img"/>
