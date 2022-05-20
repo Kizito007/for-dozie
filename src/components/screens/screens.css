@@ -10,6 +10,8 @@
     padding: 200px 0;
     background-color: #ffffff00;
     background-image: url("Rectangle.png");
+    z-index: -1;
+    overflow: hidden;
 }
 .invincible h1 {
     font-family: 'Ginkgo';
@@ -22,6 +24,17 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    transform: translateY(-600px);
+    animation: 1.2s slideIn ease-in-out forwards 1s;
+}
+@keyframes slideIn {
+    /* 100% {
+      transform: translateY(0px);
+      opacity: 1;
+    } */
+    20%, 50%, 80%, 100% {transform: translateY(0px);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
 }
 .about {
     margin-top: -75px;
