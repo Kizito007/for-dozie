@@ -1,5 +1,6 @@
 import React from 'react'
 import dozie from "./dozie.png"
+import hr from "./hr.svg"
 import art1 from "./art1.png"
 import nft1 from "./nft1.png"
 import { Link } from 'react-router-dom'
@@ -27,7 +28,8 @@ const AboutScreen = () => {
                 spare time and at work. I am very much a big-picture thinker and enjoy working on products end to end, from 
                 rom ideation all the way to development. <br/><br/><br/>
                 </p>
-                <hr/><br/><br/>
+                <img style={{width: "100%"}} src={hr} />
+                <br/><br/>
                 <h2 style={{color: "#494949", margin: "20px 0"}} className="myself">
                     Wonder can I get along with the, team? Here is me during spare time:
                 </h2>

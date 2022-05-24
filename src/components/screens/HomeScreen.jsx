@@ -5,6 +5,7 @@ import art1 from "./art1.png"
 import goodes from "./goodes.png"
 import humandes from "./humandes.png"
 import arrow4 from "./arrow4.svg"
+import hr from "./hr.svg"
 import Footer from '../layouts/Footer'
 import { Link } from 'react-router-dom'
 
@@ -137,11 +138,11 @@ const HomeScreen = () => {
         >
           <p>
             View more
-            <img src={arrow4} />
+            <img style={{marginLeft: "10px"}} src={arrow4} />
           </p>
         </Link>
       </div><br/><br/><br /><br /><br />
-      <hr/>
+      <img style={{width: "100%"}} src={hr} />
       <Footer />
     </div>
   )

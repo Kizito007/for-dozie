@@ -170,11 +170,6 @@
     letter-spacing: -0.5px;
 }
 .about div {
-    /* position: relative;
-    width: 900px;
-    height: 240px;
-    left: 267px;
-    top: 380px; */
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
@@ -183,9 +178,6 @@
     /* or 167% */
     text-align: center;
     color: #959595;
-}
-.about hr {
-    border: 1.2px solid rgba(0, 0, 0, 0.25);
 }
 .artworks {
     position: absolute;
@@ -197,13 +189,9 @@
     top: 1347px; */
 }
 .art {
-    /* position: absolute;
-    left: 0px;
-    top: 0px; */
     width: 200px;
     height: 200px;
     border-radius: 15px;
-    /* margin-left: 100px; */
 }
 .artbg {
     display: flex;
@@ -216,19 +204,11 @@
     margin-bottom: 130px;
 }
 .artworks button {
-        /* display: flex; */
-    /* flex-direction: row; */
-    /* justify-content: center; */
-    /* align-items: center; */
+    font-family: 'DM Sans';
+    font-style: normal;
     padding: 18px 40px;
     font-size: 16px;
-    border: 1px solid #c7c7c7;
-    /* margin-left: 100px; */
-    /* position: relative; */
-    /* width: 90px; */
-    /* height: 23px; */
-    /* left: 1088px; */
-    /* top: -147px; */
+    border: 1px solid #EEEEEE;
     background: #EEEEEE;
     border-radius: 12px;
 }
@@ -240,6 +220,12 @@
     }
     .art {
         margin-bottom: 60px;
+    }
+}
+@media only screen and (min-width: 1311px) {
+    .art {
+        width: 300px;
+        height: 290px;
     }
 }
 .project {
@@ -270,6 +256,7 @@
     top: 343px;
     color: #f9f9f9;
     background: #494949;
+    border: none;
     border-radius: 12px;
     font-family: 'DM Sans', sans-serif;
 }
