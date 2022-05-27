@@ -42,8 +42,12 @@
     text-decoration: none;
     font-family: 'DM Sans';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 17px;
+}
+.nav-list a:hover {
+    font-weight: 900;
+    font-size: 18px;
 }
 .bottom {
     text-align: center;

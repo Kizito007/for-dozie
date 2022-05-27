@@ -21,7 +21,7 @@ const Header = () => {
         >
           <li><Link to="/about">About</Link></li>
           <li><Link to="#contact">Contact</Link></li>
-          <li><Link to="/resume">Resume</Link></li>
+          <li><Link to="/resume">FAQ</Link></li>
           <li><img src={icon} className="img-icon"/></li>
         </ul>
         <button 
