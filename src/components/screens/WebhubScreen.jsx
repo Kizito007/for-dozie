@@ -1,32 +1,21 @@
 import React from 'react'
-import art1 from "./art1.png"
 import { Link } from 'react-router-dom'
 
 const WebhubScreen = () => {
   return (
     <>
-        <div className='project'
-            style={{
-                position: "absolute",
-                width: "100%",
-                height: "400px",
-                left: "0px",
-                top: "60px",
-                color: "#f9f9f9",
-                zIndex: "-1",
-                background: "linear-gradient(180deg, rgba(137, 58, 150, 0.21) 0%, #6D0EB8 128.03%)"
-            }}
-        >
-          <div style={{ margin: "50px", marginLeft: "14%" }}>
+        <div className='squid'>
+          <div>
               
-            <div className='text' style={{ position: "relative", bottom: "40px", marginLeft: "0" }}>
-                <div><h2>Interface Revamp of the Web-Hub App</h2></div>
+            <div className='text' 
+                style={{ display: "contents", textAlign: "center"}}
+            >
+                <h2 style={{ marginTop: "250px" }}>Interface Revamp of the Squid App</h2>
                 <p>
-                    A collective and innovative platform for linking <br /> professionals and consumers in a simple way.
+                    A collective and innovative platform for linking professional <br />
+                    services and consumers in a simple way.
                 </p>
             </div>             
-            {/*  */}
-            <div className='projectdiv'><img style={{marginLeft: "16%"}} src={art1} className=""/></div>
           </div>
 
         </div>
@@ -45,18 +34,18 @@ const WebhubScreen = () => {
                 <li>User research, Visual design</li>
             </ul>
             </div>
-        </div>
+        </div><div>
         <ul className='webhub-nav'>
-            <li>Introduction</li>
-            <li>My Role</li>
-            <li>The Challenge</li>
-            <li>Goals</li>
-            <li>Our Users</li>
-            <li>Process</li>
-            <li>Final Designs</li>
-            <li>Learnings</li>
-            <li>Future</li>
-        </ul>
+            <li><Link to="/about">Introduction</Link></li>
+            <li><Link to="/about">My Role</Link></li>
+            <li><Link to="/about">The Challenge</Link></li>
+            <li><Link to="/about">Goals</Link></li>
+            <li><Link to="/about">Our Users</Link></li>
+            <li><Link to="/about">Process</Link></li>
+            <li><Link to="/about">Final Designs</Link></li>
+            <li><Link to="/about">Learnings</Link></li>
+            <li><Link to="/about">Future</Link></li>
+        </ul></div>
         <div style={{margin: "0 100px"}}>
             <h2 style={{marginTop: "750px"}}>Introduction</h2><br /><br />
             <p>
