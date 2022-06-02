@@ -12,23 +12,14 @@ html {
   float: right;
 }
 .elllipse {
-      /* position: relative; */
-    /* width: 742px; */
-    /* left: 974px; */
-    /* top: 183px; */
-    /* height: 100px;
-    filter: blur(220px);
-    background: linear-gradient(124.24deg, #A1E6FC 14.51%, rgba(255, 171, 46, 0.5) 46.64%, #AE12E4 85.1%); */
-    /* opacity: 0.57; */
-    /* position: absolute;
-    width: 742px;
-    left: 974px;
-    top: 4357px; */
-    height: 100px;
-    background: linear-gradient(124.24deg, #FFAB2E 45.39%, #AE12E4 85.1%);
-    opacity: 0.57;
-    filter: blur(100px);
-    
+  height: 200px;
+  background: linear-gradient(124.24deg, #FFAB2E 45.39%, #AE12E4 85.1%);
+  opacity: 0.57;
+  filter: blur(100px);
+  width: 400px;
+  float: right;
+  position: relative;
+  top: -77px;
 }
 @media only screen and (max-width: 800px) {
   .elllipse {

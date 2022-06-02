@@ -2,6 +2,7 @@ import React from 'react'
 import "./screens.css"
 import dozie from "./dozie.png"
 import art1 from "./art1.png"
+import p1 from "./p1.png"
 import goodes from "./goodes.png"
 import humandes from "./humandes.png"
 import arrow4 from "./arrow4.svg"
@@ -78,7 +79,7 @@ const HomeScreen = () => {
           created some concepts for my personal side projects.
         </p>
         <div className='project'>
-          <div className='projectdiv'><img src={art1} className=""/></div>
+          <div className='projectdiv'><img src={p1} className=""/></div>
           
           <div className='text'>
             <h2>Project Title</h2>
@@ -128,19 +129,22 @@ const HomeScreen = () => {
             </Link>
           </div>   
         </div><br/><br/><br/><br/>
-        <Link 
-          to="/projects"
-          style={{
-            textDecoration: "none",
-            color: "inherit",
-            textAlign: "center"
-          }}
-        >
-          <p>
+        <p style={{textAlign: "center"}}>
+          <Link 
+            to="/projects"
+            style={{
+              textDecoration: "none",
+              color: "inherit",
+              textAlign: "center",
+              padding: "15px",
+              background: "#ebebeb",
+              borderRadius: "30px"
+            }}
+          >
             View more
-            <img style={{marginLeft: "10px"}} src={arrow4} />
-          </p>
-        </Link>
+            <img style={{marginLeft: "5px"}} src={arrow4} />
+          </Link>
+        </p>
       </div><br/><br/><br /><br /><br />
       <img style={{width: "100%"}} src={hr} />
       <Footer />

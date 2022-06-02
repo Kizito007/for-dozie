@@ -37,14 +37,14 @@ const WebhubScreen = () => {
         </div><div>
         <ul className='webhub-nav'>
             <li><Link to="/about">Introduction</Link></li>
-            <li><Link to="/about">My Role</Link></li>
-            <li><Link to="/about">The Challenge</Link></li>
-            <li><Link to="/about">Goals</Link></li>
-            <li><Link to="/about">Our Users</Link></li>
-            <li><Link to="/about">Process</Link></li>
-            <li><Link to="/about">Final Designs</Link></li>
-            <li><Link to="/about">Learnings</Link></li>
-            <li><Link to="/about">Future</Link></li>
+            <li><Link to="#">My Role</Link></li>
+            <li><Link to="#">The Challenge</Link></li>
+            <li><Link to="#">Goals</Link></li>
+            <li><Link to="#">Our Users</Link></li>
+            <li><Link to="#">Process</Link></li>
+            <li><Link to="#">Final Designs</Link></li>
+            <li><Link to="#">Learnings</Link></li>
+            <li><Link to="#">Future</Link></li>
         </ul></div>
         <div style={{margin: "0 100px"}}>
             <h2 style={{marginTop: "750px"}}>Introduction</h2><br /><br />

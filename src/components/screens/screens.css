@@ -11,7 +11,7 @@
     background-color: #ffffff00;
     background-image: url("Rectangle.png");
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     z-index: -1;
     overflow: hidden;
@@ -239,6 +239,7 @@
     left: 0px;
     top: 25px;
     z-index: -1;
+    object-fit: cover;
     /* background: #CEEA21; */
     mix-blend-mode: normal;
     border-radius: 12px;
