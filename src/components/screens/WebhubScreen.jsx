@@ -1,4 +1,7 @@
 import React from 'react'
+import ph_brain from "./ph_brain.svg"
+import archi from "./archi.png"
+import single from "./single.png"
 import { Link } from 'react-router-dom'
 
 const WebhubScreen = () => {
@@ -61,7 +64,8 @@ const WebhubScreen = () => {
                 </p>
             </div>
             <div>
-                <h2>The Challenge</h2><br /><br />
+                <h2>The Challenge <img style={{marginLeft: "5px", position: "absolute"}} src={ph_brain} /></h2>
+                <br /><br />
                 <p>
                     The outbreak of the Coronavirus pandemic in 2020 resulted in a global 
                     shutdown. This put limitations to people's ways of living, as well as their 
@@ -77,15 +81,15 @@ const WebhubScreen = () => {
             <div style={{ marginTop: "70px", marginBottom: "100px" }}>
                 <h2>Problem Statement</h2><br /><br />
                 <p style={{ color: "#893A96" }}>
-                    <i>
+                    <b><i>
                     “How we might redesign a better experience for 
                     consumers to access qualified professionals in a 
                     way that meets their needs”
-                    </i>
+                    </i></b>
                 </p>
             </div>
             <div>
-                <h2>Goals</h2><br /><br /><br /><br />
+                <h2 style={{fontSize: "30px"}}>Goals</h2><br /><br /><br />
                 <h2>Increase Content Relevancy</h2><br />
                 <p>
                     To work with the dev team to build a recommendation engine that 
@@ -107,7 +111,7 @@ const WebhubScreen = () => {
                 <h2>Our Users</h2><br /><br />
                 <ul style={{ marginLeft: "35px" }}>
                     <li>
-                        Before i started designing, we decided to dive deep into existing 
+                        Before I started designing, we decided to dive deep into existing 
                         behavioral and service delivery data of our users to understand them 
                         better. We also conducted a series of customer interviews.
                     </li><br />
@@ -120,7 +124,9 @@ const WebhubScreen = () => {
                         jobs-to-be-done.
                     </li>
                 </ul>
-            </div>
+            </div><br /><br /><br />
+            <img src={archi} />
+            <img src={single} />
             <div>
                 <h2>Process</h2><br /><br /><br /><br />
                 <h2>Design Sprints</h2><br />
