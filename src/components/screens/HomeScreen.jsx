@@ -7,6 +7,8 @@ import goodes from "./goodes.png"
 import humandes from "./humandes.png"
 import arrow4 from "./arrow4.svg"
 import hr from "./hr.svg"
+import Peace from "./Peace.svg"
+import SendLove from "./SendLove.svg"
 import Footer from '../layouts/Footer'
 import { Link } from 'react-router-dom'
 
@@ -49,7 +51,8 @@ const HomeScreen = () => {
         <h2 className='text-header'>My Design Principles</h2><br /><br />
         <div className='principles'>
           <div className='good-design'>
-            <img src={goodes} style={{marginTop: "15px"}} />
+            <img src={goodes} />
+            <img src={SendLove} className="sendlove" style={{width: "50px", borderRadius: "0px"}}/>
             <div className='princi-text'>
               <h2>Good design solves real problems.</h2>
               <p>
@@ -60,7 +63,7 @@ const HomeScreen = () => {
             </div>
           </div>
           <div className='human-design'>
-            <img src={humandes} />
+            <img src={humandes} style={{marginTop: "-40px"}} /><span><img src={Peace} style={{width: "40px"}}/></span>
             <div className='princi-text'>
               <h2>Design for humans, not users.</h2>
               <p>

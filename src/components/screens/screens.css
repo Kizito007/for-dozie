@@ -37,7 +37,7 @@
     animation: fadeInAnimation ease 3.5s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
-    margin: 0 15%;
+    margin: 5% 15%;
 }
 @keyframes fadeInAnimation {
 	0% {
@@ -82,6 +82,11 @@
     margin-top: 30px;
     margin-bottom: 15px;
 }
+.sendlove {
+    width: 50px;
+    position: absolute;
+    top: 1675px;
+}
 @media only screen and (max-width: 400px){
     .container {
         padding: 30px;
@@ -115,6 +120,11 @@
     }
     .text-head {
         text-align: center;
+    }
+    .sendlove {
+        position: relative;
+        top: -60px;
+        /* bottom: 73px; */
     }
 }
 .skills {
@@ -240,7 +250,7 @@
 }
 .project img {
     position: relative;
-    width: 250px;
+    width: 320px;
     height: 250px;
     left: 0px;
     top: 25px;
@@ -252,7 +262,7 @@
 }
 .text {
     display: inline-block;
-    margin-left: 10%;
+    margin-left: 8%;
 }
 .text p {
     padding: 24px 0;
