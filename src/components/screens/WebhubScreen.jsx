@@ -3,6 +3,7 @@ import ph_brain from "./ph_brain.svg"
 import archi from "./archi.png"
 import single from "./single.png"
 import { Link } from 'react-router-dom'
+import { Table } from "react-bootstrap"
 
 const WebhubScreen = () => {
   return (
@@ -23,8 +24,8 @@ const WebhubScreen = () => {
 
         </div>
         <div className='webhub-overview'>
-            <div style={{margin: "50px 10%"}}>
-            <ul className='overview-text'>
+            <div>
+            {/* <ul className='overview-text'>
                 <li className='duration'>Project Duration</li>
                 <li>Platforms</li>
                 <li className='tools'>Tools</li>
@@ -35,8 +36,26 @@ const WebhubScreen = () => {
                 <li className='duration2'>Android, iOS</li>
                 <li className='tools2'>Figma, Figjam & Photoshop</li>
                 <li>User research, Visual design</li>
+            </ul> */}
+            <ul>
+                <li>
+                    <p className='overview-text'>Project Duration</p><br />
+                    <p>Total Duration - 3 months</p>
+                </li>
+                <li>
+                    <p className='overview-text'>Platforms</p><br />
+                    <p>Android, iOS</p>
+                </li>
+                <li>
+                    <p className='overview-text'>Tools</p><br />
+                    <p>Figma, Figjam & Photoshop</p>
+                </li>
+                <li>
+                    <p className='overview-text'>Contributions</p><br />
+                    <p>User research, Visual design</p>
+                </li>
             </ul>
-            </div>
+            </div> 
         </div><div>
         <ul className='webhub-nav'>
             <li><Link to="/about">Introduction</Link></li>
@@ -125,8 +144,8 @@ const WebhubScreen = () => {
                     </li>
                 </ul>
             </div><br /><br /><br />
-            <img src={archi} />
-            <img src={single} />
+            {/* <><img src={archi} className="levi" /></>
+            <><img src={single} className="sasha" /></> */}
             <div>
                 <h2>Process</h2><br /><br /><br /><br />
                 <h2>Design Sprints</h2><br />

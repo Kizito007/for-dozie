@@ -238,6 +238,9 @@
     .art {
         margin-bottom: 60px;
     }
+    .webhub-overview li {
+        margin-right: 20px;
+    }
 }
 @media only screen and (min-width: 1311px) {
     .art {
@@ -310,6 +313,29 @@
     display: flex;
     justify-content: space-around;
 }
+.webhub-overview div {
+    margin: 50px 10%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 80%;
+    overflow-x: auto;
+}
+/* @media only screen and (max-width: 1001px) {
+    .webhub-overview div {
+        margin: 50px 0;
+    }
+} */
+.overvieww-text, .overvieww-text2 {
+    margin: 0 6%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.overview-text {
+    color: #6D0EB8;
+    font-size: 22px;
+    /* margin-right: 20px; */
+}
 .webhub-nav {
     list-style-type: none;
     position: absolute;
@@ -346,6 +372,24 @@
 }
 .contrs {
     margin-left: 75px;
+}
+.sasha {
+    position: relative;
+    width: 500px;
+    left: 300px;
+}
+.levi {
+    position: relative;
+    width: 600px;
+    right: 60px;
+}
+@media only screen and (max-width: 1170px) {
+    .sasha {
+        left: 0;
+    }
+    .levi {
+        right: 0;
+    }
 }
 @media only screen and (max-width: 1026px) {
     .projectdiv {

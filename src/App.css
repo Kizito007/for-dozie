@@ -28,5 +28,6 @@ html {
     background: conic-gradient(from 180deg at 50% 50%, #FFA800 0deg, #FF01B7 360deg);
     filter: blur(130px);
     transform: matrix(0.55, -0.72, 1.04, 0.45, 0, 0);
+    width: 460px;
   }
 }
