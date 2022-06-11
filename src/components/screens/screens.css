@@ -239,7 +239,7 @@
         margin-bottom: 60px;
     }
     .webhub-overview li {
-        margin-right: 20px;
+        margin: 10px;
     }
 }
 @media only screen and (min-width: 1311px) {
@@ -313,7 +313,7 @@
     display: flex;
     justify-content: space-around;
 }
-.webhub-overview div {
+.hubdiv {
     margin: 50px 10%;
     border-collapse: collapse;
     border-spacing: 0;
@@ -383,6 +383,12 @@
     width: 600px;
     right: 60px;
 }
+.squid-container {
+    margin: 0px 100px;
+}
+.squid-intro {
+    margin-top: 750px;
+}
 @media only screen and (max-width: 1170px) {
     .sasha {
         left: 0;
@@ -435,5 +441,46 @@
     .good-design {
         margin-right: 0px;
         margin-bottom: 70px;
+    }
+    .webhub-overview {
+        height: 250px;
+    }
+    .webhub-nav {
+        display: none;
+    }
+    .webhub-overview ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .squid-container {
+        margin: 0 35px;
+    }
+    .squid-intro {
+        margin-top: 800px;
+    }
+}
+@media only screen and (max-width: 558px) {
+    .webhub-overview {
+        height: 335px;
+    }
+    .squid-intro {
+        margin-top: 885px;
+    }
+    .squid-container {
+        margin: 0px;
+    }
+}
+@media only screen and (max-width: 406px) {
+    .webhub-overview {
+        height: 425px;
+    }
+    .webhub-overview ul {
+        text-align: center;
+        justify-content: center;
+    }
+    .squid-intro {
+        margin-top: 980px;
     }
 }

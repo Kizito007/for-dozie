@@ -24,19 +24,7 @@ const WebhubScreen = () => {
 
         </div>
         <div className='webhub-overview'>
-            <div>
-            {/* <ul className='overview-text'>
-                <li className='duration'>Project Duration</li>
-                <li>Platforms</li>
-                <li className='tools'>Tools</li>
-                <li className='contrs'>Contributions</li>
-            </ul><br />
-            <ul className='sub-text'>
-                <li className='duration'>Total Duration - 3 months</li>
-                <li className='duration2'>Android, iOS</li>
-                <li className='tools2'>Figma, Figjam & Photoshop</li>
-                <li>User research, Visual design</li>
-            </ul> */}
+            <div className='hubdiv'>
             <ul>
                 <li>
                     <p className='overview-text'>Project Duration</p><br />
@@ -68,8 +56,8 @@ const WebhubScreen = () => {
             <li><Link to="#">Learnings</Link></li>
             <li><Link to="#">Future</Link></li>
         </ul></div>
-        <div style={{margin: "0 100px"}}>
-            <h2 style={{marginTop: "750px"}}>Introduction</h2><br /><br />
+        <div className='squid-container'>
+            <h2 className='squid-intro'>Introduction</h2><br /><br />
             <p>
                 Web-Hub is a service platform that bridges the gap between professionals
                 and consumers. Whether it concerns a renovation, a
