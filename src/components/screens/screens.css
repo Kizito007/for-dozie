@@ -66,9 +66,6 @@
         top: 630px;
     }
 } */
-.projectdiv {
-    display: contents;
-}
 .principles {
     display: flex;
 }
@@ -249,7 +246,7 @@
     }
 }
 .project {
-    margin-bottom: 15px;
+    margin-bottom: 40px;
 }
 .project img {
     position: relative;
@@ -263,18 +260,27 @@
     mix-blend-mode: normal;
     border-radius: 12px;
 }
+.projectdivv {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+@media only screen and (max-width: 1108px) {
+    .projectdivv {
+        justify-content: center;
+    }
+}
 .text {
-    display: inline-block;
-    margin-left: 8%;
+    /* display: inline-block; */
+    margin-top: 8%;
 }
-.text p {
+/* .text p {
     padding: 24px 0;
-}
+} */
 .text button {
     width: 241px;
     height: 55px;
-    left: 576px;
-    top: 343px;
     color: #494949;
     background: #ebebeb;
     border: none;
@@ -398,16 +404,16 @@
     }
 }
 @media only screen and (max-width: 1026px) {
-    .projectdiv {
+    /* .projectdiv {
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 0 48%;
-    }
+    } */
     .text {
         display: grid;
-        margin: 0 23%;
-        text-align: center;
+        margin: 0 5%;
+        /* text-align: center; */
         justify-content: center;
     }
     .text h2 {
@@ -416,18 +422,12 @@
 
 }
 @media only screen and (max-width: 800px) {
-    .projectdiv {
+    /* .projectdiv {
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 0 48%;
-    }
-    .text {
-        display: grid;
-        margin: 0 23%;
-        text-align: center;
-        justify-content: center;
-    }
+    } */
     .text h2 {
         margin-top: 60px;
     }

@@ -9,6 +9,7 @@ import arrow4 from "./arrow4.svg"
 import hr from "./hr.svg"
 import Peace from "./Peace.svg"
 import SendLove from "./SendLove.svg"
+import Contact from "./Contact.jsx"
 import Footer from '../layouts/Footer'
 import { Link } from 'react-router-dom'
 
@@ -81,65 +82,68 @@ const HomeScreen = () => {
           I’ve worked with start-ups and small companies, and also 
           created some concepts for my personal side projects.
         </p>
-        <div className='project'>
-          <div className='projectdiv'><img src={p1} className=""/></div>
-          
-          <div className='text'>
-            <h2>Project Title</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing <br/>
-              elit. Varius id porta ornare adipiscing morbi integer <br/>
-              lectus eget. 
-            </p><br /><br />
-            <Link to="/case-study/1">
-              <button>
-                Read Case Study
-              </button>
-            </Link>
-          </div>   
-        </div><br/><br/><br/>
-        <div className='project'>
-          <div className='projectdiv'><img src={art1} className=""/></div>
-          
-          <div className='text'>
-            <h2>Project Title</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing <br/>
-              elit. Varius id porta ornare adipiscing morbi integer <br/>
-              lectus eget. 
-            </p><br /><br />
-            <Link to="/case-study/1">
-              <button>
-                Read Case Study
-              </button>
-            </Link>
-          </div>   
-        </div><br/><br/><br/>
-        <div className='project'>
-          <div className='projectdiv'><img src={art1} className=""/></div>
-          
-          <div className='text'>
-            <h2>Project Title</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing <br/>
-              elit. Varius id porta ornare adipiscing morbi integer <br/>
-              lectus eget. 
-            </p><br /><br />
-            <Link to="/case-study/1">
-              <button>
-                Read Case Study
-              </button>
-            </Link>
-          </div>   
+        <div className='projectdivv'>
+          <div className='project'>
+            <div><img src={p1} className=""/></div>
+            
+            <div className='text'>
+              <h2>Project Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing <br/>
+                elit. Varius id porta ornare adipiscing morbi integer <br/>
+                lectus eget. 
+              </p><br /><br />
+              <Link to="/case-study/1">
+                <button>
+                  Read Case Study
+                </button>
+              </Link>
+            </div>   
+          </div><br/><br/><br/>
+          <div className='project'>
+            <div><img src={art1} className=""/></div>
+            
+            <div className='text'>
+              <h2>Project Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing <br/>
+                elit. Varius id porta ornare adipiscing morbi integer <br/>
+                lectus eget. 
+              </p><br /><br />
+              <Link to="/case-study/1">
+                <button>
+                  Read Case Study
+                </button>
+              </Link>
+            </div>   
+          </div><br/><br/><br/>
+          <div className='project'>
+            <div><img src={art1} className=""/></div>
+            
+            <div className='text'>
+              <h2>Project Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing <br/>
+                elit. Varius id porta ornare adipiscing morbi integer <br/>
+                lectus eget. 
+              </p><br /><br />
+              <Link to="/case-study/1">
+                <button>
+                  Read Case Study
+                </button>
+              </Link>
+            </div>   
+          </div>
         </div><br/><br/><br/><br/>
-        <p style={{textAlign: "center"}}>
+        <p style={{textAlign: "right"}}>
           <Link 
             to="/projects"
             style={{
               textDecoration: "none",
               color: "inherit",
               textAlign: "center",
-              padding: "15px",
+              padding: "24px 60px",
+              marginRight: "50px",
               background: "#ebebeb",
               borderRadius: "30px"
             }}
@@ -150,6 +154,7 @@ const HomeScreen = () => {
         </p>
       </div><br/><br/><br /><br /><br />
       <img style={{width: "100%"}} src={hr} />
+      <Contact />
       <Footer />
     </div>
   )

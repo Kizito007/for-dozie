@@ -52,19 +52,33 @@
     border-radius: 25px;
     /* font-size: 18px; */
 }
-.bottom {
+.bottom, .contact {
     text-align: center;
 }
-.bottom button {
+input[type="email"], input[type="text"], textarea {
+    padding: 20px;
+    width: 80%;
+    letter-spacing: 1px;
+    border-radius: 12px;
+    border: 1.5px solid #c4c4c4;
+    outline: none;
+    font-family: 'DM Sans', sans-serif;
+}
+.contact button {
     width: 241px;
     height: 55px;
     left: 599px;
     top: 212px;
     font-size: 16px;
-    border: 2px solid #959595;
+    border: none;
     box-sizing: border-box;
     border-radius: 12px;
     font-family: 'DM Sans', sans-serif;
+    background: linear-gradient(107.26deg, #FFAB2E 11.4%, #AE12E4 97.78%);
+    color: #f9f9f9;
+}
+.contact button:hover {
+    background: linear-gradient(133.06deg, #FFAB2E 16.72%, #AE12E4 102.53%);
 }
 .bottom p {
     padding: 10px 0;
