@@ -57,6 +57,7 @@
     width: 200px;
     height: 200px;
     float: right;
+    margin-right: 10%;
     top: -33px;
     border-radius: 235px;
     z-index: -1;
@@ -394,6 +395,9 @@
 }
 .squid-intro {
     margin-top: 750px;
+}
+.css-ahj2mt-MuiTypography-root {
+    font-family: 'DM Sans', sans-serif;
 }
 @media only screen and (max-width: 1170px) {
     .sasha {

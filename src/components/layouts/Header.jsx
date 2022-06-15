@@ -2,12 +2,21 @@ import React, { useState } from 'react'
 import logo from "./logo.svg"
 import icon from "./icon.svg"
 import "./layout.css"
-import { Link, HashRouter } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import ScrollspyNav from "react-scrollspy-nav";
 
 const Header = () => {
 
   const [isMobile, setMobile] = useState();
+  let location = useLocation();
+  let navigate = useNavigate();
+
+  const locationChange = () => {
+    if(location.pathname !== "/") {
+      // console.log(location.pathname)
+      navigate("/#contactt")
+    }
+  }
 
   return (
     <nav className='header'>
@@ -26,7 +35,7 @@ const Header = () => {
             activeNavClass="is-active"
           >
             <li>
-              <a href="#contactt">Contact</a>
+              <a href="#contactt" onClick={locationChange} >Contact</a>
             </li>
           </ScrollspyNav>
           <li><Link to="/faq">FAQ</Link></li>
