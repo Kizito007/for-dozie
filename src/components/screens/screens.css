@@ -399,6 +399,16 @@
 .css-ahj2mt-MuiTypography-root {
     font-family: 'DM Sans', sans-serif;
 }
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+    margin: 50px auto;
+    width: 55%;
+    border: 1.5px solid #C4C4C4;
+    padding: 10px 0;
+    font-family: 'DM Sans', sans-serif;
+}
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded {
+    margin: 16px auto;
+}
 @media only screen and (max-width: 1170px) {
     .sasha {
         left: 0;
@@ -463,6 +473,9 @@
     }
     .squid-intro {
         margin-top: 800px;
+    }
+    .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+        width: 100%;
     }
 }
 @media only screen and (max-width: 558px) {

@@ -64,6 +64,14 @@ input[type="email"], input[type="text"], input[type="search"], textarea {
     outline: none;
     font-family: 'DM Sans', sans-serif;
 }
+input[type="search"], #search-msg {
+    width: 40%;
+}
+@media only screen and (max-width: 800px) {
+    input[type="search"], #search-msg {
+        width: 80%;
+    }
+}
 .contact button, .faq-button {
     width: 241px;
     height: 55px;

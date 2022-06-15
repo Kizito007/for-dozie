@@ -21,7 +21,7 @@ const ProjectScreen = () => {
           <input type="search" 
             placeholder='Search for a keyword' 
             id="search" name="search"
-            style={{width: "40%"}}
+            // style={{width: "40%"}}
           />
           <br/><br/><br/>
           <button className='faq-button'>
@@ -32,10 +32,7 @@ const ProjectScreen = () => {
       <Accordion
         style={{
           marginTop: "100px",
-          borderRadius: "12px",
-          border: "1.5px solid #C4C4C4",
-          padding: "10px 0",
-          fontFamily: "'DM Sans', sans-serif"
+          borderRadius: "12px"
         }}
       >
         <AccordionSummary
@@ -54,11 +51,7 @@ const ProjectScreen = () => {
       </Accordion>
       <Accordion
         style={{
-          margin: "50px 0",
           borderRadius: "12px",
-          border: "1.5px solid #C4C4C4",
-          padding: "10px 0",
-          fontFamily: "'DM Sans', sans-serif"
         }}
       >
         <AccordionSummary
@@ -77,11 +70,7 @@ const ProjectScreen = () => {
       </Accordion>
       <Accordion
         style={{
-          margin: "50px 0",
           borderRadius: "12px",
-          border: "1.5px solid #C4C4C4",
-          padding: "10px 0",
-          fontFamily: "'DM Sans', sans-serif"
         }}
       >
         <AccordionSummary
@@ -100,11 +89,7 @@ const ProjectScreen = () => {
       </Accordion>
       <Accordion
         style={{
-          margin: "50px 0",
           borderRadius: "12px",
-          border: "1.5px solid #C4C4C4",
-          padding: "10px 0",
-          fontFamily: "'DM Sans', sans-serif"
         }}
       >
         <AccordionSummary
@@ -126,11 +111,7 @@ const ProjectScreen = () => {
       </Accordion>
       <Accordion
         style={{
-          margin: "50px 0",
           borderRadius: "12px",
-          border: "1.5px solid #C4C4C4",
-          padding: "10px 0",
-          fontFamily: "'DM Sans', sans-serif"
         }}
       >
         <AccordionSummary
@@ -155,13 +136,13 @@ const ProjectScreen = () => {
           <input type="search" 
             placeholder='Search for a keyword' 
             id="search" name="search"
-            style={{width: "40%"}}
+            // style={{width: "40%"}}
           /><br /><br />
-          <textarea id="w3review" name="w3review" 
+          <textarea id="search-msg" name="w3review" 
             placeholder='Message' rows="6" cols="70"
-            style={{
-              width: "40%"
-            }}
+            // style={{
+            //   width: "40%"
+            // }}
           >
           </textarea>
           <br/><br/><br/>
