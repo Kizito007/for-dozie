@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import logo from "./logo.svg"
 import icon from "./icon.svg"
 import "./layout.css"
-import { Link } from "react-router-dom";
+import { Link, HashRouter } from "react-router-dom";
+import ScrollspyNav from "react-scrollspy-nav";
 
 const Header = () => {
 
@@ -20,8 +21,15 @@ const Header = () => {
           onClick={() => setMobile(false)}
         >
           <li><Link to="/about">About</Link></li>
-          <li><Link to="#contact">Contact</Link></li>
-          <li><Link to="/resume">FAQ</Link></li>
+          <ScrollspyNav
+            scrollTargetIds={["contactt",]}
+            activeNavClass="is-active"
+          >
+            <li>
+              <a href="#contactt">Contact</a>
+            </li>
+          </ScrollspyNav>
+          <li><Link to="/faq">FAQ</Link></li>
           <li><img src={icon} className="img-icon"/></li>
         </ul>
         <button 

@@ -12,6 +12,11 @@ import SendLove from "./SendLove.svg"
 import Contact from "./Contact.jsx"
 import Footer from '../layouts/Footer'
 import { Link } from 'react-router-dom'
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import { Autoplay, Pagination, Navigation } from "swiper";
+import 'swiper/css';
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 const HomeScreen = () => {
   return (
@@ -134,24 +139,37 @@ const HomeScreen = () => {
               </Link>
             </div>   
           </div>
-        </div><br/><br/><br/><br/>
-        <p style={{textAlign: "right"}}>
-          <Link 
-            to="/projects"
-            style={{
-              textDecoration: "none",
-              color: "inherit",
-              textAlign: "center",
-              padding: "24px 60px",
-              marginRight: "50px",
-              background: "#ebebeb",
-              borderRadius: "30px"
-            }}
-          >
-            View more
-            <img style={{marginLeft: "5px"}} src={arrow4} />
-          </Link>
-        </p>
+        </div><br/><br/>
+        {/* <Swiper
+          spaceBetween={50}
+          slidesPerView={2}
+          // onSlideChange={() => console.log('slide change')}
+          // onSwiper={(swiper) => console.log(swiper)}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <img src={art1} className=""/>
+            <h2>Slide 1</h2>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={art1} className=""/>
+            <h2>Slide 2</h2> 
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={art1} className=""/>
+            <h2>Slide 3</h2>
+          </SwiperSlide>
+          ...
+        </Swiper> */}
       </div><br/><br/><br /><br /><br />
       <img style={{width: "100%"}} src={hr} />
       <Contact />

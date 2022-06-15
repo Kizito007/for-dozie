@@ -55,7 +55,7 @@
 .bottom, .contact {
     text-align: center;
 }
-input[type="email"], input[type="text"], textarea {
+input[type="email"], input[type="text"], input[type="search"], textarea {
     padding: 20px;
     width: 80%;
     letter-spacing: 1px;
@@ -64,7 +64,7 @@ input[type="email"], input[type="text"], textarea {
     outline: none;
     font-family: 'DM Sans', sans-serif;
 }
-.contact button {
+.contact button, .faq-button {
     width: 241px;
     height: 55px;
     left: 599px;

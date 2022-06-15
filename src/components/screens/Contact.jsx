@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className='contact'>
+    <div id='contactt' className='contact'>
         <h2 className='text-header'>Let's create excellent work together!</h2>
         <p style={{fontSize: "21px", padding: "50px 0"}}>Get in touch for opportunities or just to say hi! 👋</p><br/>
         <form>
@@ -13,7 +13,7 @@ const Contact = () => {
             <input type="text" id="subject" placeholder='Subject' name="subject"/><br/><br/>
             <textarea id="w3review" name="w3review" placeholder='Message' rows="10" cols="70"></textarea><br /><br />
             <button className='contact'>
-                Submit
+              Submit
             </button>
         </form>
     </div>

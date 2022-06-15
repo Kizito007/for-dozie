@@ -5,7 +5,7 @@ import Header from './components/layouts/Header'
 import { Routes, Route } from "react-router-dom";
 import HomeScreen from './components/screens/HomeScreen'
 import AboutScreen from './components/screens/AboutScreen'
-import ProjectScreen from './components/screens/ProjectScreen'
+import FaqScreen from './components/screens/FaqScreen'
 import WebhubScreen from './components/screens/WebhubScreen'
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomeScreen />} />
         <Route path="about" element={<AboutScreen />} />
-        <Route path="projects" element={<ProjectScreen />} />
+        <Route path="faq" element={<FaqScreen />} />
         <Route path="case-study/1" element={<WebhubScreen />} />
       </Routes>
     </div>
