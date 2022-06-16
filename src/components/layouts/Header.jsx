@@ -32,7 +32,7 @@ const Header = () => {
           <li><Link to="/about">About</Link></li>
           <ScrollspyNav
             scrollTargetIds={["contactt",]}
-            activeNavClass="is-active"
+            // activeNavClass="is-active"
           >
             <li>
               <a href="#contactt" onClick={locationChange} >Contact</a>

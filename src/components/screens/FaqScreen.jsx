@@ -25,12 +25,13 @@ const ProjectScreen = () => {
           />
           <br/><br/><br/>
           <button className='faq-button'>
-            Submit
+            Search
           </button>
         </form>
       </div>
       <Accordion
         style={{
+          margin: "0 auto",
           marginTop: "100px",
           borderRadius: "12px"
         }}
@@ -52,6 +53,7 @@ const ProjectScreen = () => {
       <Accordion
         style={{
           borderRadius: "12px",
+          margin: "50px auto"
         }}
       >
         <AccordionSummary
@@ -71,6 +73,7 @@ const ProjectScreen = () => {
       <Accordion
         style={{
           borderRadius: "12px",
+          margin: "50px auto"
         }}
       >
         <AccordionSummary
@@ -90,6 +93,7 @@ const ProjectScreen = () => {
       <Accordion
         style={{
           borderRadius: "12px",
+          margin: "50px auto"
         }}
       >
         <AccordionSummary
@@ -112,6 +116,7 @@ const ProjectScreen = () => {
       <Accordion
         style={{
           borderRadius: "12px",
+          margin: "50px auto"
         }}
       >
         <AccordionSummary
