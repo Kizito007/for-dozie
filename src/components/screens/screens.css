@@ -406,6 +406,16 @@
     padding: 10px 0;
     font-family: 'DM Sans', sans-serif;
 }
+.css-67l5gl {
+    margin: 50px auto;
+    width: 55%;
+    border: 1.5px solid #C4C4C4;
+    padding: 10px 0;
+    font-family: 'DM Sans', sans-serif;
+}
+.css-9l3uo3 {
+    font-family: 'DM Sans', sans-serif;
+}
 .css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded {
     margin: 16px auto;
 }
@@ -475,6 +485,9 @@
         margin-top: 800px;
     }
     .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+        width: 100%;
+    }
+    .css-67l5gl {
         width: 100%;
     }
 }
