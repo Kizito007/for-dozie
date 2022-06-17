@@ -18,4 +18,7 @@ export const GlobalStyles = createGlobalStyle`
   .invincible {
     background-image: ${({ theme }) => theme.backgroundImage};
   }
+  .nav-list-mobile {
+    background: ${({ theme }) => theme.body};
+  }
 `

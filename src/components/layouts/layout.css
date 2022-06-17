@@ -57,7 +57,7 @@
 }
 input[type="email"], input[type="text"], input[type="search"], textarea {
     padding: 20px;
-    width: 80%;
+    width: 60%;
     letter-spacing: 1px;
     border-radius: 12px;
     border: 1.5px solid #c4c4c4;
@@ -69,6 +69,9 @@ input[type="search"], #search-msg {
 }
 @media only screen and (max-width: 800px) {
     input[type="search"], #search-msg {
+        width: 80%;
+    }
+    input[type="email"], input[type="text"], input[type="search"], textarea {
         width: 80%;
     }
 }
