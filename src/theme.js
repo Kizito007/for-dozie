@@ -1,4 +1,5 @@
 import Rectangle from "./components/images/Rectangle.png"
+import darkrect from "./components/images/darkrect.png"
 
 export const lightTheme = {
     body: '#f9f9f9',
@@ -13,5 +14,5 @@ export const darkTheme = {
     text: '#f9f9f9',
     toggleBorder: '#6B8096',
     gradient: 'linear-gradient(#091236, #1E215D)',
-    backgroundImage: "url('darkrect.png')"
+    backgroundImage: `url(${darkrect})`
 }
