@@ -9,7 +9,7 @@
 .invincible {
     padding: 200px 0;
     background-color: #ffffff00;
-    background-image: url("Rectangle.png");
+    /* background-image: url("Rectangle.png"); */
     background-size: cover;
     /* background-position: top; */
     background-repeat: no-repeat;

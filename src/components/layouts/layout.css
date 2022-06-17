@@ -85,7 +85,7 @@ input[type="search"], #search-msg {
     background: linear-gradient(107.26deg, #FFAB2E 11.4%, #AE12E4 97.78%);
     color: #f9f9f9;
 }
-.contact button:hover {
+.contact button:hover, .faq-button:hover {
     background: linear-gradient(133.06deg, #FFAB2E 16.72%, #AE12E4 102.53%);
 }
 .bottom p {

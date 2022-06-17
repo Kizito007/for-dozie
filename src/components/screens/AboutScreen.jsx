@@ -5,7 +5,7 @@ import art1 from "./art1.png"
 import nft1 from "./nft1.png"
 import { Link } from 'react-router-dom'
 
-const AboutScreen = () => {
+const AboutScreen = ({styles, light}) => {
   return (
     <>
         <div className='about'>
@@ -43,7 +43,7 @@ const AboutScreen = () => {
                 </p>
             </div>
         </div>
-        <div className='artworks'>
+        <div className='artworks' style={!light ? {background: styles.backdrop} : null}>
             <br/><br/>
             <h2 style={{color: "#f9f9f9", textAlign: "center"}}>Some art works of mine</h2>
             <br/><br/>

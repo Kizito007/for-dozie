@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
 import logo from "./logo.svg"
 import icon from "./icon.svg"
+import iconic from "./iconic.svg"
 import "./layout.css"
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import ScrollspyNav from "react-scrollspy-nav";
 
-const Header = () => {
+const Header = ({ toggleTheme, light, styles }) => {
 
   const [isMobile, setMobile] = useState();
+
   let location = useLocation();
   let navigate = useNavigate();
 
@@ -19,7 +21,7 @@ const Header = () => {
   }
 
   return (
-    <nav className='header'>
+    <nav className='header' style={!light ? {background: styles.background} : null}>
         <Link className="navbar-brand" to="/">
             <div className="logo-image">
               <img src={logo} className="img-fluid"/>
@@ -29,17 +31,20 @@ const Header = () => {
           className={isMobile? "nav-list-mobile": "nav-list"}
           onClick={() => setMobile(false)}
         >
-          <li><Link to="/about">About</Link></li>
+          <li><Link to="/about" style={!light ? {color: styles.color} : null}>About</Link></li>
           <ScrollspyNav
             scrollTargetIds={["contactt",]}
             // activeNavClass="is-active"
           >
             <li>
-              <a href="#contactt" onClick={locationChange} >Contact</a>
+              <a href="#contactt" onClick={locationChange} style={!light ? {color: styles.color} : null}>Contact</a>
             </li>
           </ScrollspyNav>
-          <li><Link to="/faq">FAQ</Link></li>
-          <li><img src={icon} className="img-icon"/></li>
+          <li><Link to="/faq" style={!light ? {color: styles.color} : null}>FAQ</Link></li>
+          <li onClick={toggleTheme}>
+            {/* src={iconic} */}
+            <img src={light ? iconic : icon} className="img-icon"/>
+          </li>
         </ul>
         <button 
           className='mobile-menu-icon'           
