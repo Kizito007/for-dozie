@@ -5,7 +5,7 @@ import single from "./single.png"
 import { Link } from 'react-router-dom'
 import { Table } from "react-bootstrap"
 
-const WebhubScreen = () => {
+const WebhubScreen = ({ styles, light }) => {
   return (
     <>
         <div className='squid'>
@@ -23,7 +23,9 @@ const WebhubScreen = () => {
           </div>
 
         </div>
-        <div className='webhub-overview'>
+        <div className='webhub-overview' style={
+            !light ? {background: styles.backdrop} : {background: "#f4f4f4"}
+        }>
             <div className='hubdiv'>
             <ul>
                 <li>

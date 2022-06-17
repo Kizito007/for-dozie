@@ -44,7 +44,7 @@ function App() {
         <Route path="/" element={<HomeScreen />} />
         <Route path="about" element={<AboutScreen styles={styles} light={light} />} />
         <Route path="faq" element={<FaqScreen />} />
-        <Route path="case-study/1" element={<WebhubScreen />} />
+        <Route path="case-study/1" element={<WebhubScreen styles={styles} light={light}/>} />
       </Routes>
     </div>
     {/* <img className='ellipse' src={ellipseGr}/> */}

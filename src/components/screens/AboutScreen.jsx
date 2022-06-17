@@ -30,7 +30,11 @@ const AboutScreen = ({styles, light}) => {
                 </p>
                 <img style={{width: "100%"}} src={hr} />
                 <br/><br/>
-                <h2 style={{color: "#494949", margin: "20px 0"}} className="myself">
+                <h2 style={
+                    !light ? {color: styles.color, margin: "20px 0"} : {color: "#494949", margin: "20px 0"}
+                    } 
+                    className="myself"
+                >
                     Wonder can I get along with the, team? Here is me during spare time:
                 </h2>
                 <p>
