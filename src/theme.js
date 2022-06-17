@@ -3,7 +3,7 @@ export const lightTheme = {
     text: '#494949',
     toggleBorder: '#FFF',
     gradient: 'linear-gradient(#39598A, #79D7ED)',
-    backgroundImage: "url('Rectangle.png')"
+    backgroundImage: "url('../src/components/images/Rectangle.png')"
 }
   
 export const darkTheme = {
