@@ -16,7 +16,7 @@ const ProjectScreen = () => {
         <h1>Got questions?</h1>
       </div>
       <div style={{ textAlign: "center", marginTop: "840px" }}>
-        <h2>In here, I answer questions I get from my DMs and emails.</h2><br/><br/>
+        <h2 style={{ fontWeight: "normal" }}>In here, I answer questions I get from my DMs and emails.</h2><br/><br/>
         {/* <form>
           <input type="search" 
             placeholder='Search for a keyword' 

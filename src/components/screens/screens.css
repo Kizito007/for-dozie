@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "Ginkgo";
+    src: url("./Ginkgo-Regular.woff");
+}
 .text-head {
     margin-top: 900px;
     font-size: 25px;

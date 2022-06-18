@@ -37,7 +37,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
-      <GlobalStyles />
+    <GlobalStyles />
     <Header light={light} toggleTheme={toggleTheme} styles={styles} />
     <div className="container">
       <Routes>
