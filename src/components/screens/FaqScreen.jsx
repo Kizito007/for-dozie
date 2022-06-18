@@ -45,8 +45,12 @@ const ProjectScreen = () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            I believe product design is a hybrid of 3 things: Tech, Usability and Aesthetics. 
+            being able to design something functional (solves a real problem). 
+            It's fascinating to see how humans react to design and how it affects their actions. 
+            Good UX helps people reach the goal they're set to achieve. 
+            For example, adding shadows to a button helps to promote the Call-To-Action, 
+            which triggers people to click on it. Every little detail in design affects the entirety of the product!
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -65,8 +69,10 @@ const ProjectScreen = () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            There are a lot on the list but I'll try to keep this incisive. 
+            - Craft & Execution - Understand the principles of UX and guidelines (material design, human interface, accessibility) 
+            - Visual design skills (good eye for design, attention to detail, interaction design, software, design systems, prototyping) 
+            - Design Methods (design thinking, design sprints, journey mapping, usability testing) - Collaboration (PMs, Devs and other depts)
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -85,8 +91,13 @@ const ProjectScreen = () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            I think, the best part of the job is designing interfaces that function to solve a problem, 
+            from interaction design to building design systems, collaborating with developers and Product Managers together bringing it to actualization. 
+            There's never one best way to solve the problem, that’s why I always challenge myself to achieve a design breakthrough. 
+            As for my least favourite part of the job, I think it would be the day-to-day meetings. 
+            Althought I believe in getting things done efficiently and quickly. 
+            Meetings that are unnecessarily long and arid make one weary .
+            A perfect balance of deep focus time and alignment meetings would be awesome.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -108,8 +119,12 @@ const ProjectScreen = () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            On average i avoid web/app redesigns without proper context. 
+            UI/Web designers redesign stuff and showcase them on Dribbble. 
+            As Product Designers, let's not forget the UX side of things—The problem to be solved. 
+            Case studies give more depth compared to redesigns. 
+            It highlights your thought process, design process, method of work. 
+            Always start from the problem you set out to solve!
           </Typography>
         </AccordionDetails>
       </Accordion>
