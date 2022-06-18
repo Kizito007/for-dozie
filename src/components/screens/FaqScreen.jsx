@@ -16,8 +16,8 @@ const ProjectScreen = () => {
         <h1>Got questions?</h1>
       </div>
       <div style={{ textAlign: "center", marginTop: "840px" }}>
-        <p>In here, I answer questions I get from my DMs and emails.</p><br/><br/>
-        <form>
+        <h2>In here, I answer questions I get from my DMs and emails.</h2><br/><br/>
+        {/* <form>
           <input type="search" 
             placeholder='Search for a keyword' 
             id="search" name="search"
@@ -27,7 +27,7 @@ const ProjectScreen = () => {
           <button className='faq-button'>
             Search
           </button>
-        </form>
+        </form> */}
       </div>
       <Accordion
         style={{
