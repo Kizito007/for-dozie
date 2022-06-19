@@ -35,7 +35,8 @@ const ProjectScreen = () => {
         style={{
           margin: "0 auto",
           marginTop: "100px",
-          borderRadius: "12px"
+          borderRadius: "12px",
+          boxShadow: "none"
         }}
       >
         <AccordionSummary
@@ -59,7 +60,8 @@ const ProjectScreen = () => {
       <Accordion
         style={{
           borderRadius: "12px",
-          margin: "50px auto"
+          margin: "50px auto",
+          boxShadow: "none"
         }}
       >
         <AccordionSummary
@@ -81,7 +83,8 @@ const ProjectScreen = () => {
       <Accordion
         style={{
           borderRadius: "12px",
-          margin: "50px auto"
+          margin: "50px auto",
+          boxShadow: "none"
         }}
       >
         <AccordionSummary
@@ -106,7 +109,8 @@ const ProjectScreen = () => {
       <Accordion
         style={{
           borderRadius: "12px",
-          margin: "50px auto"
+          margin: "50px auto",
+          boxShadow: "none"
         }}
       >
         <AccordionSummary
@@ -133,7 +137,8 @@ const ProjectScreen = () => {
       <Accordion
         style={{
           borderRadius: "12px",
-          margin: "50px auto"
+          margin: "50px auto",
+          boxShadow: "none"
         }}
       >
         <AccordionSummary
