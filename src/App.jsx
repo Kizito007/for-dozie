@@ -48,7 +48,7 @@ function App() {
       </Routes>
     </div>
     {/* <img className='ellipse' src={ellipseGr}/> */}
-    <div className="elllipse"></div>
+    {/* <div className="elllipse"></div> */}
     </ThemeProvider>
   )
 }

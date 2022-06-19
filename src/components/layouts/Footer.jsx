@@ -9,7 +9,7 @@ import linked from "./in.svg"
 const Footer = () => {
   return (
     <div className='bottom'>
-      <p style={{ paddingTop: "70px" }}>
+      <p style={{ padding: "70px 0" }}>
         <a href="https://behance.net/marioedgar">
           <img src={beh}/>
         </a>
