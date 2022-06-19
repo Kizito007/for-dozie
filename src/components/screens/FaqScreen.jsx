@@ -8,6 +8,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { Zoom, Reveal } from 'react-reveal';
 
 const ProjectScreen = () => {
   return (
@@ -29,6 +30,7 @@ const ProjectScreen = () => {
           </button>
         </form> */}
       </div>
+      <Zoom>
       <Accordion
         style={{
           margin: "0 auto",
@@ -148,9 +150,10 @@ const ProjectScreen = () => {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      
+      </Zoom>
       <div style={{ textAlign: "center", marginTop: "200px" }}>
         <h2 style={{ fontWeight: "normal", marginBottom: "140px" }}>Thanks for making it this far! I hope you find this helpful. ✌️</h2>
+        <Reveal>
         <h2 style={{ fontSize: "22px", margin: "50px 0" }}>Got a question?</h2>
         <form>
           <input type="search" 
@@ -170,6 +173,7 @@ const ProjectScreen = () => {
             Submit
           </button>
         </form>
+        </Reveal>
       </div>
       <Footer />
     </div>

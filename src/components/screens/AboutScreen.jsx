@@ -4,6 +4,7 @@ import hr from "./hr.svg"
 import art1 from "./art1.png"
 import nft1 from "./nft1.png"
 import { Link } from 'react-router-dom'
+import { Zoom, Reveal } from 'react-reveal';
 
 const AboutScreen = ({styles, light}) => {
   return (
@@ -15,10 +16,13 @@ const AboutScreen = ({styles, light}) => {
                 justifyContent: "center",
                 margin: "100px 48%"
             }}>
+                <Zoom>
                 <img style={{ position: "relative", left: "31%", top: "95px", marginBottom: "45px" }} src={dozie} className="intro-img"/>
+                </Zoom>
             </div>
             <h2 className='myself'>A little bit about myself. </h2>
             <div>
+                <Reveal>
                 <p>
                 My name is Nwaka Chiedozie Mario and I'm passionate about improving the everyday lives of others through 
                 design. I'm constantly learning new things everyday and love meeting people who are motivated and unafraid 
@@ -28,8 +32,10 @@ const AboutScreen = ({styles, light}) => {
                 spare time and at work. I am very much a big-picture thinker and enjoy working on products end to end, from 
                 rom ideation all the way to development. <br/><br/><br/>
                 </p>
+                </Reveal>
                 <img style={{width: "100%"}} src={hr} />
                 <br/><br/>
+                <Reveal>
                 <h2 style={
                     !light ? {color: styles.color, margin: "20px 0"} : {color: "#494949", margin: "20px 0"}
                     } 
@@ -45,10 +51,12 @@ const AboutScreen = ({styles, light}) => {
                 current on the latest trends in design, both social and aesthetic. I prefer subtle over loud, like my personality <br/> 
                 😁😊.
                 </p>
+                </Reveal>
             </div>
         </div>
         <div className='artworks' style={!light ? {background: styles.backdrop} : null}>
             <br/><br/>
+            <Reveal>
             <h2 style={{color: "#f9f9f9", textAlign: "center"}}>Some art works of mine</h2>
             <br/><br/>
             <div className='artbg'>
@@ -60,6 +68,7 @@ const AboutScreen = ({styles, light}) => {
                     </button>
                 </Link>
             </div>
+            </Reveal>
         </div>
     </>
   )
