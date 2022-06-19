@@ -56,7 +56,6 @@ const AboutScreen = ({styles, light}) => {
         </div>
         <div className='artworks' style={!light ? {background: styles.backdrop} : null}>
             <br/><br/>
-            <Reveal>
             <h2 style={{color: "#f9f9f9", textAlign: "center"}}>Some art works of mine</h2>
             <br/><br/>
             <div className='artbg'>
@@ -68,7 +67,6 @@ const AboutScreen = ({styles, light}) => {
                     </button>
                 </Link>
             </div>
-            </Reveal>
         </div>
     </>
   )

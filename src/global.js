@@ -24,7 +24,7 @@ export const GlobalStyles = createGlobalStyle`
   input[type="email"], input[type="text"], input[type="search"], textarea {
     background: ${({ theme }) => theme.contactFormBg};
   }
-  .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+  .css-1elwnq4-MuiPaper-root-MuiAccordion-root, .css-67l5gl {
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
   }

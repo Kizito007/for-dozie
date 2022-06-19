@@ -12,7 +12,7 @@ import SendLove from "./SendLove.svg"
 import Contact from "./Contact.jsx"
 import Footer from '../layouts/Footer'
 import { Link } from 'react-router-dom'
-import { Bounce, Zoom, Reveal, Fade } from 'react-reveal';
+import { Zoom } from 'react-reveal';
 // import { Swiper, SwiperSlide } from 'swiper/react';
 // import { Autoplay, Pagination, Navigation } from "swiper";
 import 'swiper/css';
@@ -31,7 +31,6 @@ const HomeScreen = () => {
             <img src={dozie} className="intro-img"/>
           </Zoom>
         </div>
-        <Bounce left>
         <h2 className='text-head'>
             Hi, I'm Nwaka Dozie. <br/>
             A <span style={{color: "#f50000"}} >product designer</span>  & <span style={{color: "#f5b500"}}>visual artist</span>.
@@ -41,8 +40,6 @@ const HomeScreen = () => {
           crafting digital products,helping<br/> businesses and
           non-profits expand their capacity for impact.
         </p>
-        </Bounce>
-        
       </div>
       <div>
         <h2 className='text-header'>My Skills.</h2><br /><br />
@@ -63,7 +60,6 @@ const HomeScreen = () => {
       </div>
       <div>
         <h2 className='text-header'>My Design Principles</h2><br /><br />
-        <Reveal>
         <div className='principles'>
           <div className='good-design'>
             <img src={goodes} />
@@ -89,17 +85,14 @@ const HomeScreen = () => {
             </div>
           </div>
         </div>
-        </Reveal>
       </div>
       <div>
         <h2 className='text-header'>Projects</h2>
-        <Reveal>
         <p style={{marginTop: "20px", marginBottom: "60px"}}>
           I’ve worked with start-ups and small companies, and also 
           created some concepts for my personal side projects.
         </p>
-        <Fade left>
-        <div className='projectdivv'>
+\        <div className='projectdivv'>
           <div className='project'>
             <div><img src={p1} className=""/></div>
             
@@ -182,13 +175,9 @@ const HomeScreen = () => {
           </SwiperSlide>
           ...
         </Swiper> */}
-        </Fade>
-        </Reveal>
       </div><br/><br/><br /><br /><br />
       <img style={{width: "100%"}} src={hr} />
-      <Zoom>
-        <Contact />
-      </Zoom>
+      <Contact />
       <Footer />
     </div>
   )

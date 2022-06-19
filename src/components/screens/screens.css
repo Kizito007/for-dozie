@@ -403,19 +403,13 @@
 .css-ahj2mt-MuiTypography-root {
     font-family: 'DM Sans', sans-serif;
 }
-.css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root, .css-67l5gl {
     margin: 50px auto;
     width: 55%;
     border: 1.5px solid #C4C4C4;
     padding: 10px 0;
     font-family: 'DM Sans', sans-serif;
-}
-.css-67l5gl {
-    margin: 50px auto;
-    width: 55%;
-    border: 1.5px solid #C4C4C4;
-    padding: 10px 0;
-    font-family: 'DM Sans', sans-serif;
+    box-shadow: none;
 }
 .css-9l3uo3 {
     font-family: 'DM Sans', sans-serif;
