@@ -3,22 +3,11 @@ import logo from "./logo.svg"
 import icon from "./icon.svg"
 import iconic from "./iconic.svg"
 import "./layout.css"
-import { Link, useLocation, useNavigate } from "react-router-dom";
-import ScrollspyNav from "react-scrollspy-nav";
+import { Link } from "react-router-dom";
 
 const Header = ({ toggleTheme, light, styles }) => {
 
   const [isMobile, setMobile] = useState();
-
-  let location = useLocation();
-  let navigate = useNavigate();
-
-  const locationChange = () => {
-    if(location.pathname !== "/") {
-      // console.log(location.pathname)
-      navigate("/#contactt")
-    }
-  }
 
   return (
     <nav className='header' style={!light ? {background: styles.background} : null}>
@@ -32,14 +21,7 @@ const Header = ({ toggleTheme, light, styles }) => {
           onClick={() => setMobile(false)}
         >
           <li><Link to="/about" style={!light ? {color: styles.color} : null}>About</Link></li>
-          <ScrollspyNav
-            scrollTargetIds={["contactt",]}
-            // activeNavClass="is-active"
-          >
-            <li>
-              <a href="#contactt" onClick={locationChange} style={!light ? {color: styles.color} : null}>Contact</a>
-            </li>
-          </ScrollspyNav>
+          <li><Link to="/projects" style={!light ? {color: styles.color} : null}>Projects</Link></li>
           <li><Link to="/faq" style={!light ? {color: styles.color} : null}>FAQ</Link></li>
           <li onClick={toggleTheme}>
             {/* src={iconic} */}

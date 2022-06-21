@@ -5,7 +5,7 @@ import art1 from "./art1.png"
 import p1 from "./p1.png"
 import goodes from "./goodes.png"
 import humandes from "./humandes.png"
-import arrow4 from "./arrow4.svg"
+// import arrow4 from "./arrow4.svg"
 import hr from "./hr.svg"
 import Peace from "./Peace.svg"
 import SendLove from "./SendLove.svg"
@@ -18,6 +18,7 @@ import { Zoom } from 'react-reveal';
 import 'swiper/css';
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import ScrollspyNav from "react-scrollspy-nav";
 
 const HomeScreen = () => {
   return (
@@ -33,11 +34,21 @@ const HomeScreen = () => {
             Hi, I'm Nwaka Dozie. <br/>
             A <span style={{color: "#f50000"}} >product designer</span>  & <span style={{color: "#f5b500"}}>visual artist</span>.
         </h2> <br/>
-        <p className='intro-text'>
+        <p className='intro-text' style={{ margin: "50px 0" }}>
           With over 3 years experience conceptualizing<br/> and
           crafting digital products,helping<br/> businesses and
           non-profits expand their capacity for impact.
         </p>
+        <ScrollspyNav
+            scrollTargetIds={["contactt",]}
+            // activeNavClass="is-active"
+        >
+          <a href="#contactt">
+          <button className='intro-btn'>
+            Contact me
+          </button>
+          </a>
+        </ScrollspyNav>
       </div>
       <div>
         <h2 className='text-header'>My Skills.</h2><br /><br />

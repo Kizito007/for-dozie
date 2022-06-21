@@ -8,6 +8,7 @@ import Header from './components/layouts/Header'
 import { Routes, Route } from "react-router-dom";
 import HomeScreen from './components/screens/HomeScreen'
 import AboutScreen from './components/screens/AboutScreen'
+import ProjectScreen from './components/screens/ProjectScreen'
 import FaqScreen from './components/screens/FaqScreen'
 import WebhubScreen from './components/screens/WebhubScreen'
 
@@ -43,6 +44,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomeScreen />} />
         <Route path="about" element={<AboutScreen styles={styles} light={light} />} />
+        <Route path="projects" element={<ProjectScreen styles={styles} light={light} />} />
         <Route path="faq" element={<FaqScreen />} />
         <Route path="case-study/1" element={<WebhubScreen styles={styles} light={light}/>} />
       </Routes>
