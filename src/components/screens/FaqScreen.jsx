@@ -36,7 +36,9 @@ const ProjectScreen = () => {
           margin: "0 auto",
           marginTop: "100px",
           borderRadius: "12px",
-          boxShadow: "none"
+          boxShadow: "none",
+          backgroundColor: "inherit",
+          color: "inherit"
         }}
       >
         <AccordionSummary
@@ -61,7 +63,9 @@ const ProjectScreen = () => {
         style={{
           borderRadius: "12px",
           margin: "50px auto",
-          boxShadow: "none"
+          boxShadow: "none",
+          backgroundColor: "inherit",
+          color: "inherit"
         }}
       >
         <AccordionSummary
@@ -84,7 +88,9 @@ const ProjectScreen = () => {
         style={{
           borderRadius: "12px",
           margin: "50px auto",
-          boxShadow: "none"
+          boxShadow: "none",
+          backgroundColor: "inherit",
+          color: "inherit"
         }}
       >
         <AccordionSummary
@@ -110,7 +116,9 @@ const ProjectScreen = () => {
         style={{
           borderRadius: "12px",
           margin: "50px auto",
-          boxShadow: "none"
+          boxShadow: "none",
+          backgroundColor: "inherit",
+          color: "inherit"
         }}
       >
         <AccordionSummary
@@ -138,7 +146,9 @@ const ProjectScreen = () => {
         style={{
           borderRadius: "12px",
           margin: "50px auto",
-          boxShadow: "none"
+          boxShadow: "none",
+          backgroundColor: "inherit",
+          color: "inherit"
         }}
       >
         <AccordionSummary
@@ -146,18 +156,15 @@ const ProjectScreen = () => {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
+          <Typography>What do you think about Product Designers on a project basis VS a permanent role?</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
           <Typography>
             I believe hiring a Product Designer in a permanent role. 
             Design is an sequential process, 
             it’s not the best for a company to have designers on contract or project basis. 
             A Product Designer on contract won't have enough time to understand the business, 
             users and iterate on the design.
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
           </Typography>
         </AccordionDetails>
       </Accordion>

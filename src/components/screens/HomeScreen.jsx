@@ -90,7 +90,7 @@ const HomeScreen = () => {
           I’ve worked with start-ups and small companies, and also 
           created some concepts for my personal side projects.
         </p>
-\        <div className='projectdivv'>
+        <div className='projectdivv'>
           <div className='project'>
             <div><img src={p1} className=""/></div>
             

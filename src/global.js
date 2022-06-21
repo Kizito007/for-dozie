@@ -31,6 +31,9 @@ export const GlobalStyles = createGlobalStyle`
   .css-i4bv87-MuiSvgIcon-root {
     color: ${({ theme }) => theme.text};
   }
+  .css-vubbuv {
+    color: ${({ theme }) => theme.text};
+  }
   .img-icon {
     position: ${({ theme }) => theme.position};
     top: ${({ theme }) => theme.top};
