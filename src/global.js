@@ -31,4 +31,16 @@ export const GlobalStyles = createGlobalStyle`
   .css-i4bv87-MuiSvgIcon-root {
     color: ${({ theme }) => theme.text};
   }
+  .img-icon {
+    position: ${({ theme }) => theme.position};
+    top: ${({ theme }) => theme.top};
+    right: ${({ theme }) => theme.right};
+  }
+  @media screen and (max-width: 925px) {
+    .img-icon {
+        position: unset;
+        top: 0;
+        right: 0;
+    }
+  }
 `

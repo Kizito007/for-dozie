@@ -7,7 +7,10 @@ export const lightTheme = {
     toggleBorder: '#FFF',
     gradient: 'linear-gradient(#39598A, #79D7ED)',
     backgroundImage: `url(${Rectangle})`,
-    contactFormBg: '#f9f9f9'
+    contactFormBg: '#f9f9f9',
+    position: "relative",
+    top: "-20px",
+    right: "28px",
 }
   
 export const darkTheme = {
@@ -16,5 +19,8 @@ export const darkTheme = {
     toggleBorder: '#6B8096',
     gradient: 'linear-gradient(#091236, #1E215D)',
     backgroundImage: `url(${darkrect})`,
-    contactFormBg: '#313131'
+    contactFormBg: '#313131',
+    position: "relative",
+    top: "-9px",
+    right: "30px",
 }

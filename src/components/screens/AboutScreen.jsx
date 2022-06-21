@@ -4,7 +4,7 @@ import hr from "./hr.svg"
 import art1 from "./art1.png"
 import nft1 from "./nft1.png"
 import { Link } from 'react-router-dom'
-import { Zoom, Reveal } from 'react-reveal';
+import { Reveal } from 'react-reveal';
 
 const AboutScreen = ({styles, light}) => {
   return (
@@ -16,9 +16,7 @@ const AboutScreen = ({styles, light}) => {
                 justifyContent: "center",
                 margin: "100px 48%"
             }}>
-                <Zoom>
                 <img style={{ position: "relative", left: "31%", top: "95px", marginBottom: "45px" }} src={dozie} className="intro-img"/>
-                </Zoom>
             </div>
             <h2 className='myself'>A little bit about myself. </h2>
             <div>

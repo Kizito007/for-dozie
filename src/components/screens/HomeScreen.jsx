@@ -27,9 +27,7 @@ const HomeScreen = () => {
       </div>
       <div className='intro'>
         <div>
-          <Zoom>
-            <img src={dozie} className="intro-img"/>
-          </Zoom>
+          <img src={dozie} className="intro-img"/>
         </div>
         <h2 className='text-head'>
             Hi, I'm Nwaka Dozie. <br/>
