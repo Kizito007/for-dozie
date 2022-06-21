@@ -125,9 +125,9 @@ const ProjectScreen = () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            On average i avoid web/app redesigns without proper context. 
+            On average I avoid web/app redesigns without proper context. 
             UI/Web designers redesign stuff and showcase them on Dribbble. 
-            As Product Designers, let's not forget the UX side of things—The problem to be solved. 
+            In Product Design, the UX side of things should be always considered—The problem to be solved. 
             Case studies give more depth compared to redesigns. 
             It highlights your thought process, design process, method of work. 
             Always start from the problem you set out to solve!
@@ -146,7 +146,13 @@ const ProjectScreen = () => {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography>What do you think about Product Designers on a project basis VS a permanent role?</Typography>
+          <Typography>
+            I believe hiring a Product Designer in a permanent role. 
+            Design is an sequential process, 
+            it’s not the best for a company to have designers on contract or project basis. 
+            A Product Designer on contract won't have enough time to understand the business, 
+            users and iterate on the design.
+          </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
