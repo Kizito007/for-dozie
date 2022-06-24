@@ -39,6 +39,9 @@ export const GlobalStyles = createGlobalStyle`
     top: ${({ theme }) => theme.top};
     right: ${({ theme }) => theme.right};
   }
+  ul.slick-dots li button:before {
+    color: ${({ theme }) => theme.text};
+  }
   @media screen and (max-width: 925px) {
     .img-icon {
         position: unset;

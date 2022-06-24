@@ -21,7 +21,9 @@
     "react-router": "^6.3.0",
     "react-router-dom": "^6.3.0",
     "react-scrollspy-nav": "^1.2.4",
+    "react-slick": "^0.29.0",
     "react-transition-group": "^4.4.2",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.5",
     "swiper": "^8.2.4"
   },
