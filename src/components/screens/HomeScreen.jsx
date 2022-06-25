@@ -78,7 +78,7 @@ const HomeScreen = () => {
         <p className='intro-text'>
           With over 3 years experience conceptualizing<br/> and
           crafting digital products,helping businesses and
-          non-profits expand their capacity for impact.
+          non-profits <br/> expand their capacity for impact.
         </p>
         <ScrollspyNav
             scrollTargetIds={["contactt",]}

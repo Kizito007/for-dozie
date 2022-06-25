@@ -42,6 +42,11 @@ export const GlobalStyles = createGlobalStyle`
   ul.slick-dots li button:before {
     color: ${({ theme }) => theme.text};
   }
+  .slick-prev:before, .slick-next:before {
+    color: ${({ theme }) => theme.text};
+    position: relative;
+    bottom: 115px;
+  }
   @media screen and (max-width: 925px) {
     .img-icon {
         position: unset;
