@@ -97,12 +97,6 @@
         padding: 30px;
     }
 }
-@media only screen and (max-width: 660px){
-    .invincible h1 {
-        font-size: 55px;
-        margin: 0;
-    }
-}
 @media only screen and (max-width: 925px){
     /* .home {
         margin: 0 5%;
@@ -462,6 +456,18 @@ ul.slick-dots {
 }
 .css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded {
     margin: 16px auto;
+}
+@media only screen and (max-width: 660px){
+    .invincible h1 {
+        font-size: 55px;
+        margin: 0 0px;
+    }
+    .slick-slide > div {
+        margin: 0;
+    }
+    .parallax-bg {
+        width: 400px;
+    }
 }
 @media only screen and (max-width: 1170px) {
     .sasha {
