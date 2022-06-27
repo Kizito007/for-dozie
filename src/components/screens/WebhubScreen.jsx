@@ -3,6 +3,7 @@ import ph_brain from "./ph_brain.svg"
 import archi from "./archi.png"
 import single from "./single.png"
 import { Link } from 'react-router-dom'
+import ScrollspyNav from "react-scrollspy-nav";
 
 const WebhubScreen = ({ styles, light }) => {
   return (
@@ -48,32 +49,125 @@ const WebhubScreen = ({ styles, light }) => {
         </div>
         <div>
         <ul className='webhub-nav'>
-            <li><Link to="/about">Introduction</Link></li>
-            <li><Link to="#">My Role</Link></li>
-            <li><Link to="#">The Challenge</Link></li>
-            <li><Link to="#">Goals</Link></li>
-            <li><Link to="#">Our Users</Link></li>
-            <li><Link to="#">Process</Link></li>
-            <li><Link to="#">Final Designs</Link></li>
-            <li><Link to="#">Learnings</Link></li>
-            <li><Link to="#">Future</Link></li>
+            <li>
+                <ScrollspyNav
+                    scrollTargetIds={["introduction",]}
+                    // activeNavClass="is-active"
+                >
+                <a href="#introduction">
+                    Introduction
+                </a>
+                </ScrollspyNav>
+            </li>
+            <li>
+                <ScrollspyNav
+                    scrollTargetIds={["role",]}
+                    // activeNavClass="is-active"
+                >
+                    <a href="#role">
+                        My Role
+                    </a>
+                </ScrollspyNav>
+            </li>
+            <li>
+                <ScrollspyNav
+                    scrollTargetIds={["challenge",]}
+                    // activeNavClass="is-active"
+                >
+                    <a href="#challenge">
+                        The Challenge
+                    </a>
+                </ScrollspyNav>
+            </li>
+            <li>
+            <li>
+                <ScrollspyNav
+                    scrollTargetIds={["goals",]}
+                    // activeNavClass="is-active"
+                >
+                    <a href="#goals">
+                        Goals
+                    </a>
+                </ScrollspyNav>
+            </li>
+            </li>
+            <li>
+            <li>
+                <ScrollspyNav
+                    scrollTargetIds={["users",]}
+                    // activeNavClass="is-active"
+                >
+                    <a href="#users">
+                        Our users
+                    </a>
+                </ScrollspyNav>
+            </li>
+            </li>
+            <li>
+            <li>
+                <ScrollspyNav
+                    scrollTargetIds={["process",]}
+                    // activeNavClass="is-active"
+                >
+                    <a href="#process">
+                        Process
+                    </a>
+                </ScrollspyNav>
+            </li>
+            </li>
+            <li>
+            <li>
+                <ScrollspyNav
+                    scrollTargetIds={["designs",]}
+                    // activeNavClass="is-active"
+                >
+                    <a href="#designs">
+                        Final Designs
+                    </a>
+                </ScrollspyNav>
+            </li>
+            </li>
+            <li>
+            <li>
+                <ScrollspyNav
+                    scrollTargetIds={["learnings",]}
+                    // activeNavClass="is-active"
+                >
+                    <a href="#learnings">
+                        Learnings
+                    </a>
+                </ScrollspyNav>
+            </li>
+            </li>
+            <li>
+            <li>
+                <ScrollspyNav
+                    scrollTargetIds={["future",]}
+                    // activeNavClass="is-active"
+                >
+                    <a href="#future">
+                        Future
+                    </a>
+                </ScrollspyNav>
+            </li>
+            </li>
         </ul>
         <div className='squid-container'>
-            <h2 className='squid-intro'>Introduction</h2><br /><br />
+            <h2 className='squid-intro' id="introduction">Introduction</h2><br /><br />
             <p>
                 Web-Hub is a service platform that bridges the gap between professionals
                 and consumers. Whether it concerns a renovation, a
                 maintenance job or a repair for all DIY jobs in and around a house.
             </p>
             <div style={{margin: "110px 0"}}>
-                <h2>My Role</h2><br /><br />
+                <h2 id='role'>My Role</h2><br /><br />
                 <p>
                     I'm the lead designer for this project. I collaborated with developers and a
                     product manager through the project.
                 </p>
             </div>
             <div>
-                <h2>The Challenge <img style={{marginLeft: "5px", position: "absolute"}} src={ph_brain} /></h2>
+                <h2 id='challenge'>The Challenge <img style={{marginLeft: "5px", position: "absolute"}} src={ph_brain} /></h2>
                 <br /><br />
                 <p>
                     The outbreak of the Coronavirus pandemic in 2020 resulted in a global 
@@ -98,7 +192,7 @@ const WebhubScreen = ({ styles, light }) => {
                 </p>
             </div>
             <div>
-                <h2 style={{fontSize: "30px"}}>Goals</h2><br /><br /><br />
+                <h2 id='goals' style={{fontSize: "30px"}}>Goals</h2><br /><br /><br />
                 <h2>Increase Content Relevancy</h2><br />
                 <p>
                     To work with the dev team to build a recommendation engine that 
@@ -117,7 +211,7 @@ const WebhubScreen = ({ styles, light }) => {
                 </p>
             </div>
             <div style={{ marginTop: "110px" }}>
-                <h2>Our Users</h2><br /><br />
+                <h2 id='users'>Our Users</h2><br /><br />
                 <ul style={{ marginLeft: "35px" }}>
                     <li>
                         Before I started designing, we decided to dive deep into existing 
@@ -137,7 +231,7 @@ const WebhubScreen = ({ styles, light }) => {
             <><img src={archi} className="levi" /></>
             <><img src={single} className="sasha" /></>
             <div>
-                <h2>Process</h2><br /><br /><br /><br />
+                <h2 id='process'>Process</h2><br /><br /><br /><br />
                 <h2>Design Sprints</h2><br />
                 <p>
                     A design sprint was conducted to facilitate collaboration cross-departments. 
@@ -167,7 +261,7 @@ const WebhubScreen = ({ styles, light }) => {
                     user experience. <br />
                     I wish I could show you every single part of the process!
                 </p><br /><br /><br />
-                <h2>Final Designs</h2><br />
+                <h2 id='designs'>Final Designs</h2><br />
                 <p>
                     Here's a detailed walkthrough of the revamped app.
                 </p><br /><br /><br />
@@ -179,7 +273,7 @@ const WebhubScreen = ({ styles, light }) => {
                 </p><br /><br /><br />
             </div>
             <div>
-                <h2>What we learned</h2><br /><br/><br />
+                <h2 id='learnings'>What we learned</h2><br /><br/><br />
                 <h2>Take it one phase at a time</h2><br />
                 <p>
                     We learned to break down complicated designs into small, manageable 
@@ -194,7 +288,7 @@ const WebhubScreen = ({ styles, light }) => {
                 </p><br /><br /><br />
             </div>
             <div>
-                <h2>Future</h2><br /><br/><br />
+                <h2 id='future'>Future</h2><br /><br/><br />
                 <h2>Post-launch optimization</h2><br />
                 <p>
                     This is a crucial next step for every UX improvement or product launch. With 
