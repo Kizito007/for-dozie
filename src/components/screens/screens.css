@@ -431,12 +431,12 @@ ul.slick-dots {
 .sasha {
     position: relative;
     width: 500px;
-    left: 300px;
+    left: 33%;
 }
 .levi {
     position: relative;
     width: 600px;
-    right: 60px;
+    right: 30px;
 }
 .squid-container {
     margin: 0px 100px;
@@ -541,6 +541,12 @@ ul.slick-dots {
         width: 100%;
     }
     .css-67l5gl {
+        width: 100%;
+    }
+    .levi {
+        width: 100%;
+    }
+    .sasha {
         width: 100%;
     }
 }

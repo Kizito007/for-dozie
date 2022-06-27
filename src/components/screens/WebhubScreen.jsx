@@ -3,7 +3,6 @@ import ph_brain from "./ph_brain.svg"
 import archi from "./archi.png"
 import single from "./single.png"
 import { Link } from 'react-router-dom'
-import { Table } from "react-bootstrap"
 
 const WebhubScreen = ({ styles, light }) => {
   return (
@@ -135,8 +134,8 @@ const WebhubScreen = ({ styles, light }) => {
                     </li>
                 </ul>
             </div><br /><br /><br />
-            {/* <><img src={archi} className="levi" /></>
-            <><img src={single} className="sasha" /></> */}
+            <><img src={archi} className="levi" /></>
+            <><img src={single} className="sasha" /></>
             <div>
                 <h2>Process</h2><br /><br /><br /><br />
                 <h2>Design Sprints</h2><br />
