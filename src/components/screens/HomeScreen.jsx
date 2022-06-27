@@ -85,7 +85,7 @@ const HomeScreen = () => {
             // activeNavClass="is-active"
         >
           <a href="#contactt">
-          <button className='intro-btn'>
+          <button style={{ width: "184px" }} className='intro-btn'>
             Contact me
           </button>
           </a>

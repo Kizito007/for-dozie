@@ -1,5 +1,11 @@
 import React from 'react'
 import ph_brain from "./ph_brain.svg"
+import arrow from "./arrow.svg"
+import curvyarrow from "./curvyarrow.svg"
+import smiley from "./smiley.svg"
+import flame from "./flame.svg"
+import Sunshine from "./Sunshine.svg"
+import question from "./_!.svg"
 import archi from "./archi.png"
 import single from "./single.png"
 import sketch from "./sketch.png"
@@ -151,7 +157,8 @@ const WebhubScreen = ({ styles, light }) => {
                 </p>
             </div>
             <div>
-                <h2 id='goals' style={{fontSize: "30px"}}>Goals</h2><br /><br /><br />
+                <h2 id='goals' style={{fontSize: "30px"}}>Goals</h2>
+                <img className='floaters' src={arrow} /><br /><br /><br />
                 <h3>Increase Content Relevancy</h3><br />
                 <p>
                     To work with the dev team to build a recommendation engine that 
@@ -170,7 +177,8 @@ const WebhubScreen = ({ styles, light }) => {
                 </p>
             </div>
             <div style={{ marginTop: "110px" }}>
-                <h2 id='users'>Our Users</h2><br /><br />
+                <h2 id='users'>Our Users</h2>
+                <img className='floaters' src={smiley} /><br /><br />
                 <ul style={{ marginLeft: "35px" }}>
                     <li>
                         Before I started designing, we decided to dive deep into existing 
@@ -190,7 +198,8 @@ const WebhubScreen = ({ styles, light }) => {
             <><img src={archi} className="levi" /></>
             <><img src={single} className="sasha" /></>
             <div>
-                <h2 id='process'>Process</h2><br /><br />
+                <h2 id='process'>Process</h2>
+                <img className='floaters' src={curvyarrow} /><br /><br />
                 <h3>Design Sprints</h3><br />
                 <p>
                     A design sprint was conducted to facilitate collaboration cross-departments. 
@@ -223,7 +232,8 @@ const WebhubScreen = ({ styles, light }) => {
                     user experience. <br />
                     I wish I could show you every single part of the process!
                 </p><br /><br /><br />
-                <h2 id='designs'>Final Designs</h2><br />
+                <h2 id='designs'>Final Designs</h2>
+                <img className='floaters' src={flame} /><br />
                 <p>
                     Here's a detailed walkthrough of the revamped app.
                 </p><br /><br /><br />
@@ -238,7 +248,8 @@ const WebhubScreen = ({ styles, light }) => {
                 <img src={p1} style={{right: "0", borderRadius: "12px",}} className="case-ones" /><br /><br />
             </div>
             <div>
-                <h2 id='learnings'>What we learned</h2><br /><br/><br />
+                <h2 id='learnings'>What we learned</h2>
+                <img className='floaters' src={question} /><br /><br/><br />
                 <h3>Take it one phase at a time</h3><br />
                 <p>
                     We learned to break down complicated designs into small, manageable 
@@ -253,7 +264,8 @@ const WebhubScreen = ({ styles, light }) => {
                 </p><br /><br /><br />
             </div>
             <div>
-                <h2 id='future'>Future</h2><br /><br/><br />
+                <h2 id='future'>Future</h2>
+                <img className='floaters' src={Sunshine} /><br /><br/><br />
                 <h3>Post-launch optimization</h3><br />
                 <p>
                     This is a crucial next step for every UX improvement or product launch. With 
