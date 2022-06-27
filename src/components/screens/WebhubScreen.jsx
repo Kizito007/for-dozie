@@ -13,6 +13,7 @@ import flow1 from "./flow1.png"
 import flow2 from "./flow2.png"
 import final1 from "./final1.png"
 import final2 from "./final2.png"
+import final3 from "./final3.png"
 import p1 from "./p1.png"
 import { Link } from 'react-router-dom'
 import ScrollspyNav from "react-scrollspy-nav";
@@ -224,7 +225,8 @@ const WebhubScreen = ({ styles, light }) => {
                 <p>
                     I sketched multiple user flows to visualize ideas quickly. My focus at this stage 
                     is to diverge first, converge later. Here are some early sketches of the Brand page.
-                </p><br /><br /><br />
+                </p><br /><br />
+                <img src={final3} style={{right: "0",}} className="case-ones" /><br /><br /><br />
                 <h3>We went through 10+ iterations</h3><br />
                 <p>
                     The initial designs went through several user tests, discussions 
