@@ -2,6 +2,12 @@ import React from 'react'
 import ph_brain from "./ph_brain.svg"
 import archi from "./archi.png"
 import single from "./single.png"
+import sketch from "./sketch.png"
+import flow1 from "./flow1.png"
+import flow2 from "./flow2.png"
+import final1 from "./final1.png"
+import final2 from "./final2.png"
+import p1 from "./p1.png"
 import { Link } from 'react-router-dom'
 import ScrollspyNav from "react-scrollspy-nav";
 
@@ -146,18 +152,18 @@ const WebhubScreen = ({ styles, light }) => {
             </div>
             <div>
                 <h2 id='goals' style={{fontSize: "30px"}}>Goals</h2><br /><br /><br />
-                <h2>Increase Content Relevancy</h2><br />
+                <h3>Increase Content Relevancy</h3><br />
                 <p>
                     To work with the dev team to build a recommendation engine that 
                     automatically shows consumers the most relevant content based on their  
                     search behaviour, recommended and most favourited brands.
                 </p><br /><br /><br />
-                <h2>A delightful, consistent consumer experience</h2><br />
+                <h3>A delightful, consistent consumer experience</h3><br />
                 <p>
                     To ensure a proper design system is in place to reduce technical debt, and 
                     give our consumers a better, consistent experience.
                 </p><br /><br /><br />
-                <h2>Operational efficiency</h2><br />
+                <h3>Operational efficiency</h3><br />
                 <p>
                     To optimize internal operations, we will build scalable design components, 
                     which will work across Payment and refund systems.
@@ -184,30 +190,33 @@ const WebhubScreen = ({ styles, light }) => {
             <><img src={archi} className="levi" /></>
             <><img src={single} className="sasha" /></>
             <div>
-                <h2 id='process'>Process</h2><br /><br /><br /><br />
-                <h2>Design Sprints</h2><br />
+                <h2 id='process'>Process</h2><br /><br />
+                <h3>Design Sprints</h3><br />
                 <p>
                     A design sprint was conducted to facilitate collaboration cross-departments. 
                     Developers, Product Managers and Creatives contributed their fresh ideas in 
                     this sprint. The purpose of these sprints is to align everyone on the same goal 
                     To improve our consumer experience by solving our user's problems today.
                 </p><br /><br /><br />
-                <h2>User flows</h2><br />
+                <h3>User flows</h3><br />
                 <p>
                     We mapped each archetype to their user journey on the app, with their 
                     respective success metrics.
-                </p><br /><br /><br />
-                <h2>Sketches</h2><br />
+                </p><br /><br />
+                <img src={flow1} style={{right: "0",}} className="case-ones" /><br /><br />
+                <img src={flow2} style={{right: "0",}} className="case-ones" /><br /><br />
+                <h3>Sketches</h3><br />
+                <p>
+                    I sketched multiple user flows to visualize ideas quickly. My focus at this stage 
+                    is to diverge first, converge later. Here are some early sketches of the Brand page.
+                </p><br /><br />
+                <img src={sketch} style={{right: "0",}} className="case-ones" /><br /><br /><br />
+                <h3>Mid-fi Wireframes</h3><br />
                 <p>
                     I sketched multiple user flows to visualize ideas quickly. My focus at this stage 
                     is to diverge first, converge later. Here are some early sketches of the Brand page.
                 </p><br /><br /><br />
-                <h2>Mid-fi Wireframes</h2><br />
-                <p>
-                    I sketched multiple user flows to visualize ideas quickly. My focus at this stage 
-                    is to diverge first, converge later. Here are some early sketches of the Brand page.
-                </p><br /><br /><br />
-                <h2>We went through 10+ iterations</h2><br />
+                <h3>We went through 10+ iterations</h3><br />
                 <p>
                     The initial designs went through several user tests, discussions 
                     with operations, and business teams to ensure we have a friendly and scalable 
@@ -218,21 +227,24 @@ const WebhubScreen = ({ styles, light }) => {
                 <p>
                     Here's a detailed walkthrough of the revamped app.
                 </p><br /><br /><br />
-                <h2>A new look.</h2><br />
+                <h3>A new look.</h3><br />
                 <p>
                     Before the redesign, the app was cluttered. Now, Web-Hub has a fresh new 
                     modern look and a better experience. To improve the brand and service 
                     perception, we introduced scalable components and redesigned micro-interactions.
-                </p><br /><br /><br />
+                </p><br /><br />
+                <img src={final1} style={{right: "0",}} className="case-ones" /><br /><br />
+                <img src={final2} style={{right: "0",}} className="case-ones" /><br /><br />
+                <img src={p1} style={{right: "0", borderRadius: "12px",}} className="case-ones" /><br /><br />
             </div>
             <div>
                 <h2 id='learnings'>What we learned</h2><br /><br/><br />
-                <h2>Take it one phase at a time</h2><br />
+                <h3>Take it one phase at a time</h3><br />
                 <p>
                     We learned to break down complicated designs into small, manageable 
                     chunks. This eases development and handles bugs as we go along.
                 </p><br /><br /><br />
-                <h2>Adapt to the changing consumer behaviour</h2><br />
+                <h3>Adapt to the changing consumer behaviour</h3><br />
                 <p>
                     We recognised the neccessity to stay grounded and focused on the goal, 
                     but also account for changes to the product to match the changed 
@@ -242,13 +254,13 @@ const WebhubScreen = ({ styles, light }) => {
             </div>
             <div>
                 <h2 id='future'>Future</h2><br /><br/><br />
-                <h2>Post-launch optimization</h2><br />
+                <h3>Post-launch optimization</h3><br />
                 <p>
                     This is a crucial next step for every UX improvement or product launch. With 
                     informed, actionable insights, we are able to design a better experience for 
                     our consumers.
                 </p><br /><br /><br />
-                <h2>Continue to design better experiences</h2><br />
+                <h3>Continue to design better experiences</h3><br />
                 <p>
                     To follow through our product roadmap and continue to 
                     stick to our design principles.

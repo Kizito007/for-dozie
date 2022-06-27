@@ -436,6 +436,11 @@ ul.slick-dots {
     width: 600px;
     right: 30px;
 }
+.case-ones {
+    position: relative;
+    width: 600px;
+    left: 23%;
+}
 .squid-container {
     margin: 0px 100px;
     margin-left: 140px;
@@ -476,6 +481,9 @@ ul.slick-dots {
     }
     .levi {
         right: 0;
+    }
+    .case-ones {
+        left: 0;
     }
 }
 @media only screen and (max-width: 1026px) {
@@ -541,10 +549,7 @@ ul.slick-dots {
     .css-67l5gl {
         width: 100%;
     }
-    .levi {
-        width: 100%;
-    }
-    .sasha {
+    .levi, .sasha, .case-ones {
         width: 100%;
     }
 }
