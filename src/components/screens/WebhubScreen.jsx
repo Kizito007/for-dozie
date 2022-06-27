@@ -48,110 +48,63 @@ const WebhubScreen = ({ styles, light }) => {
             </div> 
         </div>
         <div>
+        
+        <div style={{ position: "sticky", top: "70px" }}>
+        <ScrollspyNav
+            scrollTargetIds={
+                ["introduction", "role", "challenge", "goals", "users", "process", "designs", "learnings", "future",]
+            }
+            // activeNavClass="is-active"
+        >
         <ul className='webhub-nav'>
             <li>
-                <ScrollspyNav
-                    scrollTargetIds={["introduction",]}
-                    // activeNavClass="is-active"
-                >
                 <a href="#introduction">
                     Introduction
                 </a>
-                </ScrollspyNav>
             </li>
             <li>
-                <ScrollspyNav
-                    scrollTargetIds={["role",]}
-                    // activeNavClass="is-active"
-                >
-                    <a href="#role">
-                        My Role
-                    </a>
-                </ScrollspyNav>
+                <a href="#role">
+                    My Role
+                </a>
             </li>
             <li>
-                <ScrollspyNav
-                    scrollTargetIds={["challenge",]}
-                    // activeNavClass="is-active"
-                >
-                    <a href="#challenge">
-                        The Challenge
-                    </a>
-                </ScrollspyNav>
+                <a href="#challenge">
+                    The Challenge
+                </a>
             </li>
             <li>
-            <li>
-                <ScrollspyNav
-                    scrollTargetIds={["goals",]}
-                    // activeNavClass="is-active"
-                >
-                    <a href="#goals">
-                        Goals
-                    </a>
-                </ScrollspyNav>
-            </li>
+                <a href="#goals">
+                    Goals
+                </a>
             </li>
             <li>
-            <li>
-                <ScrollspyNav
-                    scrollTargetIds={["users",]}
-                    // activeNavClass="is-active"
-                >
-                    <a href="#users">
-                        Our users
-                    </a>
-                </ScrollspyNav>
-            </li>
+                <a href="#users">
+                    Our users
+                </a>
             </li>
             <li>
-            <li>
-                <ScrollspyNav
-                    scrollTargetIds={["process",]}
-                    // activeNavClass="is-active"
-                >
-                    <a href="#process">
-                        Process
-                    </a>
-                </ScrollspyNav>
-            </li>
+                <a href="#process">
+                    Process
+                </a>
             </li>
             <li>
-            <li>
-                <ScrollspyNav
-                    scrollTargetIds={["designs",]}
-                    // activeNavClass="is-active"
-                >
-                    <a href="#designs">
-                        Final Designs
-                    </a>
-                </ScrollspyNav>
-            </li>
+                <a href="#designs">
+                    Final Designs
+                </a>
             </li>
             <li>
-            <li>
-                <ScrollspyNav
-                    scrollTargetIds={["learnings",]}
-                    // activeNavClass="is-active"
-                >
-                    <a href="#learnings">
-                        Learnings
-                    </a>
-                </ScrollspyNav>
-            </li>
+                <a href="#learnings">
+                    Learnings
+                </a>
             </li>
             <li>
-            <li>
-                <ScrollspyNav
-                    scrollTargetIds={["future",]}
-                    // activeNavClass="is-active"
-                >
-                    <a href="#future">
-                        Future
-                    </a>
-                </ScrollspyNav>
-            </li>
+                <a href="#future">
+                    Future
+                </a>
             </li>
         </ul>
+        </ScrollspyNav>
+        </div>
         <div className='squid-container'>
             <h2 className='squid-intro' id="introduction">Introduction</h2><br /><br />
             <p>

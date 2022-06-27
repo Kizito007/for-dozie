@@ -391,12 +391,7 @@ ul.slick-dots {
 }
 .webhub-nav {
     list-style-type: none;
-    position: sticky;
     float: left;
-    top: 70px;
-    /* left: 4%;
-    margin-top: 85vh; */
-    /* z-index: -1; */
 }
 .webhub-nav li {
     margin: 35px 0;
