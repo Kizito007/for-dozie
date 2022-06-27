@@ -46,7 +46,8 @@ const WebhubScreen = ({ styles, light }) => {
                 </li>
             </ul>
             </div> 
-        </div><div>
+        </div>
+        <div>
         <ul className='webhub-nav'>
             <li><Link to="/about">Introduction</Link></li>
             <li><Link to="#">My Role</Link></li>
@@ -57,7 +58,7 @@ const WebhubScreen = ({ styles, light }) => {
             <li><Link to="#">Final Designs</Link></li>
             <li><Link to="#">Learnings</Link></li>
             <li><Link to="#">Future</Link></li>
-        </ul></div>
+        </ul>
         <div className='squid-container'>
             <h2 className='squid-intro'>Introduction</h2><br /><br />
             <p>
@@ -208,6 +209,8 @@ const WebhubScreen = ({ styles, light }) => {
                 </p><br /><br /><br />
             </div>
         </div>
+        </div>
+        
     </>
   )
 }

@@ -90,7 +90,7 @@
 .sendlove {
     width: 50px;
     position: absolute;
-    top: 1675px;
+    top: 1755px;
 }
 @media only screen and (max-width: 400px){
     .container {
@@ -391,9 +391,11 @@ ul.slick-dots {
 }
 .webhub-nav {
     list-style-type: none;
-    position: absolute;
-    left: 4%;
-    margin-top: 115vh;
+    position: sticky;
+    float: left;
+    top: 70px;
+    /* left: 4%;
+    margin-top: 85vh; */
     /* z-index: -1; */
 }
 .webhub-nav li {
@@ -438,6 +440,7 @@ ul.slick-dots {
 }
 .squid-container {
     margin: 0px 100px;
+    margin-left: 140px;
 }
 .squid-intro {
     margin-top: 750px;
