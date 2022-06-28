@@ -42,7 +42,7 @@ function App() {
     <Header light={light} toggleTheme={toggleTheme} styles={styles} />
     <div className="container">
       <Routes>
-        <Route path="/" element={<HomeScreen />} />
+        <Route path="/" element={<HomeScreen light={light} />} />
         <Route path="about" element={<AboutScreen styles={styles} light={light} />} />
         <Route path="projects" element={<ProjectScreen styles={styles} light={light} />} />
         <Route path="faq" element={<FaqScreen />} />

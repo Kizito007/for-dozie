@@ -1,6 +1,7 @@
 import React from 'react'
 import dozie from "./dozie.png"
 import hr from "./hr.svg"
+import hrd from "./hrd.svg"
 import art1 from "./art1.png"
 import nft1 from "./nft1.png"
 import { Link } from 'react-router-dom'
@@ -31,7 +32,7 @@ const AboutScreen = ({styles, light}) => {
                 rom ideation all the way to development. <br/><br/><br/>
                 </p>
                 </Reveal>
-                <img style={{width: "100%"}} src={hr} />
+                <img style={{width: "100%"}} src={light ? hr : hrd} />
                 <br/><br/>
                 <Reveal>
                 <h2 style={

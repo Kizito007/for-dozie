@@ -8,6 +8,7 @@ import humandes from "./humandes.png"
 import squidbg from "./squidbg.png"
 // import arrow4 from "./arrow4.svg"
 import hr from "./hr.svg"
+import hrd from "./hrd.svg"
 import Peace from "./Peace.svg"
 import SendLove from "./SendLove.svg"
 import Contact from "./Contact.jsx"
@@ -24,7 +25,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const HomeScreen = () => {
+const HomeScreen = ({ light }) => {
 
   const settings = {
     dots: true,
@@ -199,7 +200,7 @@ const HomeScreen = () => {
         </div>
         </Slider>
       </div>
-      <img style={{width: "100%"}} src={hr} />
+      <img style={{width: "100%"}} src={light ? hr : hrd} />
       <Contact />
       <Footer />
     </div>

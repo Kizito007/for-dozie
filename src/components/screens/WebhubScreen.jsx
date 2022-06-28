@@ -1,11 +1,17 @@
 import React from 'react'
 import ph_brain from "./ph_brain.svg"
 import arrow from "./arrow.svg"
+import arrowd from "./arrowd.svg"
 import curvyarrow from "./curvyarrow.svg"
+import curvyarrowd from "./curvyarrowd.svg"
 import smiley from "./smiley.svg"
+import smileyd from "./smileyd.svg"
 import flame from "./flame.svg"
+import flamed from "./flamed.svg"
 import Sunshine from "./Sunshine.svg"
+import Sunshined from "./Sunshined.svg"
 import question from "./_!.svg"
+import questioned from "./questioned.svg"
 import archi from "./archi.png"
 import single from "./single.png"
 import sketch from "./sketch.png"
@@ -159,7 +165,7 @@ const WebhubScreen = ({ styles, light }) => {
             </div>
             <div>
                 <h2 id='goals' style={{fontSize: "30px"}}>Goals</h2>
-                <img className='floaters' src={arrow} /><br /><br /><br />
+                <img className='floaters' src={light ? arrow : arrowd} /><br /><br /><br />
                 <h3>Increase Content Relevancy</h3><br />
                 <p>
                     To work with the dev team to build a recommendation engine that 
@@ -179,7 +185,7 @@ const WebhubScreen = ({ styles, light }) => {
             </div>
             <div style={{ marginTop: "110px" }}>
                 <h2 id='users'>Our Users</h2>
-                <img className='floaters' src={smiley} /><br /><br />
+                <img className='floaters' src={light ? smiley : smileyd} /><br /><br />
                 <ul style={{ marginLeft: "35px" }}>
                     <li>
                         Before I started designing, we decided to dive deep into existing 
@@ -200,7 +206,7 @@ const WebhubScreen = ({ styles, light }) => {
             <><img src={single} className="sasha" /></>
             <div>
                 <h2 id='process'>Process</h2>
-                <img className='floaters' src={curvyarrow} /><br /><br />
+                <img className='floaters' src={light ? curvyarrow : curvyarrowd} /><br /><br />
                 <h3>Design Sprints</h3><br />
                 <p>
                     A design sprint was conducted to facilitate collaboration cross-departments. 
@@ -235,7 +241,7 @@ const WebhubScreen = ({ styles, light }) => {
                     I wish I could show you every single part of the process!
                 </p><br /><br /><br />
                 <h2 id='designs'>Final Designs</h2>
-                <img className='floaters' src={flame} /><br />
+                <img className='floaters' src={light ? flame : flamed} /><br />
                 <p>
                     Here's a detailed walkthrough of the revamped app.
                 </p><br /><br /><br />
@@ -251,7 +257,7 @@ const WebhubScreen = ({ styles, light }) => {
             </div>
             <div>
                 <h2 id='learnings'>What we learned</h2>
-                <img className='floaters' src={question} /><br /><br/><br />
+                <img className='floaters' src={light ? question : questioned} /><br /><br/><br />
                 <h3>Take it one phase at a time</h3><br />
                 <p>
                     We learned to break down complicated designs into small, manageable 
@@ -267,7 +273,7 @@ const WebhubScreen = ({ styles, light }) => {
             </div>
             <div>
                 <h2 id='future'>Future</h2>
-                <img className='floaters' src={Sunshine} /><br /><br/><br />
+                <img className='floaters' src={light ? Sunshine : Sunshined} /><br /><br/><br />
                 <h3>Post-launch optimization</h3><br />
                 <p>
                     This is a crucial next step for every UX improvement or product launch. With 
