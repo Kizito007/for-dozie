@@ -254,7 +254,7 @@ const WebhubScreen = ({ styles, light }) => {
                 <img src={final1} style={{right: "0",}} className="case-ones" /><br /><br />
                 <img src={final2} style={{right: "0",}} className="case-ones" /><br /><br />
                 <img src={p1} style={{right: "0", borderRadius: "12px",}} className="case-ones" /><br /><br />
-            </div>
+            </div><br/>
             <div>
                 <h2 id='learnings'>What we learned</h2>
                 <img className='floaters' src={light ? question : questioned} /><br /><br/><br />

@@ -240,6 +240,7 @@
     background: inherit;
     border-radius: 12px;
     overflow: hidden;
+    height: 560px;
 }
 .card-bottom {
     position: relative;
@@ -249,6 +250,17 @@
 }
 .card p {
     margin: 24px 0;
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+.projects .card {
+    margin: 0 auto;
+}
+.projects .card-bottom {
+    width: 455px;
+    text-align: center;
 }
 ul.slick-dots {
     bottom: 100px;
@@ -288,6 +300,10 @@ ul.slick-dots {
         margin: 0;
     }
     .card-bottom {
+        text-align: center;
+        width: unset;
+    }
+    .projects .card-bottom {
         text-align: center;
         width: unset;
     }
@@ -471,7 +487,7 @@ ul.slick-dots {
 @media only screen and (max-width: 660px){
     .invincible h1 {
         font-size: 55px;
-        margin: 0 0px;
+        margin: 0;
     }
     .slick-slide > div {
         margin: 0;
