@@ -259,8 +259,11 @@
     margin: 0 auto;
 }
 .projects .card-bottom {
-    width: 455px;
+    width: 390px;
     text-align: center;
+}
+.projects .parallax-bg {
+    width: 390px;
 }
 ul.slick-dots {
     bottom: 100px;
@@ -306,6 +309,9 @@ ul.slick-dots {
     .projects .card-bottom {
         text-align: center;
         width: unset;
+    }
+    .projects .parallax-bg {
+        width: 390px;
     }
 }
 .project {
