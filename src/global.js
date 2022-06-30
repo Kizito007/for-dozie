@@ -45,7 +45,7 @@ export const GlobalStyles = createGlobalStyle`
   .slick-prev:before, .slick-next:before {
     color: ${({ theme }) => theme.text};
     position: relative;
-    bottom: 115px;
+    bottom: 55px;
   }
   @media screen and (max-width: 925px) {
     .img-icon {

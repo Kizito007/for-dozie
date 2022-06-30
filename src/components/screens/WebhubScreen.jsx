@@ -54,7 +54,7 @@ const WebhubScreen = ({ styles, light }) => {
           </div>
 
         </div>
-        <div className='webhub-overview' style={
+        <div className='webhub-overview' id="introduction" style={
             !light ? {background: styles.backdrop} : {background: "#f4f4f4"}
         }>
             <div className='hubdiv'>
@@ -86,6 +86,7 @@ const WebhubScreen = ({ styles, light }) => {
                 ["introduction", "role", "challenge", "goals", "users", "process", "designs", "learnings", "future",]
             }
             // activeNavClass="is-active"
+            //  putting their id above another element so  it can focus on it
         >
         <ul className='webhub-nav'>
             <li>
@@ -137,21 +138,21 @@ const WebhubScreen = ({ styles, light }) => {
         </ScrollspyNav>
         </div>
         <div className='squid-container'>
-            <h2 className='squid-intro' id="introduction">Introduction</h2><br /><br />
-            <p>
+            <h2 className='squid-intro'>Introduction</h2><br /><br />
+            <p id='role'>
                 Web-Hub is a service platform that bridges the gap between professionals
                 and consumers. Whether it concerns a renovation, a
                 maintenance job or a repair for all DIY jobs in and around a house.
             </p>
             <div style={{margin: "110px 0"}}>
-                <h2 id='role'>My Role</h2><br /><br />
-                <p>
+                <h2>My Role</h2><br /><br />
+                <p id='challenge'>
                     I'm the lead designer for this project. I collaborated with developers and a
                     product manager through the project.
                 </p>
             </div>
             <div>
-                <h2 id='challenge'>The Challenge</h2>
+                <h2>The Challenge</h2>
                 <br /><br />
                 <p>
                     The outbreak of the Coronavirus pandemic in 2020 resulted in a global 
@@ -166,8 +167,8 @@ const WebhubScreen = ({ styles, light }) => {
                 </p>
             </div>      
             <div style={{ marginTop: "70px", marginBottom: "100px" }}>
-                <h2>Problem Statement</h2><br /><br />
-                <p style={{ color: "#893A96" }}>
+                <h3>Problem Statement</h3><br /><br />
+                <p id='goals' style={{ color: "#893A96" }}>
                     <b><i>
                     “How we might redesign a better experience for 
                     consumers to access qualified professionals in a 
@@ -176,7 +177,7 @@ const WebhubScreen = ({ styles, light }) => {
                 </p>
             </div>
             <div>
-                <h2 id='goals' style={{fontSize: "30px"}}>Goals</h2>
+                <h2 style={{fontSize: "30px"}}>Goals</h2>
                 <img className='floaters' src={light ? arrow : arrowd} /><br /><br /><br />
                 <h3>Increase Content Relevancy</h3><br />
                 <p>
@@ -190,13 +191,13 @@ const WebhubScreen = ({ styles, light }) => {
                     give our consumers a better, consistent experience.
                 </p><br /><br /><br />
                 <h3>Operational efficiency</h3><br />
-                <p>
+                <p id='users'>
                     To optimize internal operations, we will build scalable design components, 
                     which will work across Payment and refund systems.
                 </p>
             </div>
             <div style={{ marginTop: "110px" }}>
-                <h2 id='users'>Our Users</h2>
+                <h2>Our Users</h2>
                 <img className='floaters' src={light ? smiley : smileyd} /><br /><br />
                 <ul style={{ marginLeft: "35px" }}>
                     <li>
@@ -216,8 +217,9 @@ const WebhubScreen = ({ styles, light }) => {
             </div><br /><br /><br />
             <><img src={archi} className="levi" /></>
             <><img src={single} className="sasha" /></>
+            <p id='process'></p><br /><br />
             <div>
-                <h2 id='process'>Process</h2>
+                <h2>Process</h2>
                 <img className='floaters' src={light ? curvyarrow : curvyarrowd} /><br /><br />
                 <h3>Design Sprints</h3><br />
                 <p>
@@ -246,13 +248,13 @@ const WebhubScreen = ({ styles, light }) => {
                 </p><br /><br />
                 <img src={final3} style={{right: "0",}} className="case-ones" /><br /><br /><br />
                 <h3>We went through 10+ iterations</h3><br />
-                <p>
+                <p id='designs'>
                     The initial designs went through several user tests, discussions 
                     with operations, and business teams to ensure we have a friendly and scalable 
                     user experience. <br />
                     I wish I could show you every single part of the process!
                 </p><br /><br /><br />
-                <h2 id='designs'>Final Designs</h2>
+                <h2>Final Designs</h2>
                 <img className='floaters' src={light ? flame : flamed} /><br />
                 <p>
                     Here's a detailed walkthrough of the revamped app.
@@ -265,10 +267,11 @@ const WebhubScreen = ({ styles, light }) => {
                 </p><br /><br />
                 <img src={final1} style={{right: "0",}} className="case-ones" /><br /><br />
                 <img src={final2} style={{right: "0",}} className="case-ones" /><br /><br />
-                <img src={p1} style={{right: "0", borderRadius: "12px",}} className="case-ones" /><br /><br />
-            </div><br/>
+                <img src={p1} style={{right: "0", borderRadius: "12px",}} className="case-ones" />
+            </div>
+            <p id='learnings'></p><br /><br />
             <div>
-                <h2 id='learnings'>What we learned</h2>
+                <h2>What we learned</h2>
                 <img className='floaters' src={light ? question : questioned} /><br /><br/><br />
                 <h3>Take it one phase at a time</h3><br />
                 <p>
