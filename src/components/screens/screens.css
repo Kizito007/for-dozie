@@ -247,6 +247,7 @@
     width: 455px;
     bottom: 325px;
     text-align: center;
+    color: #f9f9f9;
 }
 .card p {
     margin: 24px 0;
@@ -266,7 +267,7 @@
     width: 390px;
 }
 ul.slick-dots {
-    bottom: 100px;
+    bottom: 10px;
 }
 /* ul.slick-prev, .slick-next {
     background: url("./rightcircle.svg");
@@ -290,7 +291,7 @@ ul.slick-dots {
         height: 290px;
     }
 }
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1130px) {
     .parallax-bg {
         width: 511px;
         height: 500px;
@@ -311,7 +312,7 @@ ul.slick-dots {
         width: unset;
     }
     .projects .parallax-bg {
-        width: 390px;
+        width: 100%;
     }
 }
 .project {
@@ -490,6 +491,16 @@ ul.slick-dots {
     float: right;
     bottom: 55px;
 }
+.card .intro-btn {
+    width: 187px;
+    background: #ebebeb;
+    color: #494949;
+}
+.card .intro-btn:hover {
+    background: #893a96;
+    color: #ebebeb;
+    border: none;   
+}
 @media only screen and (max-width: 660px){
     .invincible h1 {
         font-size: 55px;
@@ -499,7 +510,7 @@ ul.slick-dots {
         margin: 0;
     }
     .parallax-bg {
-        width: 400px;
+        width: 100%;
     }
 }
 @media only screen and (max-width: 1170px) {

@@ -1,5 +1,4 @@
-import React from 'react'
-import ph_brain from "./ph_brain.svg"
+import React, { useState } from 'react'
 import arrow from "./arrow.svg"
 import arrowd from "./arrowd.svg"
 import curvyarrow from "./curvyarrow.svg"
@@ -21,10 +20,23 @@ import final1 from "./final1.png"
 import final2 from "./final2.png"
 import final3 from "./final3.png"
 import p1 from "./p1.png"
-import { Link } from 'react-router-dom'
 import ScrollspyNav from "react-scrollspy-nav";
 
 const WebhubScreen = ({ styles, light }) => {
+    
+    // const [isOpen, setOpen] = useState(false);
+    // const [photoIndex, setPhotoIndex] = useState(false);
+
+    // const images = [
+    //     {archi},
+    //     {single},
+    //     {sketch},
+    //     {final1},
+    //     {p1},
+    //     {final2},
+    //     {final3},
+    // ];
+
   return (
     <>
         <div className='squid'>
@@ -139,7 +151,7 @@ const WebhubScreen = ({ styles, light }) => {
                 </p>
             </div>
             <div>
-                <h2 id='challenge'>The Challenge <img style={{marginLeft: "5px", position: "absolute"}} src={ph_brain} /></h2>
+                <h2 id='challenge'>The Challenge</h2>
                 <br /><br />
                 <p>
                     The outbreak of the Coronavirus pandemic in 2020 resulted in a global 

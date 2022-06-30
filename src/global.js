@@ -49,9 +49,9 @@ export const GlobalStyles = createGlobalStyle`
   }
   @media screen and (max-width: 925px) {
     .img-icon {
-        position: unset;
-        top: 0;
-        right: 0;
+      position: unset;
+      top: 0;
+      right: 0;
     }
   }
 `
