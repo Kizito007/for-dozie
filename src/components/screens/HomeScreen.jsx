@@ -1,11 +1,11 @@
 import React from 'react'
 import "./screens.css"
 import dozie from "./dozie.png"
-import art1 from "./art1.png"
+// import art1 from "./art1.png"
 import p1 from "./p1.png"
 import goodes from "./goodes.png"
 import humandes from "./humandes.png"
-import squidbg from "./squidbg.png"
+// import squidbg from "./squidbg.png"
 // import arrow4 from "./arrow4.svg"
 import hr from "./hr.svg"
 import hrd from "./hrd.svg"
@@ -16,8 +16,6 @@ import Footer from '../layouts/Footer'
 import { Link } from 'react-router-dom'
 import { Zoom } from 'react-reveal';
 import ScrollspyNav from "react-scrollspy-nav";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Parallax, Pagination, Navigation } from "swiper";
 import 'swiper/css';
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -116,7 +114,7 @@ const HomeScreen = ({ light }) => {
             <img src={goodes} />
             <img src={SendLove} className="sendlove" style={{width: "50px", borderRadius: "0px"}}/>
             <div className='princi-text'>
-              <h2>Good design solves real problems.</h2>
+              <h3>Good design solves real problems.</h3>
               <p>
                 I have a good understanding in tech, business and design. I start every
                 project by comprehending the business and customers before
@@ -127,7 +125,7 @@ const HomeScreen = ({ light }) => {
           <div className='human-design'>
             <img src={humandes} style={{marginTop: "-40px"}} /><span><img src={Peace} style={{width: "40px"}}/></span>
             <div className='princi-text'>
-              <h2>Design for humans, not users.</h2>
+              <h3>Design for humans, not users.</h3>
               <p>
                 Strike a balance between aesthetics and functionality. Good 
                 micro-copy brings massive results. Let's build products with meaningful 

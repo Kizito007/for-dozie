@@ -7,6 +7,7 @@ import ellipseGr from "./ellipseGr.svg"
 import Header from './components/layouts/Header'
 import { Routes, Route } from "react-router-dom";
 import HomeScreen from './components/screens/HomeScreen'
+import ScrollToTop from './components/screens/ScrollToTop'
 import AboutScreen from './components/screens/AboutScreen'
 import ProjectScreen from './components/screens/ProjectScreen'
 import FaqScreen from './components/screens/FaqScreen'
@@ -41,6 +42,8 @@ function App() {
     <GlobalStyles />
     <Header light={light} toggleTheme={toggleTheme} styles={styles} />
     <div className="container">
+    <ScrollToTop>
+
       <Routes>
         <Route path="/" element={<HomeScreen light={light} />} />
         <Route path="about" element={<AboutScreen styles={styles} light={light} />} />
@@ -48,6 +51,8 @@ function App() {
         <Route path="faq" element={<FaqScreen />} />
         <Route path="case-study/1" element={<WebhubScreen styles={styles} light={light}/>} />
       </Routes>
+      </ScrollToTop>
+
     </div>
     {/* <img className='ellipse' src={ellipseGr}/> */}
     {/* <div className="elllipse"></div> */}

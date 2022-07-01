@@ -7,8 +7,11 @@ import { Link } from "react-router-dom";
 
 const Header = ({ toggleTheme, light, styles }) => {
 
-  const [isMobile, setMobile] = useState();
+  const [isMobile, setMobile] = useState(false);
 
+  const handleToggle = () => {
+    setTimeout(() => setMobile(!isMobile), 100)
+  }
   return (
     <nav className='header' style={!light ? {background: styles.background} : null}>
         <Link className="navbar-brand" to="/">
@@ -19,6 +22,7 @@ const Header = ({ toggleTheme, light, styles }) => {
         <ul 
           className={isMobile? "nav-list-mobile": "nav-list"}
           onClick={() => setMobile(false)}
+          // {setTimeout(() => setMobile(false), 1000)}
         >
           <li><Link to="/about" style={!light ? {color: styles.color} : null}>About</Link></li>
           <li><Link to="/projects" style={!light ? {color: styles.color} : null}>Projects</Link></li>
@@ -30,7 +34,7 @@ const Header = ({ toggleTheme, light, styles }) => {
         </ul>
         <button 
           className='mobile-menu-icon'           
-          onClick={() => setMobile(!isMobile)}
+          onClick={handleToggle}
         >
           { 
             isMobile ? 
