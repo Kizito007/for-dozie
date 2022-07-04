@@ -16,9 +16,6 @@ import Footer from '../layouts/Footer'
 import { Link } from 'react-router-dom'
 import { Zoom } from 'react-reveal';
 import ScrollspyNav from "react-scrollspy-nav";
-import 'swiper/css';
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
