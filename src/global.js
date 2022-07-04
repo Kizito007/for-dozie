@@ -34,7 +34,7 @@ export const GlobalStyles = createGlobalStyle`
   .css-vubbuv {
     color: ${({ theme }) => theme.text};
   }
-  .css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+  .css-1t1j96h-MuiPaper-root-MuiDialog-paper, .css-uhb5lp {
     background-color: #00000000;
   }
   .img-icon {
