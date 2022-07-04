@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
   *,
@@ -34,6 +34,9 @@ export const GlobalStyles = createGlobalStyle`
   .css-vubbuv {
     color: ${({ theme }) => theme.text};
   }
+  .css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+    background-color: #00000000;
+  }
   .img-icon {
     position: ${({ theme }) => theme.position};
     top: ${({ theme }) => theme.top};
@@ -54,4 +57,4 @@ export const GlobalStyles = createGlobalStyle`
       right: 0;
     }
   }
-`
+`;

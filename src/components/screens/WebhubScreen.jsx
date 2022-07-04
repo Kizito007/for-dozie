@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import SimpleDialogDemo from './SimpleDialogDemo'
 import arrow from "./arrow.svg"
 import arrowd from "./arrowd.svg"
 import curvyarrow from "./curvyarrow.svg"
@@ -19,7 +20,7 @@ import flow2 from "./flow2.png"
 import final1 from "./final1.png"
 import final2 from "./final2.png"
 import final3 from "./final3.png"
-import p1 from "./p1.png"
+import pp1 from "./pp1.png"
 import ScrollspyNav from "react-scrollspy-nav";
 
 const WebhubScreen = ({ styles, light }) => {
@@ -215,8 +216,12 @@ const WebhubScreen = ({ styles, light }) => {
                     </li>
                 </ul>
             </div><br /><br /><br />
-            <><img src={archi} className="levi" /></>
-            <><img src={single} className="sasha" /></>
+            {/* 
+                <img src={archi} className="levi" />
+                <img src={single} className="sasha" />
+            */}
+            <><SimpleDialogDemo image={archi} className="levi" /></>
+            <><SimpleDialogDemo image={single} className="sasha" /></>
             <p id='process'></p><br /><br />
             <div>
                 <h2>Process</h2>
@@ -233,20 +238,23 @@ const WebhubScreen = ({ styles, light }) => {
                     We mapped each archetype to their user journey on the app, with their 
                     respective success metrics.
                 </p><br /><br />
-                <img src={flow1} style={{right: "0",}} className="case-ones" /><br /><br />
-                <img src={flow2} style={{right: "0",}} className="case-ones" /><br /><br />
+                {/*
+                    <img src={flow1} style={{right: "0",}} className="case-ones" />
+                */}
+                <SimpleDialogDemo image={flow1} className="case-ones" /><br /><br />
+                <SimpleDialogDemo image={flow2} style={{right: "0",}} className="case-ones" /><br /><br />
                 <h3>Sketches</h3><br />
                 <p>
                     I sketched multiple user flows to visualize ideas quickly. My focus at this stage 
                     is to diverge first, converge later. Here are some early sketches of the Brand page.
                 </p><br /><br />
-                <img src={sketch} style={{right: "0",}} className="case-ones" /><br /><br /><br />
+                <SimpleDialogDemo image={sketch} className="case-ones" /><br /><br /><br />
                 <h3>Mid-fi Wireframes</h3><br />
                 <p>
                     I sketched multiple user flows to visualize ideas quickly. My focus at this stage 
                     is to diverge first, converge later. Here are some early sketches of the Brand page.
                 </p><br /><br />
-                <img src={final3} style={{right: "0",}} className="case-ones" /><br /><br /><br />
+                <SimpleDialogDemo image={final3} className="case-ones" /><br /><br /><br />
                 <h3>We went through 10+ iterations</h3><br />
                 <p id='designs'>
                     The initial designs went through several user tests, discussions 
@@ -265,9 +273,9 @@ const WebhubScreen = ({ styles, light }) => {
                     modern look and a better experience. To improve the brand and service 
                     perception, we introduced scalable components and redesigned micro-interactions.
                 </p><br /><br />
-                <img src={final1} style={{right: "0",}} className="case-ones" /><br /><br />
-                <img src={final2} style={{right: "0",}} className="case-ones" /><br /><br />
-                <img src={p1} style={{right: "0", borderRadius: "12px",}} className="case-ones" />
+                <SimpleDialogDemo image={final1} className="case-ones" /><br /><br />
+                <SimpleDialogDemo image={final2} className="case-ones" /><br /><br />
+                <SimpleDialogDemo style={{right: "0", borderRadius: "12px",}} image={pp1} className="case-ones" />
             </div>
             <p id='learnings'></p><br /><br />
             <div>
