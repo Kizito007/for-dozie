@@ -11,7 +11,7 @@ import Dialog from '@mui/material/Dialog';
 // import PersonIcon from '@mui/icons-material/Person';
 // import AddIcon from '@mui/icons-material/Add';
 // import Typography from '@mui/material/Typography';
-// import { blue } from '@mui/material/colors';
+import { purple } from '@mui/material/colors';
 
 
 const emails = ['username@gmail.com', 'user02@gmail.com'];
@@ -28,7 +28,7 @@ function SimpleDialog(props) {
   };
 
   return (
-    <Dialog style={{ backgroundColor: "#00000000" }} onClose={handleClose} open={open}>
+    <Dialog sx={{ bgcolor: purple[100] }} onClose={handleClose} open={open}>
         <img src={image} />
       {/* <DialogTitle>Set backup account</DialogTitle>
       <List sx={{ pt: 0 }}>
