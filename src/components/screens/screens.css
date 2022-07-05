@@ -488,7 +488,9 @@ ul.slick-dots {
 .css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded {
   margin: 16px auto;
 }
-
+.css-uhb5lp {
+  background-color: #00000000;
+}
 .floaters {
   position: relative;
   float: right;
