@@ -27,11 +27,8 @@ function SimpleDialog(props) {
     onClose(value);
   };
 
-  const dialog = document.getElementsByClassName("css-uhb5lp")
-  dialog.style.backgroundColor = "#00000000";
-
   return (
-    <Dialog onClose={handleClose} open={open}>
+    <Dialog style={{ backgroundColor: "#00000000" }} onClose={handleClose} open={open}>
         <img src={image} />
       {/* <DialogTitle>Set backup account</DialogTitle>
       <List sx={{ pt: 0 }}>
