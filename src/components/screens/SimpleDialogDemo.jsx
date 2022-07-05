@@ -28,7 +28,7 @@ function SimpleDialog(props) {
   };
 
   return (
-    <Dialog sx={{ bgcolor: purple[100] }} onClose={handleClose} open={open}>
+    <Dialog sx={{ bgcolor: purple[100], color: purple[100] }} onClose={handleClose} open={open}>
         <img src={image} />
       {/* <DialogTitle>Set backup account</DialogTitle>
       <List sx={{ pt: 0 }}>
