@@ -1,4 +1,5 @@
 import React from 'react'
+import ScrollToTop from "react-scroll-to-top";
 import "./screens.css"
 import dozie from "./dozie.png"
 // import art1 from "./art1.png"
@@ -76,6 +77,7 @@ const HomeScreen = ({ light }) => {
           crafting digital products,helping businesses and
           non-profits <br/> expand their capacity for impact.
         </p>
+        <ScrollToTop smooth />
         <ScrollspyNav
             scrollTargetIds={["contactt",]}
             // activeNavClass="is-active"

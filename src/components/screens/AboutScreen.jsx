@@ -1,4 +1,5 @@
 import React from 'react'
+import ScrollToTop from "react-scroll-to-top";
 import dozie from "./dozie.png"
 import hr from "./hr.svg"
 import hrd from "./hrd.svg"
@@ -19,6 +20,7 @@ const AboutScreen = ({styles, light}) => {
             }}>
                 <img style={{ position: "relative", left: "31%", top: "95px", marginBottom: "45px" }} src={dozie} className="intro-img"/>
             </div>
+            <ScrollToTop smooth />
             <h2 className='myself'>A little bit about myself. </h2>
             <div>
                 <Reveal>

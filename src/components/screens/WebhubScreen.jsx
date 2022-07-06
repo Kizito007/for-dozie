@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import ScrollToTop from "react-scroll-to-top";
 import SimpleDialogDemo from './SimpleDialogDemo'
 import arrow from "./arrow.svg"
 import arrowd from "./arrowd.svg"
@@ -55,6 +56,7 @@ const WebhubScreen = ({ styles, light }) => {
           </div>
 
         </div>
+        <ScrollToTop smooth />
         <div className='webhub-overview' id="introduction" style={
             !light ? {background: styles.backdrop} : {background: "#f4f4f4"}
         }>

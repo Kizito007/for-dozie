@@ -157,18 +157,22 @@
 .reds:hover {
   border: 2px solid #ea1b1b;
   font-size: 15px;
+  color: #ea1b1b;
 }
 .greens:hover {
   border: 2px solid #97dc04;
   font-size: 15px;
+  color: #97dc04;
 }
 .purples:hover {
   border: 2px solid #ae12e4;
   font-size: 15px;
+  color: #ae12e4;
 }
 .blues:hover {
   border: 2px solid #a1e6fc;
   font-size: 15px;
+  color: #a1e6fc;
 }
 .myself {
   text-align: center;
@@ -223,18 +227,18 @@
   border-radius: 12px;
 }
 .parallax-bg {
-  width: 450px;
+  width: 650px;
   height: 500px;
   border-radius: 12px;
   z-index: -1;
   object-fit: cover;
 }
-.slick-slide > div {
+/* .slick-slide > div {
   margin: 0 -10px;
 }
 .slick-list {
   margin: -10px;
-}
+} */
 .card {
   margin: 0 25px;
   background: inherit;
@@ -471,6 +475,11 @@ ul.slick-dots {
 }
 .squid-intro {
   margin-top: 750px;
+}
+.styles_scroll-to-top__2A70v {
+  border-radius: 25px;
+  right: 14px;
+  opacity: 0.3;
 }
 .css-ahj2mt-MuiTypography-root {
   font-family: "DM Sans", sans-serif;
