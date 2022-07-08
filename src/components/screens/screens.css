@@ -227,7 +227,7 @@
   border-radius: 12px;
 }
 .parallax-bg {
-  width: 650px;
+  width: 80%;
   height: 500px;
   border-radius: 12px;
   z-index: -1;
@@ -248,7 +248,7 @@
 }
 .card-bottom {
   position: relative;
-  width: 455px;
+  width: 80%;
   bottom: 325px;
   text-align: center;
   color: #f9f9f9;
@@ -477,9 +477,12 @@ ul.slick-dots {
   margin-top: 750px;
 }
 .styles_scroll-to-top__2A70v {
-  border-radius: 25px;
+  border-radius: 12px;
   right: 14px;
   opacity: 0.3;
+}
+.styles_scroll-to-top__2A70v svg {
+  height: 20px;
 }
 .css-ahj2mt-MuiTypography-root {
   font-family: "DM Sans", sans-serif;

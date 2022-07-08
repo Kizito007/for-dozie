@@ -32,16 +32,16 @@ const HomeScreen = ({ light }) => {
     initialSlide: 0,
     responsive: [
       {
-        breakpoint: 1350,
+        breakpoint: 1930,//1350
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.3,
           slidesToScroll: 1,
           // infinite: true,
           dots: true
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 790,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -62,7 +62,7 @@ const HomeScreen = ({ light }) => {
 
     <div className='home'>
       <div className='invincible'>
-        <h1>Good design is invincible.</h1>
+        <h1>Good design is human-centered.</h1>
       </div>
       <div className='intro'>
         <div>
@@ -196,7 +196,7 @@ const HomeScreen = ({ light }) => {
           </div>
         </div>
         </Slider>
-      </div>
+      </div><br/><br/><br/>
       <img style={{width: "100%"}} src={light ? hr : hrd} />
       <Contact />
       <Footer />
