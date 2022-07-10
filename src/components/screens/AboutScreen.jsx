@@ -5,7 +5,6 @@ import hr from "./hr.svg"
 import hrd from "./hrd.svg"
 import art1 from "./art1.png"
 import nft1 from "./nft1.png"
-import { Link } from 'react-router-dom'
 import { Reveal } from 'react-reveal';
 
 const AboutScreen = ({styles, light}) => {
@@ -31,8 +30,13 @@ const AboutScreen = ({styles, light}) => {
                 I'm a self taught designer and have learnt a lot of the processes, concepts and theories of UX/UI and product 
                 design through attending workshops, design challenges, reading blogs and applying these to projects in my 
                 spare time and at work. I am very much a big-picture thinker and enjoy working on products end to end, from 
-                rom ideation all the way to development. <br/><br/><br/>
+                rom ideation all the way to development. <br/><br/>
                 </p>
+                <a href="#contactt">
+                    <button style={{ width: "184px" }} className='intro-btn'>
+                        Resume/CV
+                    </button>
+                </a><br/><br/><br />
                 </Reveal>
                 <img style={{width: "100%"}} src={light ? hr : hrd} />
                 <br/><br/>
@@ -62,11 +66,11 @@ const AboutScreen = ({styles, light}) => {
             <div className='artbg'>
                 <img src={art1} className="art"/>
                 <img src={nft1} className="art"/>
-                <Link to="/view-more">
+                <a href="https://opensea.io/Doziiie">
                     <button>
                         View More
                     </button>
-                </Link>
+                </a>
             </div>
         </div>
     </>

@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { Link } from 'react-router-dom'
 import ScrollToTop from "react-scroll-to-top";
 import SimpleDialogDemo from './SimpleDialogDemo'
 import arrow from "./arrow.svg"
@@ -41,6 +42,9 @@ const WebhubScreen = ({ styles, light }) => {
 
   return (
     <>
+            <Link to="/" className="squid-home">
+                Back to Home
+            </Link>
         <div className='squid'>
           <div>
               

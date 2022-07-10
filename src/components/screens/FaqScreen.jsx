@@ -1,6 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import art1 from "./art1.png"
+import ScrollToTop from "react-scroll-to-top";
 import Footer from '../layouts/Footer'
 import "./screens.css"
 import Accordion from '@mui/material/Accordion';
@@ -17,6 +16,7 @@ const ProjectScreen = () => {
         <h1>Got questions?</h1>
       </div>
       <div style={{ textAlign: "center", marginTop: "840px" }}>
+      <ScrollToTop smooth />
         <h2 style={{ fontWeight: "normal" }}>In here, I answer questions I get from my DMs and emails.</h2><br/><br/>
         {/* <form>
           <input type="search" 
