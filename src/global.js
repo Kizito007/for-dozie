@@ -37,6 +37,13 @@ export const GlobalStyles = createGlobalStyle`
   .css-1t1j96h-MuiPaper-root-MuiDialog-paper, .css-uhb5lp {
     background-color: #00000000;
   }
+  .styles_scroll-to-top__2A70v {
+    border-radius: 12px;
+    right: 14px;
+    background: #959595;
+    box-shadow: none;
+    opacity: 0.7;
+  }
   .img-icon {
     position: ${({ theme }) => theme.position};
     top: ${({ theme }) => theme.top};
