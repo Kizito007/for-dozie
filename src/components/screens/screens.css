@@ -490,6 +490,9 @@ ul.slick-dots {
   border: 1px solid #f9f9f9;
   border-radius: 50px;
 }
+.squid-home:hover {
+  font-weight: bold;
+}
 .styles_scroll-to-top__2A70v svg {
   height: 20px;
   fill: #f9f9f9;

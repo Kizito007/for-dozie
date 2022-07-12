@@ -12,6 +12,7 @@ import AboutScreen from './components/screens/AboutScreen'
 import ProjectScreen from './components/screens/ProjectScreen'
 import FaqScreen from './components/screens/FaqScreen'
 import WebhubScreen from './components/screens/WebhubScreen'
+import ResumeScreen from './components/screens/ResumeScreen'
 
 function App() {
 
@@ -49,6 +50,7 @@ function App() {
         <Route path="about" element={<AboutScreen styles={styles} light={light} />} />
         <Route path="projects" element={<ProjectScreen styles={styles} light={light} />} />
         <Route path="faq" element={<FaqScreen />} />
+        <Route path="resume" element={<ResumeScreen styles={styles} light={light}/>} />
         <Route path="case-study/1" element={<WebhubScreen styles={styles} light={light}/>} />
       </Routes>
       </ScrollToTop>

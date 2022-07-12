@@ -1,5 +1,6 @@
 import React from 'react'
 import ScrollToTop from "react-scroll-to-top";
+import { Link } from 'react-router-dom';
 import dozie from "./dozie.png"
 import hr from "./hr.svg"
 import hrd from "./hrd.svg"
@@ -30,13 +31,13 @@ const AboutScreen = ({styles, light}) => {
                 I'm a self taught designer and have learnt a lot of the processes, concepts and theories of UX/UI and product 
                 design through attending workshops, design challenges, reading blogs and applying these to projects in my 
                 spare time and at work. I am very much a big-picture thinker and enjoy working on products end to end, from 
-                rom ideation all the way to development. <br/><br/>
+                ideation all the way to development. <br/><br/>
                 </p>
-                <a href="#contactt">
+                <Link to="/resume">
                     <button style={{ width: "184px" }} className='intro-btn'>
                         Resume/CV
                     </button>
-                </a><br/><br/><br />
+                </Link><br/><br/><br />
                 </Reveal>
                 <img style={{width: "100%"}} src={light ? hr : hrd} />
                 <br/><br/>

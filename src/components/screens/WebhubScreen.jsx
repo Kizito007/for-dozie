@@ -42,16 +42,16 @@ const WebhubScreen = ({ styles, light }) => {
 
   return (
     <>
-            <Link to="/" className="squid-home">
-                Back to Home
-            </Link>
+        <Link to="/" className="squid-home">
+            Back to Home
+        </Link>
         <div className='squid'>
           <div>
               
             <div className='text' 
                 style={{ display: "contents", textAlign: "center"}}
             >
-                <h2 style={{ marginTop: "250px" }}>Interface Revamp of the Squid App</h2>
+                <h2 style={{ marginTop: "250px" }}>Interface Revamp of the Squid App</h2><br />
                 <p>
                     A collective and innovative platform for linking professional <br />
                     services and consumers in a simple way.
