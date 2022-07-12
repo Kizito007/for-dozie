@@ -3,6 +3,7 @@ import resume from "./resume.pdf"
 
 const ResumeScreen = () => {
   return (
+    <>
     <center>
         <embed 
             src={resume}
@@ -10,6 +11,7 @@ const ResumeScreen = () => {
             height="800"
         />
     </center>
+    </>
   )
 }
 

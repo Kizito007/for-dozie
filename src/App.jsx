@@ -50,12 +50,14 @@ function App() {
         <Route path="about" element={<AboutScreen styles={styles} light={light} />} />
         <Route path="projects" element={<ProjectScreen styles={styles} light={light} />} />
         <Route path="faq" element={<FaqScreen />} />
-        <Route path="resume" element={<ResumeScreen styles={styles} light={light}/>} />
         <Route path="case-study/1" element={<WebhubScreen styles={styles} light={light}/>} />
       </Routes>
-      </ScrollToTop>
-
+    </ScrollToTop>
     </div>
+    <Routes>
+      <Route path="resume" element={<ResumeScreen styles={styles} light={light}/>} />
+    </Routes>
+
     {/* <img className='ellipse' src={ellipseGr}/> */}
     {/* <div className="elllipse"></div> */}
     </ThemeProvider>
