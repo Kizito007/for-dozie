@@ -12,7 +12,7 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.text};
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     transition: all 0.25s linear;
   }
   .invincible {
