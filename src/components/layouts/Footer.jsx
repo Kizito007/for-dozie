@@ -1,10 +1,9 @@
 import React from 'react'
 import "./layout.css"
-import { Link } from 'react-router-dom'
-import beh from "./beh.svg"
-import drib from "./drib.svg"
-import twit from "./twit.svg"
-import linked from "./in.svg"
+import beh from "../svgs/beh.svg"
+import drib from "../svgs/drib.svg"
+import twit from "../svgs/twit.svg"
+import linked from "../svgs/in.svg"
 
 const Footer = () => {
   return (

@@ -1,11 +1,11 @@
 import React from 'react'
 import ScrollToTop from "react-scroll-to-top";
 import { Link } from 'react-router-dom';
-import dozie from "./dozie.png"
-import hr from "./hr.svg"
-import hrd from "./hrd.svg"
-import art1 from "./art1.png"
-import nft1 from "./nft1.png"
+import dozie from "../images/dozie.png"
+import hr from "../svgs/hr.svg"
+import hrd from "../svgs/hrd.svg"
+import art1 from "../images/art1.png"
+import nft1 from "../images/nft1.png"
 import { Reveal } from 'react-reveal';
 
 const AboutScreen = ({styles, light}) => {

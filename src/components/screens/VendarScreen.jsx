@@ -22,10 +22,11 @@ import flow2 from "../images/flow2.png"
 import final1 from "../images/final1.png"
 import final2 from "../images/final2.png"
 import final3 from "../images/final3.png"
+import Tablet from "../images/Tablet.png"
 import pp1 from "../images/pp1.png"
 import ScrollspyNav from "react-scrollspy-nav";
 
-const WebhubScreen = ({ styles, light }) => {
+const VendarScreen = ({ styles, light }) => {
     
     // const [isOpen, setOpen] = useState(false);
     // const [photoIndex, setPhotoIndex] = useState(false);
@@ -43,16 +44,15 @@ const WebhubScreen = ({ styles, light }) => {
   return (
     <>
         <BackToHome />
-        <div className='squid'>
-          <div>
+        <div className='squid vendar'>
+          <div className='vendar-bg'>
+            <img className='tablet' src={Tablet} />
               
-            <div className='text' 
-                style={{ display: "contents", textAlign: "center"}}
-            >
-                <h2 style={{ marginTop: "250px" }}>Interface Revamp of the Squid App</h2><br />
+            <div>
+                <h2>Vendar</h2><br />
                 <p>
-                    A collective and innovative platform for linking professional <br />
-                    services and consumers in a simple way.
+                    An e-commerce platform that increases sales for stores and <br />
+                    small businesses bringing products to online customers.
                 </p>
             </div>             
           </div>
@@ -62,7 +62,7 @@ const WebhubScreen = ({ styles, light }) => {
         <div className='webhub-overview' id="introduction" style={
             !light ? {background: styles.backdrop} : {background: "#f4f4f4"}
         }>
-            <div className='hubdiv'>
+            <div className='hubdiv vendar-hub'>
             <ul>
                 <li>
                     <p className='overview-text'>Project Duration</p><br />
@@ -88,20 +88,15 @@ const WebhubScreen = ({ styles, light }) => {
         <div style={{ position: "sticky", top: "70px" }}>
         <ScrollspyNav
             scrollTargetIds={
-                ["introduction", "role", "challenge", "goals", "users", "process", "designs", "learnings", "future",]
+                ["brief", "challenge", "goals", "target", "process", "designs", "learnings",]
             }
             // activeNavClass="is-active"
             //  putting their id above another element so  it can focus on it
         >
         <ul className='webhub-nav'>
             <li>
-                <a href="#introduction">
-                    Introduction
-                </a>
-            </li>
-            <li>
-                <a href="#role">
-                    My Role
+                <a href="#brief">
+                    Brief
                 </a>
             </li>
             <li>
@@ -115,8 +110,8 @@ const WebhubScreen = ({ styles, light }) => {
                 </a>
             </li>
             <li>
-                <a href="#users">
-                    Our users
+                <a href="#target">
+                    Target Group
                 </a>
             </li>
             <li>
@@ -134,17 +129,12 @@ const WebhubScreen = ({ styles, light }) => {
                     Learnings
                 </a>
             </li>
-            <li>
-                <a href="#future">
-                    Future
-                </a>
-            </li>
         </ul>
         </ScrollspyNav>
         </div>
         <div className='squid-container'>
-            <h2 className='squid-intro'>Introduction</h2><br /><br />
-            <p id='role'>
+            <h2 className='squid-intro'>Brief</h2><br /><br />
+            <p id='brief'>
                 Web-Hub is a service platform that bridges the gap between professionals
                 and consumers. Whether it concerns a renovation, a
                 maintenance job or a repair for all DIY jobs in and around a house.
@@ -196,7 +186,7 @@ const WebhubScreen = ({ styles, light }) => {
                     give our consumers a better, consistent experience.
                 </p><br /><br /><br />
                 <h3>Operational efficiency</h3><br />
-                <p id='users'>
+                <p id='target'>
                     To optimize internal operations, we will build scalable design components, 
                     which will work across Payment and refund systems.
                 </p>
@@ -320,4 +310,4 @@ const WebhubScreen = ({ styles, light }) => {
   )
 }
 
-export default WebhubScreen
+export default VendarScreen

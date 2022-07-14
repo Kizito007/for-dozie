@@ -1,6 +1,6 @@
 import React from 'react'
 import ScrollToTop from "react-scroll-to-top";
-import p1 from "./p1.png"
+import p1 from "../images/p1.png"
 import { Link } from 'react-router-dom'
 import Footer from '../layouts/Footer'
 

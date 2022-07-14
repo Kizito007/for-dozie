@@ -1,17 +1,17 @@
 import React from 'react'
 import ScrollToTop from "react-scroll-to-top";
 import "./screens.css"
-import dozie from "./dozie.png"
+import dozie from "../images/dozie.png"
 // import art1 from "./art1.png"
-import p1 from "./p1.png"
-import goodes from "./goodes.png"
-import humandes from "./humandes.png"
+import p1 from "../images/p1.png"
+import goodes from "../images/goodes.png"
+import humandes from "../images/humandes.png"
 // import squidbg from "./squidbg.png"
 // import arrow4 from "./arrow4.svg"
-import hr from "./hr.svg"
-import hrd from "./hrd.svg"
-import Peace from "./Peace.svg"
-import SendLove from "./SendLove.svg"
+import hr from "../svgs/hr.svg"
+import hrd from "../svgs/hrd.svg"
+import Peace from "../svgs/Peace.svg"
+import SendLove from "../svgs/SendLove.svg"
 import Contact from "./Contact.jsx"
 import Footer from '../layouts/Footer'
 import { Link } from 'react-router-dom'
@@ -170,7 +170,7 @@ const HomeScreen = ({ light }) => {
                 elit. Varius id porta ornare adipiscing morbi integer <br/>
                 lectus eget. 
               </p><br /><br />
-              <Link to="/case-study/1">
+              <Link to="/case-study/2">
                 <button className='intro-btn'>
                   Read Case Study
                 </button>

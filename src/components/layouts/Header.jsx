@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import logo from "./logo.svg"
-import icon from "./icon.svg"
-import iconic from "./iconic.svg"
+import logo from "../svgs/logo.svg"
+import icon from "../svgs/icon.svg"
+import iconic from "../svgs/iconic.svg"
 import "./layout.css"
 import { Link } from "react-router-dom";
 
