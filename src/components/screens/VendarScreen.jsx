@@ -14,9 +14,9 @@ import Sunshine from "../svgs/Sunshine.svg"
 import Sunshined from "../svgs/Sunshined.svg"
 import question from "../svgs/_!.svg"
 import questioned from "../svgs/questioned.svg"
-import archi from "../images/archi.png"
-import single from "../images/single.png"
-import sketch from "../images/sketch.png"
+import group from "../images/group.png"
+import s1 from "../images/s1.png"
+import s2 from "../images/s2.png"
 import flow1 from "../images/flow1.png"
 import flow2 from "../images/flow2.png"
 import final1 from "../images/final1.png"
@@ -46,12 +46,13 @@ const VendarScreen = ({ styles, light }) => {
         <BackToHome />
         <div className='squid vendar'>
           <div className='vendar-bg'>
-            <img className='tablet' src={Tablet} />
-              
+            <div className='vendar-tablet'>
+                <img className='tablet' src={Tablet} />
+            </div>              
             <div>
                 <h2>Vendar</h2><br />
                 <p>
-                    An e-commerce platform that increases sales for stores and <br />
+                    An e-commerce platform that increases sales for stores and
                     small businesses bringing products to online customers.
                 </p>
             </div>             
@@ -135,33 +136,20 @@ const VendarScreen = ({ styles, light }) => {
         <div className='squid-container'>
             <h2 className='squid-intro'>Brief</h2><br /><br />
             <p id='brief'>
-                Web-Hub is a service platform that bridges the gap between professionals
-                and consumers. Whether it concerns a renovation, a
-                maintenance job or a repair for all DIY jobs in and around a house.
+                We want to create a B2C e-commerce platform that aggregates 
+                local businesses and provide customers 
+                a way to access hundreds of options from local businesses in their city.
             </p>
-            <div style={{margin: "110px 0"}}>
-                <h2>My Role</h2><br /><br />
-                <p id='challenge'>
-                    I'm the lead designer for this project. I collaborated with developers and a
-                    product manager through the project.
-                </p>
-            </div>
             <div>
-                <h2>The Challenge</h2>
+                <h2 style={{marginTop: "110px"}}>The Challenge</h2>
                 <br /><br />
-                <p>
-                    The outbreak of the Coronavirus pandemic in 2020 resulted in a global 
-                    shutdown. This put limitations to people's ways of living, as well as their 
-                    everyday activities, economies and enterprises, and any other element of life 
-                    you can think of, and even caused a steady increase in social distancing. <br /><br /><br />
-
-                    Web-Hub was geared towards carrying out business in a simple manner for 
-                    homeowners/customers making it easy for them to access nearby 
-                    professionals and get a good idea of ​​the quality of the professional through 
-                    the reviews that other consumers write about the work performed.
-                </p>
+                <ul style={{marginLeft: "30px"}}>
+                    <li>The acceleration towards e-commerce is hurting our local economy.</li>
+                    <li>The pandemic was also the highest closure of retail business in the last 20 years.</li>
+                    <li>Unequal competition between large players online and small local businesses.</li>
+                </ul>
             </div>      
-            <div style={{ marginTop: "70px", marginBottom: "100px" }}>
+            {/* <div style={{ marginTop: "70px", marginBottom: "100px" }}>
                 <h3>Problem Statement</h3><br /><br />
                 <p id='goals' style={{ color: "#893A96" }}>
                     <b><i>
@@ -170,43 +158,42 @@ const VendarScreen = ({ styles, light }) => {
                     way that meets their needs”
                     </i></b>
                 </p>
-            </div>
+            </div> */}
             <div>
-                <h2 style={{fontSize: "30px"}}>Goals</h2>
+                <h2 style={{marginTop: "70px"}}>Goals</h2>
                 <img className='floaters' src={light ? arrow : arrowd} /><br /><br /><br />
-                <h3>Increase Content Relevancy</h3><br />
+                <h3>Operational Efficiency</h3><br />
                 <p>
-                    To work with the dev team to build a recommendation engine that 
-                    automatically shows consumers the most relevant content based on their  
-                    search behaviour, recommended and most favourited brands.
+                    Sourcing products close to customers pretty fast and timely but also secure deliveries. 
                 </p><br /><br /><br />
-                <h3>A delightful, consistent consumer experience</h3><br />
+                <h3>A convinient consumer experience</h3><br />
                 <p>
-                    To ensure a proper design system is in place to reduce technical debt, and 
-                    give our consumers a better, consistent experience.
+                    A model that allows customers to conviniently contribute to their local economy.
                 </p><br /><br /><br />
-                <h3>Operational efficiency</h3><br />
+                <h3>Business aware</h3><br />
                 <p id='target'>
-                    To optimize internal operations, we will build scalable design components, 
-                    which will work across Payment and refund systems.
+                Aggregating product options from many stores on a single platform.
                 </p>
             </div>
             <div style={{ marginTop: "110px" }}>
-                <h2>Our Users</h2>
+                <h2>Target Group</h2>
                 <img className='floaters' src={light ? smiley : smileyd} /><br /><br />
+                <p>
+                    We conducted market research to identify our personal and target audience. 
+                    Based on the service feature sets we were able to fragment how important 
+                    for us to know what demography the local businesses are in and how comfortable 
+                    they were in adapting new technology. 
+                    What solutions were they already using and what their day to day tasks look like.
+                </p><br /><br />
                 <ul style={{ marginLeft: "35px" }}>
                     <li>
-                        Before I started designing, we decided to dive deep into existing 
-                        behavioral and service delivery data of our users to understand them 
-                        better. We also conducted a series of customer interviews.
+                        People who shop at supermarket, malls and stores.
                     </li><br />
                     <li>
-                        I focused on identifying what is the job that our 
-                        customers hire our product for.
+                        Store owners who sell goods and services to consumers.
                     </li><br />
                     <li>
-                        I defined 3 user archetypes, and mapped them to their respective 
-                        jobs-to-be-done.
+                        Merchants who own multiple stores in several locations.
                     </li>
                 </ul>
             </div><br /><br /><br />
@@ -214,23 +201,16 @@ const VendarScreen = ({ styles, light }) => {
                 <img src={archi} className="levi" />
                 <img src={single} className="sasha" />
             */}
-            <><SimpleDialogDemo image={archi} className="levi" /></>
-            <><SimpleDialogDemo image={single} className="sasha" /></>
+            <><SimpleDialogDemo image={group} className="levi" /></>
+            {/* <><SimpleDialogDemo image={single} className="sasha" /></> */}
             <p id='process'></p><br /><br />
             <div>
                 <h2>Process</h2>
                 <img className='floaters' src={light ? curvyarrow : curvyarrowd} /><br /><br />
-                <h3>Design Sprints</h3><br />
-                <p>
-                    A design sprint was conducted to facilitate collaboration cross-departments. 
-                    Developers, Product Managers and Creatives contributed their fresh ideas in 
-                    this sprint. The purpose of these sprints is to align everyone on the same goal 
-                    To improve our consumer experience by solving our user's problems today.
-                </p><br /><br /><br />
                 <h3>User flows</h3><br />
                 <p>
-                    We mapped each archetype to their user journey on the app, with their 
-                    respective success metrics.
+                    We mapped the archetype to the user journey on the website, 
+                    the respective guarantee of success.
                 </p><br /><br />
                 {/*
                     <img src={flow1} style={{right: "0",}} className="case-ones" />
@@ -239,23 +219,19 @@ const VendarScreen = ({ styles, light }) => {
                 <SimpleDialogDemo image={flow2} style={{right: "0",}} className="case-ones" /><br /><br />
                 <h3>Sketches</h3><br />
                 <p>
-                    I sketched multiple user flows to visualize ideas quickly. My focus at this stage 
-                    is to diverge first, converge later. Here are some early sketches of the Brand page.
+                    I sketched multiple user flows to visualize ideas quickly. 
+                    sketching is the basis for the design of our product. 
+                    Here are some early sketches of the Web page.
                 </p><br /><br />
-                <SimpleDialogDemo image={sketch} className="case-ones" /><br /><br /><br />
+                <SimpleDialogDemo image={s1} className="case-ones" /><br />
+                <SimpleDialogDemo image={s2} className="case-ones" /><br /><br /><br />
                 <h3>Mid-fi Wireframes</h3><br />
-                <p>
-                    I sketched multiple user flows to visualize ideas quickly. My focus at this stage 
-                    is to diverge first, converge later. Here are some early sketches of the Brand page.
+                <p id='designs'>
+                    Wireframes are the blueprints for the design. In this phase we thought of interactions,
+                    placement, flow and logic. It was the phase wherein we had to solve big design
+                    puzzles, which often went hand in hand with heated discussions.
                 </p><br /><br />
                 <SimpleDialogDemo image={final3} className="case-ones" /><br /><br /><br />
-                <h3>We went through 10+ iterations</h3><br />
-                <p id='designs'>
-                    The initial designs went through several user tests, discussions 
-                    with operations, and business teams to ensure we have a friendly and scalable 
-                    user experience. <br />
-                    I wish I could show you every single part of the process!
-                </p><br /><br /><br />
                 <h2>Final Designs</h2>
                 <img className='floaters' src={light ? flame : flamed} /><br />
                 <p>

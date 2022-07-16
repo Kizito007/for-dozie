@@ -81,7 +81,8 @@ input[type="search"],
 }
 .contact button,
 .faq-button,
-.intro-btn {
+.intro-btn,
+.vendar-cr {
   width: 241px;
   height: 55px;
   left: 599px;

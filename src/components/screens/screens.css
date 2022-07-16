@@ -237,12 +237,6 @@
   z-index: -1;
   object-fit: cover;
 }
-/* .slick-slide > div {
-  margin: 0 -10px;
-}
-.slick-list {
-  margin: -10px;
-} */
 .card {
   margin: 0 25px;
   background: inherit;
@@ -257,8 +251,43 @@
   text-align: center;
   color: #f9f9f9;
 }
+.card .intro-btn {
+  width: 187px;
+  background: #ebebeb;
+  color: #494949;
+}
+.card .intro-btn:hover {
+  background: #893a96;
+  color: #ebebeb;
+  border: none;
+}
+.vendar-cr {
+  background: #ebebeb;
+  color: #494949;
+  width: 187px;
+}
+.card .vendar-cr:hover {
+  background: #ffc960;
+}
 .card p {
   margin: 24px 0;
+}
+.card1 {
+  margin-top: 55px;
+}
+/* 1st card responsiveness */
+@media only screen and (max-width: 585px) {
+  .card1 p {
+    margin-bottom: 0;
+  }
+  .card2 p {
+    margin-bottom: 0;
+  }
+  .card .intro-btn,
+  .vendar-cr {
+    height: 45px;
+    width: 255px;
+  }
 }
 .projects {
   display: flex;
@@ -297,6 +326,11 @@ ul.slick-dots {
   .art {
     width: 300px;
     height: 290px;
+  }
+}
+@media only screen and (min-width: 475px) {
+  .card-bottom {
+    padding: 0 10%;
   }
 }
 @media only screen and (max-width: 1130px) {
@@ -392,10 +426,13 @@ ul.slick-dots {
 .vendar-bg {
   display: flex;
   margin: 0 15%;
-  margin-top: 10%;
+  margin-top: 3%;
 }
 .vendar-bg div {
   margin-left: 30px;
+  margin-top: 90px;
+}
+.vendar-bg h2 {
   margin-top: 90px;
 }
 .vendar-hub .overview-text {
@@ -422,11 +459,23 @@ ul.slick-dots {
   width: 80%;
   overflow-x: auto;
 }
-/* @media only screen and (max-width: 1001px) {
-    .webhub-overview div {
-        margin: 50px 0;
-    }
-} */
+@media only screen and (max-width: 1000px) {
+  .vendar-bg {
+    display: inline;
+    text-align: center;
+  }
+  .vendar-bg div {
+    margin: 0 10%;
+  }
+  .vendar-tablet {
+    margin: 0;
+  }
+  .tablet {
+    position: relative;
+    top: 80px;
+    width: 400px;
+  }
+}
 .overvieww-text,
 .overvieww-text2 {
   margin: 0 6%;
@@ -500,7 +549,7 @@ ul.slick-dots {
 }
 .squid-home {
   position: relative;
-  top: 60px;
+  top: 35px;
   text-decoration: none;
   color: #f9f9f9;
   background: none;
@@ -508,8 +557,13 @@ ul.slick-dots {
   border: 1px solid #f9f9f9;
   border-radius: 50px;
 }
+.squid-home img {
+  position: inherit;
+  top: 7px;
+}
 .squid-home:hover {
-  font-weight: bold;
+  color: #494949;
+  background: #f9f9f9;
 }
 .styles_scroll-to-top__2A70v svg {
   height: 20px;
@@ -538,16 +592,6 @@ ul.slick-dots {
   position: relative;
   float: right;
   bottom: 55px;
-}
-.card .intro-btn {
-  width: 187px;
-  background: #ebebeb;
-  color: #494949;
-}
-.card .intro-btn:hover {
-  background: #893a96;
-  color: #ebebeb;
-  border: none;
 }
 @media only screen and (max-width: 660px) {
   .invincible h1 {
@@ -650,6 +694,9 @@ ul.slick-dots {
   .squid-container {
     margin: 0px;
   }
+  .tablet {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 406px) {
   .webhub-overview {
@@ -661,5 +708,8 @@ ul.slick-dots {
   }
   .squid-intro {
     margin-top: 980px;
+  }
+  .squid-home {
+    top: 50px;
   }
 }

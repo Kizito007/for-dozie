@@ -182,7 +182,8 @@ const WebhubScreen = ({ styles, light }) => {
                 </p>
             </div>
             <div>
-                <h2 style={{fontSize: "30px"}}>Goals</h2>
+                {/*  style={{fontSize: "30px"}} */}
+                <h2>Goals</h2>
                 <img className='floaters' src={light ? arrow : arrowd} /><br /><br /><br />
                 <h3>Increase Content Relevancy</h3><br />
                 <p>

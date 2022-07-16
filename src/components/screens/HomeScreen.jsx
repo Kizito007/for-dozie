@@ -4,6 +4,7 @@ import "./screens.css"
 import dozie from "../images/dozie.png"
 // import art1 from "./art1.png"
 import p1 from "../images/p1.png"
+import VendarCr from "../images/VendarCr.png"
 import goodes from "../images/goodes.png"
 import humandes from "../images/humandes.png"
 // import squidbg from "./squidbg.png"
@@ -145,12 +146,11 @@ const HomeScreen = ({ light }) => {
           <div className='card-top'>
             <img src={p1} className="parallax-bg"/>
           </div>
-          <div className='card-bottom'>
+          <div className='card-bottom card1'>
           <h2>Interface Revamp of the Squid App</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing <br/>
-                elit. Varius id porta ornare adipiscing morbi integer <br/>
-                lectus eget. 
+              <p style={{ marginTop: "35px" }}>
+                A collective and innovative platform for linking professional 
+                services and consumers in a simple way. 
               </p><br /><br />
               <Link to="/case-study/1">
                 <button className='intro-btn'>
@@ -161,17 +161,16 @@ const HomeScreen = ({ light }) => {
         </div>
         <div className='card'>
           <div className='card-top'>
-            <img src={p1} className="parallax-bg"/>
+            <img src={VendarCr} className="parallax-bg"/>
           </div>
-          <div className='card-bottom'>
-          <h2>Project Title2</h2>
+          <div className='card-bottom card2' style={{ paddingTop: "75px" , paddingBottom: "70px"}}>
+          <h2>Vendar</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing <br/>
-                elit. Varius id porta ornare adipiscing morbi integer <br/>
-                lectus eget. 
+                An e-commerce platform that increases sales for stores
+                and small businesses bringing products to online customers. 
               </p><br /><br />
               <Link to="/case-study/2">
-                <button className='intro-btn'>
+                <button className='vendar-cr'>
                   Read Case Study
                 </button>
               </Link>
