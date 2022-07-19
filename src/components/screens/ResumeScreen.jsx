@@ -7,7 +7,7 @@ const ResumeScreen = () => {
     <>
     <center>
         <embed 
-            src={flow1}
+            src={resume}
             width="100%"
             height="800"
         />
