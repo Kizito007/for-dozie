@@ -275,6 +275,17 @@
 .card1 {
   margin-top: 55px;
 }
+.wireframes {
+  background: #313131;
+  border-radius: 12px;
+}
+.wireframes div {
+  display: contents;
+}
+.wireframes img {
+  width: 40%;
+  margin: 5%;
+}
 /* 1st card responsiveness */
 @media only screen and (max-width: 585px) {
   .card1 p {

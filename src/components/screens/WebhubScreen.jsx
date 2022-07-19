@@ -27,6 +27,7 @@ import ScrollspyNav from "react-scrollspy-nav";
 
 const WebhubScreen = ({ styles, light }) => {
     
+    // THIS PAGE WAS CHANGED FROM WEBHUB TO SQUID APP
     // const [isOpen, setOpen] = useState(false);
     // const [photoIndex, setPhotoIndex] = useState(false);
 

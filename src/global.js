@@ -36,6 +36,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   .css-1t1j96h-MuiPaper-root-MuiDialog-paper, .css-uhb5lp {
     background-color: #00000000;
+    width: 100%;
   }
   .styles_scroll-to-top__2A70v {
     border-radius: 12px;

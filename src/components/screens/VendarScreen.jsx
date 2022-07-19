@@ -10,20 +10,29 @@ import smiley from "../svgs/smiley.svg"
 import smileyd from "../svgs/smileyd.svg"
 import flame from "../svgs/flame.svg"
 import flamed from "../svgs/flamed.svg"
-import Sunshine from "../svgs/Sunshine.svg"
-import Sunshined from "../svgs/Sunshined.svg"
 import question from "../svgs/_!.svg"
 import questioned from "../svgs/questioned.svg"
 import group from "../images/group.png"
 import s1 from "../images/s1.png"
 import s2 from "../images/s2.png"
-import flow1 from "../images/flow1.png"
-import flow2 from "../images/flow2.png"
-import final1 from "../images/final1.png"
-import final2 from "../images/final2.png"
-import final3 from "../images/final3.png"
+import flow3 from "../images/flow3.png"
+import w1 from "../images/w1.png"
+import w2 from "../images/w2.png"
+import w3 from "../images/w3.png"
+import w4 from "../images/w4.png"
+import f1 from "../images/f1.png"
+import f2 from "../images/f2.png"
+import f3 from "../images/f3.png"
+import f4 from "../images/f4.png"
+import f5 from "../images/f5.png"
+import f6 from "../images/f6.png"
+import f7 from "../images/f7.png"
+import f8 from "../images/f8.png"
+import f9 from "../images/f9.png"
+import f10 from "../images/f10.png"
+import f11 from "../images/f11.png"
+import f12 from "../images/f12.png"
 import Tablet from "../images/Tablet.png"
-import pp1 from "../images/pp1.png"
 import ScrollspyNav from "react-scrollspy-nav";
 
 const VendarScreen = ({ styles, light }) => {
@@ -133,9 +142,10 @@ const VendarScreen = ({ styles, light }) => {
         </ul>
         </ScrollspyNav>
         </div>
+        <span id='brief'/>
         <div className='squid-container'>
             <h2 className='squid-intro'>Brief</h2><br /><br />
-            <p id='brief'>
+            <p id='challenge'>
                 We want to create a B2C e-commerce platform that aggregates 
                 local businesses and provide customers 
                 a way to access hundreds of options from local businesses in their city.
@@ -146,7 +156,7 @@ const VendarScreen = ({ styles, light }) => {
                 <ul style={{marginLeft: "30px"}}>
                     <li>The acceleration towards e-commerce is hurting our local economy.</li>
                     <li>The pandemic was also the highest closure of retail business in the last 20 years.</li>
-                    <li>Unequal competition between large players online and small local businesses.</li>
+                    <li id='goals'>Unequal competition between large players online and small local businesses.</li>
                 </ul>
             </div>      
             {/* <div style={{ marginTop: "70px", marginBottom: "100px" }}>
@@ -215,8 +225,7 @@ const VendarScreen = ({ styles, light }) => {
                 {/*
                     <img src={flow1} style={{right: "0",}} className="case-ones" />
                 */}
-                <SimpleDialogDemo image={flow1} className="case-ones" /><br /><br />
-                <SimpleDialogDemo image={flow2} style={{right: "0",}} className="case-ones" /><br /><br />
+                <SimpleDialogDemo image={flow3} className="case-ones" /><br /><br />
                 <h3>Sketches</h3><br />
                 <p>
                     I sketched multiple user flows to visualize ideas quickly. 
@@ -226,58 +235,48 @@ const VendarScreen = ({ styles, light }) => {
                 <SimpleDialogDemo image={s1} className="case-ones" /><br />
                 <SimpleDialogDemo image={s2} className="case-ones" /><br /><br /><br />
                 <h3>Mid-fi Wireframes</h3><br />
-                <p id='designs'>
+                <p>
                     Wireframes are the blueprints for the design. In this phase we thought of interactions,
                     placement, flow and logic. It was the phase wherein we had to solve big design
                     puzzles, which often went hand in hand with heated discussions.
                 </p><br /><br />
-                <SimpleDialogDemo image={final3} className="case-ones" /><br /><br /><br />
-                <h2>Final Designs</h2>
+                <div className='wireframes'>
+                    <SimpleDialogDemo image={w1} />
+                    <SimpleDialogDemo image={w2} />
+                    <SimpleDialogDemo image={w3} />
+                    <SimpleDialogDemo image={w4} />
+                </div><br /><br /><br />
+                <h2 id='designs'>Final Designs</h2>
                 <img className='floaters' src={light ? flame : flamed} /><br />
                 <p>
                     Here's a detailed walkthrough of the revamped app.
-                </p><br /><br /><br />
-                <h3>A new look.</h3><br />
-                <p>
-                    Before the redesign, the app was cluttered. Now, Web-Hub has a fresh new 
-                    modern look and a better experience. To improve the brand and service 
-                    perception, we introduced scalable components and redesigned micro-interactions.
                 </p><br /><br />
-                <SimpleDialogDemo image={final1} className="case-ones" /><br /><br />
-                <SimpleDialogDemo image={final2} className="case-ones" /><br /><br />
-                <SimpleDialogDemo style={{right: "0", borderRadius: "12px",}} image={pp1} className="case-ones" />
+                <div className='wireframes' style={{ background: "#072F54" }}>
+                    <SimpleDialogDemo image={f1} />
+                    <SimpleDialogDemo image={f2} />
+                    <SimpleDialogDemo image={f3} />
+                    <SimpleDialogDemo image={f4} />
+                    <SimpleDialogDemo image={f5} />
+                    <SimpleDialogDemo image={f6} />
+                </div><br /><br />
+                <><SimpleDialogDemo image={f7} className="levi" /></>
+                <><SimpleDialogDemo image={f8} className="sasha" /></>
+                <><SimpleDialogDemo image={f9} className="levi" /></>
+                <><SimpleDialogDemo image={f10} className="sasha" /></>
+                <><SimpleDialogDemo image={f11} className="levi" /></>
+                <><SimpleDialogDemo image={f12} className="sasha" /></>
             </div>
             <p id='learnings'></p><br /><br />
             <div>
                 <h2>What we learned</h2>
                 <img className='floaters' src={light ? question : questioned} /><br /><br/><br />
-                <h3>Take it one phase at a time</h3><br />
+                <h3>Keeping up to B2C needs</h3><br />
                 <p>
-                    We learned to break down complicated designs into small, manageable 
-                    chunks. This eases development and handles bugs as we go along.
-                </p><br /><br /><br />
-                <h3>Adapt to the changing consumer behaviour</h3><br />
-                <p>
-                    We recognised the neccessity to stay grounded and focused on the goal, 
-                    but also account for changes to the product to match the changed 
-                    behavior of customers during the pandemic.
-‍
-                </p><br /><br /><br />
-            </div>
-            <div>
-                <h2 id='future'>Future</h2>
-                <img className='floaters' src={light ? Sunshine : Sunshined} /><br /><br/><br />
-                <h3>Post-launch optimization</h3><br />
-                <p>
-                    This is a crucial next step for every UX improvement or product launch. With 
-                    informed, actionable insights, we are able to design a better experience for 
-                    our consumers.
-                </p><br /><br /><br />
-                <h3>Continue to design better experiences</h3><br />
-                <p>
-                    To follow through our product roadmap and continue to 
-                    stick to our design principles.
-                </p><br /><br /><br />
+                    We can conclude that we created a commercial tool for 
+                    local businesses which has the definite possibility to grow rapidly. 
+                    Our product gives us a chance to provide customers a way to access 
+                    hundreds of local businesses in their city.
+                </p><br />
             </div>
         </div>
         </div>
