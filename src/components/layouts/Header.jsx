@@ -41,7 +41,7 @@ const Header = ({ toggleTheme, light, styles }) => {
             <i className='fas fa-times'></i> : 
             <i className='fas fa-bars'></i> 
           }
-        </button>
+        </button><br/><br/>
     </nav>
   )
 }

@@ -251,7 +251,9 @@
   text-align: center;
   color: #f9f9f9;
 }
-.card .intro-btn {
+.card .intro-btn,
+.martial-btn,
+.vendar-cr {
   width: 187px;
   background: #ebebeb;
   color: #494949;
@@ -261,13 +263,12 @@
   color: #ebebeb;
   border: none;
 }
-.vendar-cr {
-  background: #ebebeb;
-  color: #494949;
-  width: 187px;
-}
 .card .vendar-cr:hover {
   background: #ffc960;
+}
+.card .martial-btn:hover {
+  background: #b20000;
+  color: #ebebeb;
 }
 .card p {
   margin: 24px 0;
@@ -300,10 +301,10 @@
     width: 255px;
   }
 }
-.projects {
+/* .projects {
   display: flex;
   flex-wrap: wrap;
-}
+} */
 .projects .card {
   margin: 0 auto;
 }
@@ -313,6 +314,7 @@
 }
 .projects .parallax-bg {
   width: 390px;
+  height: 400px;
 }
 ul.slick-dots {
   bottom: 10px;
@@ -356,6 +358,9 @@ ul.slick-dots {
   .card {
     margin: 0;
   }
+  .card1 {
+    color: #494949;
+  }
   .card-bottom {
     text-align: center;
     width: unset;
@@ -363,9 +368,14 @@ ul.slick-dots {
   .projects .card-bottom {
     text-align: center;
     width: unset;
+    margin-top: 55px;
+  }
+  .projects-vendar-h2 {
+    color: #494949;
   }
   .projects .parallax-bg {
     width: 100%;
+    display: block;
   }
 }
 .project {
@@ -448,6 +458,10 @@ ul.slick-dots {
 }
 .vendar-hub .overview-text {
   color: #072f54;
+}
+.extension {
+  display: flex;
+  margin: 0;
 }
 .webhub-overview {
   background: #f4f4f4;
@@ -603,6 +617,21 @@ ul.slick-dots {
   position: relative;
   float: right;
   bottom: 55px;
+}
+@media only screen and (min-width: 1131px) {
+  .projects .parallax-bg {
+    width: 40%;
+  }
+  .projects .cardbottom {
+    width: 405px;
+    text-align: left;
+    color: inherit;
+    margin: 50px 45%;
+    padding: 0;
+  }
+  .projects {
+    display: block;
+  }
 }
 @media only screen and (max-width: 660px) {
   .invincible h1 {

@@ -2,16 +2,15 @@ import React from 'react'
 import ScrollToTop from "react-scroll-to-top";
 import "./screens.css"
 import dozie from "../images/dozie.png"
-// import art1 from "./art1.png"
 import p1 from "../images/p1.png"
+import martial from "../images/martial.png"
 import VendarCr from "../images/VendarCr.png"
 import goodes from "../images/goodes.png"
 import humandes from "../images/humandes.png"
-// import squidbg from "./squidbg.png"
-// import arrow4 from "./arrow4.svg"
 import hr from "../svgs/hr.svg"
 import hrd from "../svgs/hrd.svg"
 import Peace from "../svgs/Peace.svg"
+import outlink from "../svgs/outlink.svg"
 import SendLove from "../svgs/SendLove.svg"
 import Contact from "./Contact.jsx"
 import Footer from '../layouts/Footer'
@@ -178,18 +177,12 @@ const HomeScreen = ({ light }) => {
         </div>
         <div className='card'>
           <div className='card-top'>
-            <img src={p1} className="parallax-bg"/>
+            <img src={martial} className="parallax-bg"/>
           </div>
-          <div className='card-bottom'>
-          <h2>Project Title3</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing <br/>
-                elit. Varius id porta ornare adipiscing morbi integer <br/>
-                lectus eget. 
-              </p><br /><br />
+          <div className='card-bottom' style={{ marginTop: "240px" }}>
               <Link to="/case-study/1">
-                <button className='intro-btn'>
-                  Read Case Study
+                <button className='martial-btn'>
+                  View <img style={{display: "inline"}} src={outlink} />
                 </button>
               </Link>
           </div>

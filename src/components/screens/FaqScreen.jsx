@@ -1,15 +1,50 @@
-import React from 'react'
-import ScrollToTop from "react-scroll-to-top";
+import React, { useState } from 'react'
+import ScrollToTop from "react-scroll-to-top"
+import axios from "axios"
+import Spinner from './Spinner';
 import Footer from '../layouts/Footer'
 import "./screens.css"
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
+import { 
+  Accordion, 
+  AccordionSummary, 
+  AccordionDetails, 
+  Typography, 
+  Box, 
+  Alert, 
+  IconButton, 
+  Collapse 
+} from '@mui/material';
+import CloseIcon from '@mui/icons-material/Close';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Zoom } from 'react-reveal';
 
 const ProjectScreen = () => {
+
+  const [email, setEmail] = useState(false);
+  const [textField, setText] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [response, setResponse] = useState();
+  let [open, setOpen] = useState(false);
+
+  const submit = async (e) => {
+    let subject = "FAQ"
+    e.preventDefault();
+    try {
+        setIsLoading(true)
+        const sender = { email, subject, textField, };
+        const senderRes = await axios.post(
+          "https://vast-bayou-66131.herokuapp.com/v1/dozie/sendMail",
+          sender 
+        );
+        setIsLoading(false)
+        setResponse(senderRes.data.message)
+        setOpen(true)
+    } catch (err) {
+      console.log(err)
+      setResponse(senderRes.data.message)
+    }
+  }
+
   return (
     <div style={{ margin: "0 3%" }}>
       <div className='invincible'>
@@ -18,17 +53,6 @@ const ProjectScreen = () => {
       <div style={{ textAlign: "center", marginTop: "840px" }}>
       <ScrollToTop smooth />
         <h2 style={{ fontWeight: "normal" }}>In here, I answer questions I get from my DMs and emails.</h2><br/><br/>
-        {/* <form>
-          <input type="search" 
-            placeholder='Search for a keyword' 
-            id="search" name="search"
-            // style={{width: "40%"}}
-          />
-          <br/><br/><br/>
-          <button className='faq-button'>
-            Search
-          </button>
-        </form> */}
       </div>
       <Zoom>
       <Accordion
@@ -171,21 +195,50 @@ const ProjectScreen = () => {
       </Zoom>
       <div style={{ textAlign: "center", marginTop: "200px" }}>
         <h2 style={{ fontWeight: "normal", marginBottom: "140px" }}>Thanks for making it this far! I hope you find this helpful. ✌️</h2>
-        <h2 style={{ fontSize: "22px", margin: "50px 0" }}>Got a question?</h2>
-        <form>
-          <input type="search" 
-            placeholder='Search for a keyword' 
-            id="search" name="search"
-            // style={{width: "40%"}}
+        <h2 style={{ fontSize: "22px", margin: "50px 0" }}>Got a question?</h2><br/>
+        {
+          response ?
+          <Box sx={{ width: '100%' }}>
+            <Collapse in={open}>
+            <Alert
+                action={
+                <IconButton
+                    aria-label="close"
+                    color="inherit"
+                    size="small"
+                    onClick={() => {
+                    setOpen(false);
+                    }}
+                >
+                    <CloseIcon fontSize="inherit" />
+                </IconButton>
+                }
+                sx={{ mb: 2 }}
+            >
+                {response}
+            </Alert>
+            </Collapse>
+          </Box>
+          : null
+        }
+        <form onSubmit={submit}>
+          <input 
+            type="email" id="search-msg" required
+            placeholder='Email Address' name="email"
+            onChange={e => setEmail(e.target.value)}
           /><br /><br />
           <textarea id="search-msg" name="w3review" 
             placeholder='Message' rows="6" cols="70"
+            onChange={e => setText(e.target.value)}
             // style={{
             //   width: "40%"
             // }}
           >
           </textarea>
           <br/><br/><br/>
+          {
+            isLoading ? <Spinner/> : null
+          }
           <button className='faq-button'>
             Submit
           </button>

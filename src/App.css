@@ -13,7 +13,7 @@
 }
 .elllipse {
   height: 200px;
-  background: linear-gradient(124.24deg, #FFAB2E 45.39%, #AE12E4 85.1%);
+  background: linear-gradient(124.24deg, #ffab2e 45.39%, #ae12e4 85.1%);
   opacity: 0.57;
   filter: blur(100px);
   width: 400px;
@@ -21,11 +21,40 @@
   position: relative;
   top: -77px;
 }
+.loader {
+  margin: 20px auto;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+/*Safari*/
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @media only screen and (max-width: 800px) {
   .elllipse {
     position: relative;
     top: -115px;
-    background: conic-gradient(from 180deg at 50% 50%, #FFA800 0deg, #FF01B7 360deg);
+    background: conic-gradient(
+      from 180deg at 50% 50%,
+      #ffa800 0deg,
+      #ff01b7 360deg
+    );
     filter: blur(130px);
     transform: matrix(0.55, -0.72, 1.04, 0.45, 0, 0);
     width: 460px;

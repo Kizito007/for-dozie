@@ -38,6 +38,10 @@ export const GlobalStyles = createGlobalStyle`
     background-color: #00000000;
     width: 100%;
   }
+  .loader {
+    border: 2px solid ${({ theme }) => theme.body};
+    border-top: 2px solid ${({ theme }) => theme.text};
+  }
   .styles_scroll-to-top__2A70v {
     border-radius: 12px;
     right: 14px;
