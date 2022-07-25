@@ -287,12 +287,12 @@ const VendarScreen = ({ styles, light }) => {
                 </div><br /><br />
                 </Reveal>
                 <Reveal>
-                <><SimpleDialogDemo image={f7} className="levi" /></>
-                <><SimpleDialogDemo image={f8} className="sasha" /></>
-                <><SimpleDialogDemo image={f9} className="levi" /></>
-                <><SimpleDialogDemo image={f10} className="sasha" /></>
-                <><SimpleDialogDemo image={f11} className="levi" /></>
-                <><SimpleDialogDemo image={f12} className="sasha" /></>
+                <><SimpleDialogDemo image={f7} className="sasha" /></>
+                <><SimpleDialogDemo image={f8} className="levi" /></>
+                <><SimpleDialogDemo image={f9} className="sasha" /></>
+                <><SimpleDialogDemo image={f10} className="levi" /></>
+                <><SimpleDialogDemo image={f11} className="sasha" /></>
+                <><SimpleDialogDemo image={f12} className="levi" /></>
                 </Reveal>
             </div>
             <p id='learnings'></p><br /><br />
@@ -309,6 +309,7 @@ const VendarScreen = ({ styles, light }) => {
                 </p><br />
                 </Reveal>
             </div>
+            <br/><br/><br/><br/>
         </div>
         </div>
         

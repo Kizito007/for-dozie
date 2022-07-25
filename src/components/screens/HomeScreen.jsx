@@ -115,9 +115,9 @@ const HomeScreen = ({ light }) => {
             <div className='princi-text'>
               <h3>Good design solves real problems.</h3>
               <p>
-                I have a good understanding in tech, business and design. I start every
-                project by comprehending the business and customers before
-                diving into design.
+                With great understanding in design & tech, 
+                Well developed insight on project comprehension 
+                based on strong customer empathy as regards to business & design.
               </p>
             </div>
           </div>
@@ -126,9 +126,9 @@ const HomeScreen = ({ light }) => {
             <div className='princi-text'>
               <h3>Design for humans, not users.</h3>
               <p>
-                Strike a balance between aesthetics and functionality. Good 
-                micro-copy brings massive results. Let's build products with meaningful 
-                experiences that pay attention to design details.
+                A brilliant merging of practical functionality & aesthetics. 
+                Excellent micro-copy showing clear results. 
+                Structuring products with substantial experiences that are well detailed and design oriented.
               </p>
             </div>
           </div>
