@@ -358,7 +358,7 @@ ul.slick-dots {
   .card {
     margin: 0;
   }
-  .card1 {
+  .p-card1 {
     color: #494949;
   }
   .card-bottom {
@@ -569,6 +569,9 @@ ul.slick-dots {
   margin: 0px 100px;
   margin-left: 140px;
 }
+.squid-container p {
+  font-size: 15px;
+}
 .squid-intro {
   margin-top: 750px;
 }
@@ -708,6 +711,9 @@ ul.slick-dots {
   }
   .squid-container {
     margin: 0 35px;
+  }
+  .squid-container p {
+    font-size: 16px;
   }
   .squid-intro {
     margin-top: 800px;

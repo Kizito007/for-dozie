@@ -34,6 +34,7 @@ import f11 from "../images/f11.png"
 import f12 from "../images/f12.png"
 import Tablet from "../images/Tablet.png"
 import ScrollspyNav from "react-scrollspy-nav";
+import { Reveal } from 'react-reveal';
 
 const VendarScreen = ({ styles, light }) => {
     
@@ -58,13 +59,15 @@ const VendarScreen = ({ styles, light }) => {
             <div className='vendar-tablet'>
                 <img className='tablet' src={Tablet} />
             </div>              
+            <Reveal>
             <div>
                 <h2>Vendar</h2><br />
                 <p>
                     An e-commerce platform that increases sales for stores and
                     small businesses bringing products to online customers.
                 </p>
-            </div>             
+            </div>  
+            </Reveal>           
           </div>
 
         </div>
@@ -145,19 +148,23 @@ const VendarScreen = ({ styles, light }) => {
         <span id='brief'/>
         <div className='squid-container'>
             <h2 className='squid-intro'>Brief</h2><br /><br />
+            <Reveal>
             <p id='challenge'>
                 We want to create a B2C e-commerce platform that aggregates 
                 local businesses and provide customers 
                 a way to access hundreds of options from local businesses in their city.
             </p>
+            </Reveal>
             <div>
                 <h2 style={{marginTop: "110px"}}>The Challenge</h2>
                 <br /><br />
+                <Reveal>
                 <ul style={{marginLeft: "30px"}}>
                     <li>The acceleration towards e-commerce is hurting our local economy.</li>
                     <li>The pandemic was also the highest closure of retail business in the last 20 years.</li>
                     <li id='goals'>Unequal competition between large players online and small local businesses.</li>
                 </ul>
+                </Reveal>
             </div>      
             {/* <div style={{ marginTop: "70px", marginBottom: "100px" }}>
                 <h3>Problem Statement</h3><br /><br />
@@ -172,21 +179,28 @@ const VendarScreen = ({ styles, light }) => {
             <div>
                 <h2 style={{marginTop: "70px"}}>Goals</h2>
                 <img className='floaters' src={light ? arrow : arrowd} /><br /><br /><br />
+                <Reveal>
                 <h3>Operational Efficiency</h3><br />
                 <p>
                     Sourcing products close to customers pretty fast and timely but also secure deliveries. 
                 </p><br /><br /><br />
+                </Reveal>
+                <Reveal>
                 <h3>A convinient consumer experience</h3><br />
                 <p>
                     A model that allows customers to conviniently contribute to their local economy.
                 </p><br /><br /><br />
+                </Reveal>
+                <Reveal>
                 <h3>Business aware</h3><br />
                 <p id='target'>
                 Aggregating product options from many stores on a single platform.
                 </p>
+                </Reveal>
             </div>
             <div style={{ marginTop: "110px" }}>
                 <h2>Target Group</h2>
+                <Reveal>
                 <img className='floaters' src={light ? smiley : smileyd} /><br /><br />
                 <p>
                     We conducted market research to identify our personal and target audience. 
@@ -206,16 +220,18 @@ const VendarScreen = ({ styles, light }) => {
                         Merchants who own multiple stores in several locations.
                     </li>
                 </ul>
+                </Reveal>
             </div><br /><br /><br />
             {/* 
                 <img src={archi} className="levi" />
                 <img src={single} className="sasha" />
             */}
-            <><SimpleDialogDemo image={group} /></>
+            <Reveal><><SimpleDialogDemo image={group} /></></Reveal>
             {/* <><SimpleDialogDemo image={single} className="sasha" /></> */}
             <p id='process'></p><br /><br />
             <div>
                 <h2>Process</h2>
+                <Reveal>
                 <img className='floaters' src={light ? curvyarrow : curvyarrowd} /><br /><br />
                 <h3>User flows</h3><br />
                 <p>
@@ -226,6 +242,8 @@ const VendarScreen = ({ styles, light }) => {
                     <img src={flow1} style={{right: "0",}} className="case-ones" />
                 */}
                 <SimpleDialogDemo image={flow3} className="case-ones" /><br /><br />
+                </Reveal>
+                <Reveal>
                 <h3>Sketches</h3><br />
                 <p>
                     I sketched multiple user flows to visualize ideas quickly. 
@@ -233,20 +251,28 @@ const VendarScreen = ({ styles, light }) => {
                     Here are some early sketches of the Web page.
                 </p><br /><br />
                 <SimpleDialogDemo image={s1} className="case-ones" /><br />
+                </Reveal>
+                <Reveal>
                 <SimpleDialogDemo image={s2} className="case-ones" /><br /><br /><br />
+                </Reveal>
+                <Reveal>
                 <h3>Mid-fi Wireframes</h3><br />
                 <p>
                     Wireframes are the blueprints for the design. In this phase we thought of interactions,
                     placement, flow and logic. It was the phase wherein we had to solve big design
                     puzzles, which often went hand in hand with heated discussions.
                 </p><br /><br />
+                </Reveal>
+                <Reveal>
                 <div className='wireframes'>
                     <SimpleDialogDemo image={w1} />
                     <SimpleDialogDemo image={w2} />
                     <SimpleDialogDemo image={w3} />
                     <SimpleDialogDemo image={w4} />
                 </div><br /><br /><br />
+                </Reveal>
                 <h2 id='designs'>Final Designs</h2>
+                <Reveal>
                 <img className='floaters' src={light ? flame : flamed} /><br />
                 <p>
                     Here's a detailed walkthrough of the revamped app.
@@ -259,16 +285,20 @@ const VendarScreen = ({ styles, light }) => {
                     <SimpleDialogDemo image={f5} />
                     <SimpleDialogDemo image={f6} />
                 </div><br /><br />
+                </Reveal>
+                <Reveal>
                 <><SimpleDialogDemo image={f7} className="levi" /></>
                 <><SimpleDialogDemo image={f8} className="sasha" /></>
                 <><SimpleDialogDemo image={f9} className="levi" /></>
                 <><SimpleDialogDemo image={f10} className="sasha" /></>
                 <><SimpleDialogDemo image={f11} className="levi" /></>
                 <><SimpleDialogDemo image={f12} className="sasha" /></>
+                </Reveal>
             </div>
             <p id='learnings'></p><br /><br />
             <div>
                 <h2>What we learned</h2>
+                <Reveal>
                 <img className='floaters' src={light ? question : questioned} /><br /><br/><br />
                 <h3>Keeping up to B2C needs</h3><br />
                 <p>
@@ -277,6 +307,7 @@ const VendarScreen = ({ styles, light }) => {
                     Our product gives us a chance to provide customers a way to access 
                     hundreds of local businesses in their city.
                 </p><br />
+                </Reveal>
             </div>
         </div>
         </div>
