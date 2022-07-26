@@ -16,7 +16,6 @@ import Contact from "./Contact.jsx"
 import Footer from '../layouts/Footer'
 import { Link } from 'react-router-dom'
 import { Zoom } from 'react-reveal';
-import ScrollspyNav from "react-scrollspy-nav";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -78,16 +77,11 @@ const HomeScreen = ({ light }) => {
           non-profits <br/> expand their capacity for impact.
         </p>
         <ScrollToTop smooth />
-        <ScrollspyNav
-            scrollTargetIds={["contactt",]}
-            // activeNavClass="is-active"
-        >
-          <a href="#contactt">
+          <a href="mailto:nwakadozie76@gmail.com">
           <button style={{ width: "184px" }} className='intro-btn'>
             Contact me
           </button>
           </a>
-        </ScrollspyNav>
       </div>
       <div>
         <h2 className='text-header'>My Skills.</h2><br /><br />
