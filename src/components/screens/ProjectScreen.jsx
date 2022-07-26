@@ -67,11 +67,11 @@ const ProjectScreen = () => {
               <p>
                 An martial art landing page re-design. 
               </p><br /><br />
-              <Link to="/case-study/1">
+              <a href="https://www.behance.net/gallery/148532007/Martial-Arts">
                 <button className='martial-btn'>
                   View <img style={{display: "inline"}} src={outlink} />
                 </button>
-              </Link>
+              </a>
           </div>
         </div>
         </Reveal>

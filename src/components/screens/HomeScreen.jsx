@@ -180,11 +180,11 @@ const HomeScreen = ({ light }) => {
             <img src={martial} className="parallax-bg"/>
           </div>
           <div className='card-bottom' style={{ marginTop: "240px" }}>
-              <Link to="/case-study/1">
+              <a href="https://www.behance.net/gallery/148532007/Martial-Arts">
                 <button className='martial-btn'>
                   View <img style={{display: "inline"}} src={outlink} />
                 </button>
-              </Link>
+              </a>
           </div>
         </div>
         </Slider>
