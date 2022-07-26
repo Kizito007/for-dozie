@@ -647,6 +647,9 @@ ul.slick-dots {
   .parallax-bg {
     width: 100%;
   }
+  .group {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 1170px) {
   .sasha {

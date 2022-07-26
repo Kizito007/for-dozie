@@ -226,7 +226,7 @@ const VendarScreen = ({ styles, light }) => {
                 <img src={archi} className="levi" />
                 <img src={single} className="sasha" />
             */}
-            <Reveal><><SimpleDialogDemo image={group} /></></Reveal>
+            <Reveal><><SimpleDialogDemo className='group' image={group} /></></Reveal>
             {/* <><SimpleDialogDemo image={single} className="sasha" /></> */}
             <p id='process'></p><br /><br />
             <div>
