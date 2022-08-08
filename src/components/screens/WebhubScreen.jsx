@@ -91,7 +91,7 @@ const WebhubScreen = ({ styles, light }) => {
         <div style={{ position: "sticky", top: "70px" }}>
         <ScrollspyNav
             scrollTargetIds={
-                ["introduction", "role", "challenge", "goals", "users", "process", "designs", "learnings", "future",]
+                ["introduction", "challenge", "goals", "users", "process", "designs", "learnings", "future",]
             }
             // activeNavClass="is-active"
             //  putting their id above another element so  it can focus on it
@@ -100,11 +100,6 @@ const WebhubScreen = ({ styles, light }) => {
             <li>
                 <a href="#introduction">
                     Introduction
-                </a>
-            </li>
-            <li>
-                <a href="#role">
-                    My Role
                 </a>
             </li>
             <li>
@@ -148,21 +143,12 @@ const WebhubScreen = ({ styles, light }) => {
         <div className='squid-container'>
             <h2 className='squid-intro'>Introduction</h2><br /><br />
             <Reveal>
-            <p id='role'>
-                Web-Hub is a service platform that bridges the gap between professionals
-                and consumers. Whether it concerns a renovation, a
-                maintenance job or a repair for all DIY jobs in and around a house.
-            </p>
+            <p id='challenge'>
+                Squid app is a service platform that bridges the gap between professional 
+                services and consumers. Whether it concerns a renovation, 
+                a maintenance job or a repair for all DIY jobs in and around a house.
+            </p> <br /><br /><br />
             </Reveal>
-            <div style={{margin: "110px 0"}}>
-                <h2>My Role</h2><br /><br />
-                <Reveal>
-                <p id='challenge'>
-                    I'm the lead designer for this project. I collaborated with developers and a
-                    product manager through the project.
-                </p>
-                </Reveal>
-            </div>
             <div>
                 <h2>The Challenge</h2>
                 <br /><br />
@@ -173,7 +159,7 @@ const WebhubScreen = ({ styles, light }) => {
                     everyday activities, economies and enterprises, and any other element of life 
                     you can think of, and even caused a steady increase in social distancing. <br /><br /><br />
 
-                    Web-Hub was geared towards carrying out business in a simple manner for 
+                    Squid was geared towards carrying out business in a simple manner for 
                     homeowners/customers making it easy for them to access nearby 
                     professionals and get a good idea of ​​the quality of the professional through 
                     the reviews that other consumers write about the work performed.
@@ -290,16 +276,7 @@ const WebhubScreen = ({ styles, light }) => {
                 <SimpleDialogDemo image={final3} className="case-ones" /><br /><br /><br />
                 </Reveal>
                 <Reveal>
-                <h3>We went through 10+ iterations</h3><br />
-                <p id='designs'>
-                    The initial designs went through several user tests, discussions 
-                    with operations, and business teams to ensure we have a friendly and scalable 
-                    user experience. <br />
-                    I wish I could show you every single part of the process!
-                </p><br /><br /><br />
-                </Reveal>
-                <Reveal>
-                <h2>Final Designs</h2>
+                <h2 id="designs">Final Designs</h2>
                 <img className='floaters' src={light ? flame : flamed} /><br />
                 <p>
                     Here's a detailed walkthrough of the revamped app.
@@ -308,7 +285,7 @@ const WebhubScreen = ({ styles, light }) => {
                 <Reveal>
                 <h3>A new look.</h3><br />
                 <p>
-                    Before the redesign, the app was cluttered. Now, Web-Hub has a fresh new 
+                    Before the redesign, the app was cluttered. Now, Squid has a fresh new 
                     modern look and a better experience. To improve the brand and service 
                     perception, we introduced scalable components and redesigned micro-interactions.
                 </p><br /><br />
