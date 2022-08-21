@@ -63,7 +63,7 @@ const ProjectScreen = () => {
             <img src={martial} className="parallax-bg"/>
           </div>
           <div className='card-bottom cardbottom'>
-          <h2>Bolt-Dojo</h2>
+          <h2>Belt-Dojo</h2>
               <p>
                 An martial art landing page re-design. 
               </p><br /><br />
