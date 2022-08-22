@@ -6,8 +6,8 @@ import p1 from "../images/p1.png"
 import martial from "../images/martial.png"
 import VendarCr from "../images/VendarCr.png"
 import Frame41 from "../images/Frame41.png"
-import goodes from "../images/goodes.png"
-import humandes from "../images/humandes.png"
+import goodes from "../images/goodDesign.png"
+import humandes from "../images/human-design.png"
 import hr from "../svgs/hr.svg"
 import hrd from "../svgs/hrd.svg"
 import Peace from "../svgs/Peace.svg"
@@ -42,7 +42,7 @@ const HomeScreen = ({ light }) => {
         }
       },
       {
-        breakpoint: 790,
+        breakpoint: 830,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -155,6 +155,37 @@ const HomeScreen = ({ light }) => {
         </Slider>
       </div>
       <div>
+        <h2 className='text-header'>Design Principles</h2><br />
+        <div className='principles'>
+          <div className='good-design'>
+            <img src={goodes} />
+            <span>
+            <img src={SendLove} className="sendlove" style={{width: "50px", borderRadius: "0px"}}/>
+            </span>
+            <div className='princi-text'>
+              <h3>Good design solves real problems.</h3>
+              <p>
+                With great understanding in design & tech, 
+                Well developed insight on project comprehension 
+                based on strong customer empathy as regards to business & design.
+              </p>
+            </div>
+          </div>
+          <div className='good-design'>
+            <img src={humandes} />
+            <span><img src={Peace} className="peace" style={{ width: "30px" }}/></span>
+            <div className='princi-text'>
+              <h3>Design for humans, not users.</h3>
+              <p>
+                A brilliant merging of practical functionality & aesthetics. 
+                Excellent micro-copy showing clear results. 
+                Structuring products with substantial experiences that are well detailed and design oriented.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* <div>
         <h2 className='text-header'>Design Principles</h2><br /><br />
         <div className='principles'>
           <div className='good-design'>
@@ -181,7 +212,7 @@ const HomeScreen = ({ light }) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <br/><br/><br/>
       <img style={{width: "100%"}} src={light ? hr : hrd} />
       <Contact />
