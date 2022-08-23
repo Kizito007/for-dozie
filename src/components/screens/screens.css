@@ -115,8 +115,27 @@
 }
 .peace {
   position: relative;
-  top: 250px;
-  left: -60px;
+  top: 175px;
+  left: -15px;
+}
+.footerMail {
+  text-decoration: none;
+  width: auto;
+  background: linear-gradient(
+    97.57deg,
+    #6c2c83 18.04%,
+    #ff3d00 51.65%,
+    #ce0808 91.29%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footerMail:hover {
+  background: linear-gradient(90.98deg, #ffab2e 57.34%, #ff4202 74.4%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media only screen and (max-width: 400px) {
   .container {
@@ -137,11 +156,6 @@
   .intro-text {
     text-align: center;
     margin: 50px 0;
-  }
-  .sendlove {
-    position: relative;
-    top: -60px;
-    /* bottom: 73px; */
   }
 }
 .skills {
@@ -741,7 +755,11 @@ a {
   .peace {
     position: relative;
     top: 0;
-    left: -45px;
+  }
+  .sendlove {
+    position: relative;
+    top: -60px;
+    /* bottom: 73px; */
   }
   .webhub-overview {
     height: 250px;

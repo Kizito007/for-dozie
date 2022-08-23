@@ -8,7 +8,7 @@ import linked from "../svgs/in.svg"
 const Footer = () => {
   return (
     <div className='bottom'>
-      <p style={{ padding: "70px 0" }}>
+      <p style={{ paddingTop: "70px" }}>
         <a href="https://behance.net/marioedgar">
           <img src={beh}/>
         </a>
@@ -21,7 +21,8 @@ const Footer = () => {
         <a href="https://www.linkedin.com/in/nwaka-chiedozie-67a073142/">
           <img src={linked}/>
         </a>
-      </p>
+      </p><br /><br />
+      <p style={{ paddingBottom: "150px" }}>dozie.design &copy; 2022</p>
     </div>
   )
 }

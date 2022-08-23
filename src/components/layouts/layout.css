@@ -43,7 +43,12 @@
   font-size: 17px;
   padding: 10px;
 }
-.nav-list a:hover,
+.nav-list a:hover {
+  background: linear-gradient(90.98deg, #ffab2e 57.34%, #ff4202 74.4%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .nav-list img:hover {
   background: rgba(255, 171, 46, 0.144);
   border-radius: 25px;

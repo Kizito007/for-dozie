@@ -42,6 +42,13 @@ const HomeScreen = ({ light }) => {
         }
       },
       {
+        breakpoint: 1080,//1350
+        settings: {
+          slidesToShow: 1.1,
+          slidesToScroll: 1,
+        }
+      },
+      {
         breakpoint: 830,
         settings: {
           slidesToShow: 1,
@@ -90,13 +97,13 @@ const HomeScreen = ({ light }) => {
           non-profits <br/> expand their capacity for impact. */}
         </p> <br/>
         <ScrollToTop smooth />
+          <button style={{ width: "165px", display: "block", margin: "0 auto" }} className='intro-btn'>
           <a href="mailto:nwakadozie76@gmail.com" style={{
             display: "flex", justifyContent: "center", textDecoration: "none", width: "auto"
           }}>
-          <button style={{ width: "184px" }} className='intro-btn'>
             Contact me
-          </button>
           </a>
+          </button>
       </div>
       <div>
         <h2 className='text-header'>My Skills</h2><br /><br />
@@ -105,7 +112,7 @@ const HomeScreen = ({ light }) => {
         </Zoom>
       </div>
       <div>
-        <h2 className='text-header'>Projects</h2>
+        <h2 className='text-header'>Projects</h2><br />
         <p style={{marginTop: "20px", marginBottom: "60px", textAlign: "center"}}>
           I’ve worked with start-ups and small companies, and also 
           created some concepts for my personal side projects.
@@ -155,7 +162,7 @@ const HomeScreen = ({ light }) => {
         </Slider>
       </div>
       <div>
-        <h2 className='text-header'>Design Principles</h2><br />
+        <h2 className='text-header'>Design Principles</h2><br /><br />
         <div className='principles'>
           <div className='good-design'>
             <img src={goodes} />
@@ -185,37 +192,19 @@ const HomeScreen = ({ light }) => {
           </div>
         </div>
       </div>
-      {/* <div>
-        <h2 className='text-header'>Design Principles</h2><br /><br />
-        <div className='principles'>
-          <div className='good-design'>
-            <img src={goodes} />
-            <img src={SendLove} className="sendlove" style={{width: "50px", borderRadius: "0px"}}/>
-            <div className='princi-text'>
-              <h3>Good design solves real problems.</h3>
-              <p>
-                With great understanding in design & tech, 
-                Well developed insight on project comprehension 
-                based on strong customer empathy as regards to business & design.
-              </p>
-            </div>
-          </div>
-          <div className='human-design'>
-            <img src={humandes} style={{marginTop: "-40px"}} /><span><img src={Peace} style={{width: "40px"}}/></span>
-            <div className='princi-text'>
-              <h3>Design for humans, not users.</h3>
-              <p>
-                A brilliant merging of practical functionality & aesthetics. 
-                Excellent micro-copy showing clear results. 
-                Structuring products with substantial experiences that are well detailed and design oriented.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div> */}
       <br/><br/><br/>
       <img style={{width: "100%"}} src={light ? hr : hrd} />
-      <Contact />
+      {/* <Contact /> */}
+      <h2 className='text-header'>Let's create excellent work together!</h2>
+      <p style={{fontSize: "18px", padding: "50px 0", textAlign: "center"}}>Get in touch for opportunities or just to say hi! 👋</p><br/>
+      <p style={{
+        fontSize: "21px", textAlign: "center"
+      }}
+      >
+        <a href="mailto:nwakadozie76@gmail.com" className='footerMail'>
+          Nwakadozie76@gmail.com
+        </a>
+      </p><br /><br />
       <Footer />
     </div>
   )
