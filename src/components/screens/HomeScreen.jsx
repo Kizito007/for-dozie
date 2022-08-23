@@ -162,7 +162,7 @@ const HomeScreen = ({ light }) => {
         </Slider>
       </div>
       <div>
-        <h2 className='text-header'>Design Principles</h2><br /><br />
+        <h2 className='text-header'>Design Principles</h2><br />
         <div className='principles'>
           <div className='good-design'>
             <img src={goodes} />
@@ -181,7 +181,7 @@ const HomeScreen = ({ light }) => {
           <div className='good-design'>
             <img src={humandes} />
             <span><img src={Peace} className="peace" style={{ width: "30px" }}/></span>
-            <div className='princi-text'>
+            <div className='princi-text' style={{ left: "49px" }}>
               <h3>Design for humans, not users.</h3>
               <p>
                 A brilliant merging of practical functionality & aesthetics. 
