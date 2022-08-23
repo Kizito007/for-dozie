@@ -3,26 +3,26 @@ import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 
-function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "red" }}
-        onClick={onClick}
-      />
-    );
-  }
+// function SampleNextArrow(props) {
+//     const { className, style, onClick } = props;
+//     return (
+//       <div
+//         className={className}
+//         style={{ ...style, display: "block", background: "red" }}
+//         onClick={onClick}
+//       />
+//     );
+//   }
   
-  function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        onClick={onClick}
-      />
-    );
-  }
+//   function SamplePrevArrow(props) {
+//     const { className, style, onClick } = props;
+//     return (
+//       <div
+//         className={className}
+//         onClick={onClick}
+//       />
+//     );
+//   }
 
 const Autoplay = () => {
 
@@ -54,7 +54,7 @@ const Autoplay = () => {
                 breakpoint: 580,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 5
+                    // slidesToScroll: 5
                 }
             }
         ]

@@ -65,7 +65,7 @@ const ProjectScreen = () => {
           <div className='card-bottom cardbottom'>
           <h2>Belt-Dojo</h2>
               <p>
-                An martial art landing page re-design. 
+                A martial art landing page re-design. 
               </p><br /><br />
               <a href="https://www.behance.net/gallery/148532007/Martial-Arts">
                 <button className='martial-btn'>

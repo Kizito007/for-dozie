@@ -155,7 +155,7 @@ const HomeScreen = ({ light }) => {
             <div style={{ width: "fitContent", margin: "0 10px" }}>
               <h2>Belt-Dojo <img style={{display: "inline"}} src={outlink} /></h2> <br />
               <p>
-              An martial art landing page re-design. 
+              A martial art landing page re-design. 
               </p>
             </div>
           </div>
