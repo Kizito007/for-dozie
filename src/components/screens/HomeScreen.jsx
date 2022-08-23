@@ -1,10 +1,10 @@
 import React from 'react'
 import ScrollToTop from "react-scroll-to-top";
 import "./screens.css"
-import dp from "../images/LinkedinDp.png"
+import dp from "../images/LinkedInDp.png"
 import p1 from "../images/p1.png"
 import martial from "../images/martial.png"
-import VendarCr from "../images/VendarCr.png"
+// import VendarCr from "../images/VendarCr.png"
 import Frame41 from "../images/Frame41.png"
 import goodes from "../images/goodDesign.png"
 import humandes from "../images/human-design.png"
@@ -13,7 +13,7 @@ import hrd from "../svgs/hrd.svg"
 import Peace from "../svgs/Peace.svg"
 import outlink from "../svgs/outlink.svg"
 import SendLove from "../svgs/SendLove.svg"
-import Contact from "./Contact.jsx"
+// import Contact from "./Contact.jsx"
 import Autoplay from "./Autoplay.jsx"
 import Footer from '../layouts/Footer'
 import { Link } from 'react-router-dom'
