@@ -86,8 +86,7 @@ const HomeScreen = ({ light }) => {
             <span style={{
               background: "linear-gradient(90.98deg, #FFAB2E 57.34%, #FF4202 74.4%)",
               "WebkitBackgroundClip": "text",
-              "WebkitTextFillColor": "transparent"}}>
-              Visual artist
+              "WebkitTextFillColor": "transparent"}}> Visual artist
             </span>
         </h2> <br/>
         <p className='intro-text'>
