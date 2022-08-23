@@ -54,7 +54,7 @@ const Autoplay = () => {
                 breakpoint: 580,
                 settings: {
                     slidesToShow: 2,
-                    // slidesToScroll: 5
+                    slidesToScroll: 5
                 }
             }
         ]
