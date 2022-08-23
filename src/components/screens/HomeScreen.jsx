@@ -77,7 +77,8 @@ const HomeScreen = ({ light }) => {
           <img src={dp} className="intro-img"/>
         </div>
         <h2 className='text-head'>
-            Hi, I'm Nwaka Dozie. <br/>
+            Hi, I'm Dozie. <br/>
+            <span style={{fontSize: "21px"}}>
             A {" "}
             <span style={{
               background: "linear-gradient(93deg, #EA1B1B 27.26%, #6C2C83 48.26%)",
@@ -87,6 +88,7 @@ const HomeScreen = ({ light }) => {
               background: "linear-gradient(90.98deg, #FFAB2E 57.34%, #FF4202 74.4%)",
               "WebkitBackgroundClip": "text",
               "WebkitTextFillColor": "transparent"}}> Visual artist
+            </span>
             </span>
         </h2> <br/>
         <p className='intro-text'>
