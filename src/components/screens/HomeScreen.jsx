@@ -2,7 +2,7 @@ import React from 'react'
 import ScrollToTop from "react-scroll-to-top";
 import "./screens.css"
 import dp from "../images/LinkedInDp.png"
-import p1 from "../images/p1.png"
+import p1 from "../images/pp1.png"
 import martial from "../images/martial.png"
 // import VendarCr from "../images/VendarCr.png"
 import Frame41 from "../images/Frame41.png"
@@ -42,14 +42,14 @@ const HomeScreen = ({ light }) => {
         }
       },
       {
-        breakpoint: 1080,//1350
+        breakpoint: 1245,//1350
         settings: {
           slidesToShow: 1.1,
           slidesToScroll: 1,
         }
       },
       {
-        breakpoint: 830,
+        breakpoint: 1045,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -197,15 +197,15 @@ const HomeScreen = ({ light }) => {
       <img style={{width: "100%"}} src={light ? hr : hrd} />
       {/* <Contact /> */}
       <h2 className='text-header'>Let's create excellent work together!</h2>
-      <p style={{fontSize: "18px", padding: "50px 0", textAlign: "center"}}>Get in touch for opportunities or just to say hi! 👋</p><br/>
-      <p style={{
-        fontSize: "21px", textAlign: "center"
+      <p style={{fontSize: "16px", padding: "50px 0", textAlign: "center"}}>Get in touch for opportunities or just to say hi! 👋</p><br/>
+      <h1 className='gradientMail' style={{
+        textAlign: "center"
       }}
       >
         <a href="mailto:nwakadozie76@gmail.com" className='footerMail'>
           Nwakadozie76@gmail.com
         </a>
-      </p><br /><br />
+      </h1><br /><br />
       <Footer />
     </div>
   )
