@@ -1,7 +1,7 @@
 import React from 'react'
 import ScrollToTop from "react-scroll-to-top";
 import { Link } from 'react-router-dom';
-import dozie from "../images/dozie.png"
+import dozie from "../images/LinkedInDp.png"
 import hr from "../svgs/hr.svg"
 import hrd from "../svgs/hrd.svg"
 import art1 from "../images/art1.png"

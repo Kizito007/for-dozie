@@ -23,7 +23,7 @@ import flow2 from "../images/flow2.png"
 import final1 from "../images/final1.png"
 import final2 from "../images/final2.png"
 import final3 from "../images/final3.png"
-import pp1 from "../images/pp1.png"
+import pp1 from "../images/p1.png"
 import ScrollspyNav from "react-scrollspy-nav";
 
 const WebhubScreen = ({ styles, light }) => {

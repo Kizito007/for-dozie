@@ -17,8 +17,8 @@ import ResumeScreen from './components/screens/ResumeScreen'
 
 function App() {
 
-  const [theme, setTheme] = useState('dark');
-  const [light, setLight] = useState(false)
+  const [theme, setTheme] = useState('light');
+  const [light, setLight] = useState(true)
 
   // The function that toggles between themes
   const toggleTheme = () => {

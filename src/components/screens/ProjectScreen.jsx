@@ -1,7 +1,7 @@
 import React from 'react'
 import ScrollToTop from "react-scroll-to-top";
 import VendarCr from "../images/VendarCr.png"
-import pp1 from "../images/pp1.png"
+import pp1 from "../images/p1.png"
 import martial from "../images/martial.png"
 import outlink from "../svgs/outlink.svg"
 import { Link } from 'react-router-dom'
@@ -44,7 +44,7 @@ const ProjectScreen = () => {
             <img src={VendarCr} className="parallax-bg"/>
           </div>
           <div className='card-bottom cardbottom'>
-          <h2 className='projects-vendar-h2'>Vendar</h2><br />
+          <h2 className='projects-vendar-h2'>Vendar</h2><br /><br />
               <p>
                 An e-commerce platform that increases sales for stores and 
                 small businesses bringing products to online customers.

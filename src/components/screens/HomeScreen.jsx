@@ -118,7 +118,37 @@ const HomeScreen = ({ light }) => {
           I’ve worked with start-ups and small companies, and also 
           created some concepts for my personal side projects.
         </p>
-        <Slider {...settings}>
+        <div className="projects-container">
+          <Link to="/case-study/2">
+          <div className='homecard' style={{ border: "1px solid #FFC960" }}>
+            <div className='card-top'>
+              <img src={Frame41} className="parallax-bg"/><br />
+            </div>
+            <div className="projectsTextContainer">
+              <h2>Vendar</h2> <br />
+              <p>
+                An e-commerce platform that increases sales <br/> for stores
+                and small businesses bringing products to online customers. 
+              </p>
+            </div>
+          </div>
+          </Link>
+          <Link to="/case-study/1">
+          <div className='homecard' style={{ border: "1px solid #C5B2C8" }}>
+            <div className='card-top'>
+              <img src={p1} className="parallax-bg"/><br />
+            </div>
+            <div className="projectsTextContainer">
+              <h2>Interface Revamp of the Squid App</h2> <br />
+              <p>
+                A collective and innovative platform <br /> for linking professional 
+                services and consumers in a simple way. 
+              </p>
+            </div>
+          </div>
+          </Link>
+        </div>
+        {/* <Slider {...settings}>
           <Link to="/case-study/2">
           <div className='card' style={{ border: "1px solid #FFC960" }}>
             <div className='card-top'>
@@ -160,7 +190,7 @@ const HomeScreen = ({ light }) => {
             </div>
           </div>
           </a>
-        </Slider>
+        </Slider> */}
       </div>
       <div>
         <h2 className='text-header'>Design Principles</h2><br />
