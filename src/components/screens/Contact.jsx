@@ -19,7 +19,8 @@ const Contact = () => {
     e.preventDefault();
     try {
         setIsLoading(true)
-        const sender = { email, subject, textField, fullname };
+        const to = "nwakadozie76@gmail.com"
+        const sender = { email, subject, textField, to, fullname };
         const senderRes = await axios.post(
           "https://vast-bayou-66131.herokuapp.com/v1/dozie/sendMail",
           sender 
