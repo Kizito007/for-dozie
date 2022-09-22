@@ -13,7 +13,7 @@ import ProjectScreen from './components/screens/ProjectScreen'
 import FaqScreen from './components/screens/FaqScreen'
 import WebhubScreen from './components/screens/WebhubScreen'
 import VendarScreen from './components/screens/VendarScreen'
-import ResumeScreen from './components/screens/ResumeScreen'
+// import ResumeScreen from './components/screens/ResumeScreen'
 
 function App() {
 
@@ -56,9 +56,9 @@ function App() {
       </Routes>
     </ScrollToTop>
     </div>
-    <Routes>
+    {/* <Routes>
       <Route path="resume" element={<ResumeScreen styles={styles} light={light}/>} />
-    </Routes>
+    </Routes> */}
 
     {/* <img className='ellipse' src={ellipseGr}/> */}
     {/* <div className="elllipse"></div> */}
