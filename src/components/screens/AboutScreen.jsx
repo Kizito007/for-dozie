@@ -33,11 +33,12 @@ const AboutScreen = ({styles, light}) => {
                 spare time and at work. I am very much a big-picture thinker and enjoy working on products end to end, from 
                 ideation all the way to development. <br/><br/>
                 </p>
-                <Link to="/resume">
+                <a href="https://read.cv/dozie">
                     <button style={{ width: "184px" }} className='intro-btn'>
                         Resume/CV
                     </button>
-                </Link><br/><br/><br />
+                </a>
+                <br/><br/><br />
                 </Reveal>
                 <img style={{width: "100%"}} src={light ? hr : hrd} />
                 <br/><br/>
