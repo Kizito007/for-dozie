@@ -1,7 +1,7 @@
 import React from 'react'
 import ScrollToTop from "react-scroll-to-top";
 import "./screens.css"
-import dp from "../images/LinkedInDp.png"
+import dp from "../images/homepic.png"
 import p1 from "../images/pp1.png"
 import martial from "../images/martial.png"
 // import VendarCr from "../images/VendarCr.png"
@@ -17,7 +17,7 @@ import SendLove from "../svgs/SendLove.svg"
 import Autoplay from "./Autoplay.jsx"
 import Footer from '../layouts/Footer'
 import { Link } from 'react-router-dom'
-import { Zoom } from 'react-reveal';
+import { Reveal } from 'react-reveal';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -71,81 +71,71 @@ const HomeScreen = ({ light }) => {
     <div className='home'>
       <div className='invincible'>
         <h1>Good design is human-centered.</h1>
+        <div className="floating grad"></div>
+        <div className="floating grad2"></div>
       </div>
       <div className='intro'>
         <div>
-          <img src={dp} className="intro-img"/>
+          <img src={dp} className="intro-img" />
         </div>
-        <h2 className='text-head'>
-            Hi, I'm Dozie. <br/>
-            <span style={{fontSize: "21px"}}>
-            A {" "}
-            <span style={{
-              background: "linear-gradient(93deg, #EA1B1B 27.26%, #6C2C83 48.26%)",
-              "WebkitBackgroundClip": "text",
-              "WebkitTextFillColor": "transparent"}} >UX designer</span> {"& "}
-            <span style={{
-              background: "linear-gradient(90.98deg, #FFAB2E 57.34%, #FF4202 74.4%)",
-              "WebkitBackgroundClip": "text",
-              "WebkitTextFillColor": "transparent"}}> Visual artist
-            </span>
-            </span>
-        </h2> <br/>
-        <p className='intro-text'>
-          With over 3 years experience conceptualizing and
-          crafting digital products.
-          {/* ,helping businesses and
-          non-profits <br/> expand their capacity for impact. */}
-        </p> <br/>
+        <Reveal>
+          <h2 className='text-head'>
+            Hi, there
+            <span className='wave'>👋</span>
+          </h2> <br />
+          <p className='intro-text'>
+            Need someone with over 3 years experience conceptualising and
+            crafting day to day digital products, that’s where i come in. <br />
+            Like Vincent Van Gogh said <br />
+            “Great things are done by a series of small things brought together.”
+          </p> <br />
+        </Reveal>
         <ScrollToTop smooth />
-          <button style={{ width: "165px", display: "block", margin: "0 auto" }} className='intro-btn'>
+        <button style={{ width: "165px", display: "block", margin: "0 auto" }} className='intro-btn'>
           <a href="mailto:nwakadozie76@gmail.com" style={{
             display: "flex", justifyContent: "center", textDecoration: "none", width: "auto"
           }}>
             Contact me
           </a>
-          </button>
+        </button>
       </div>
-      <div>
+      {/* <div>
         <h2 className='text-header'>My Skills</h2><br /><br />
         <Zoom>
-          <Autoplay/>
+          <Autoplay />
         </Zoom>
-      </div>
+      </div> */}
       <div>
-        <h2 className='text-header'>Projects</h2><br />
-        <p style={{marginTop: "20px", marginBottom: "60px", textAlign: "center"}}>
-          I’ve worked with start-ups and small companies, and also 
-          created some concepts for my personal side projects.
-        </p>
+        <h2 className='text-header'>Selected Projects</h2><br />
+
         <div className="projects-container">
           <Link to="/case-study/2">
-          <div className='homecard' style={{ border: "1px solid #FFC960" }}>
-            <div className='card-top'>
-              <img src={Frame41} className="parallax-bg"/><br />
+            <div className='homecard' style={{ border: "1px solid #FFC960" }}>
+              <div className='card-top'>
+                <img src={Frame41} className="parallax-bg" /><br />
+              </div>
+              <div className="projectsTextContainer">
+                <h2>Vendar</h2> <br />
+                <p>
+                  An e-commerce platform that increases sales <br /> for stores
+                  and small businesses bringing products to online customers.
+                </p>
+              </div>
             </div>
-            <div className="projectsTextContainer">
-              <h2>Vendar</h2> <br />
-              <p>
-                An e-commerce platform that increases sales <br/> for stores
-                and small businesses bringing products to online customers. 
-              </p>
-            </div>
-          </div>
           </Link>
           <Link to="/case-study/1">
-          <div className='homecard' style={{ border: "1px solid #C5B2C8" }}>
-            <div className='card-top'>
-              <img src={p1} className="parallax-bg"/><br />
+            <div className='homecard' style={{ border: "1px solid #C5B2C8" }}>
+              <div className='card-top'>
+                <img src={p1} className="parallax-bg" /><br />
+              </div>
+              <div className="projectsTextContainer">
+                <h2>Interface Revamp of the Squid App</h2> <br />
+                <p>
+                  A collective and innovative platform <br /> for linking professional
+                  services and consumers in a simple way.
+                </p>
+              </div>
             </div>
-            <div className="projectsTextContainer">
-              <h2>Interface Revamp of the Squid App</h2> <br />
-              <p>
-                A collective and innovative platform <br /> for linking professional 
-                services and consumers in a simple way. 
-              </p>
-            </div>
-          </div>
           </Link>
         </div>
         {/* <Slider {...settings}>
@@ -198,36 +188,36 @@ const HomeScreen = ({ light }) => {
           <div className='good-design'>
             <img src={goodes} />
             <span>
-            <img src={SendLove} className="sendlove" style={{width: "50px", borderRadius: "0px"}}/>
+              <img src={SendLove} className="sendlove" style={{ width: "50px", borderRadius: "0px" }} />
             </span>
             <div className='princi-text'>
               <h3>Good design solves real problems.</h3>
               <p>
-                With great understanding in design & tech, 
-                Well developed insight on project comprehension 
+                With great understanding in design & tech,
+                Well developed insight on project comprehension
                 based on strong customer empathy as regards to business & design.
               </p>
             </div>
           </div>
           <div className='good-design'>
             <img src={humandes} />
-            <span><img src={Peace} className="peace" style={{ width: "30px" }}/></span>
+            <span><img src={Peace} className="peace" style={{ width: "30px" }} /></span>
             <div className='princi-text' style={{ left: "49px" }}>
               <h3>Design for humans, not users.</h3>
               <p>
-                A brilliant merging of practical functionality & aesthetics. 
-                Excellent micro-copy showing clear results. 
+                A brilliant merging of practical functionality & aesthetics.
+                Excellent micro-copy showing clear results.
                 Structuring products with substantial experiences that are well detailed and design oriented.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <br/><br/><br/>
-      <img style={{width: "100%"}} src={light ? hr : hrd} />
+      <br /><br /><br />
+      <img style={{ width: "100%" }} src={light ? hr : hrd} />
       {/* <Contact /> */}
       <h2 className='text-header'>Let's create excellent work together!</h2>
-      <p style={{fontSize: "16px", padding: "50px 0", textAlign: "center"}}>Get in touch for opportunities or just to say hi! 👋</p><br/>
+      <p style={{ fontSize: "16px", padding: "50px 0", textAlign: "center" }}>Get in touch for opportunities or just to say hi! 👋</p><br />
       <h1 className='gradientMail' style={{
         textAlign: "center"
       }}
