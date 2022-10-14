@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="description" content="Good design is human-centered" />
   <meta name="google-site-verification" content="4isRIGsE3_X_KO1rITIYuPQ29jWeBBU7V04HpOqmixA" />
-  <link rel="icon" type="image/svg+xml" href="/src/components/svgs/logo.svg" />
+  <link rel="icon" type="image/svg+xml" href="/src/components/images/homepic.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
@@ -17,10 +17,57 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dozie Nwaka</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    .loaddder-wrapper {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #121212;
+      display: grid;
+      place-items: center;
+    }
+
+    .loaddder {
+      /* background-image: url("spin.png"); */
+      border: 5px solid #e3e3e3;
+      border-top: 5px solid #FF6C00;
+      border-radius: 50%;
+      width: 140px;
+      height: 140px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <div id="root"></div>
+  <div id="root">
+    <div id="root">
+      <div class="loaddder-wrapper">
+        <lottie-player src="https://lottie.host/573eeb21-beec-4ab5-9b4d-0ee2cd193702/cl97oUtAxq.json"
+          background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+        <!-- <div class="loaddder"></div> -->
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script type="module" src="/src/main.jsx"></script>
 </body>
 

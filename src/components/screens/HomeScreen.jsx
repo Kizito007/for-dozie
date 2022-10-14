@@ -2,23 +2,27 @@ import React from 'react'
 import ScrollToTop from "react-scroll-to-top";
 import "./screens.css"
 import dp from "../images/homepic.png"
-import p1 from "../images/pp1.png"
-import martial from "../images/martial.png"
-// import VendarCr from "../images/VendarCr.png"
-import Frame41 from "../images/Frame41.png"
+// import p1 from "../images/pp1.png"
+// import martial from "../images/martial.png"
+// // import VendarCr from "../images/VendarCr.png"
+// import Frame41 from "../images/Frame41.png"
+import VendarCr from "../images/FrameVendar.png"
+import pp1 from "../images/p1.png"
 import goodes from "../images/goodDesign.png"
 import humandes from "../images/human-design.png"
 import hr from "../svgs/hr.svg"
 import hrd from "../svgs/hrd.svg"
+import band1 from "../svgs/band1.svg"
+import band2 from "../svgs/band2.svg"
 import Peace from "../svgs/Peace.svg"
-import outlink from "../svgs/outlink.svg"
+// import outlink from "../svgs/outlink.svg"
 import SendLove from "../svgs/SendLove.svg"
 // import Contact from "./Contact.jsx"
-import Autoplay from "./Autoplay.jsx"
+// import Autoplay from "./Autoplay.jsx"
 import Footer from '../layouts/Footer'
 import { Link } from 'react-router-dom'
 import { Reveal } from 'react-reveal';
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -91,13 +95,9 @@ const HomeScreen = ({ light }) => {
           </p> <br />
         </Reveal>
         <ScrollToTop smooth />
-        <button style={{ width: "165px", display: "block", margin: "0 auto" }} className='intro-btn'>
-          <a href="mailto:nwakadozie76@gmail.com" style={{
-            display: "flex", justifyContent: "center", textDecoration: "none", width: "auto"
-          }}>
-            Contact me
-          </a>
-        </button>
+        {/* <button style={{ width: "165px", display: "block", margin: "0 auto" }} className='intro-btn'>
+          
+        </button> */}
       </div>
       {/* <div>
         <h2 className='text-header'>My Skills</h2><br /><br />
@@ -106,10 +106,48 @@ const HomeScreen = ({ light }) => {
         </Zoom>
       </div> */}
       <div>
-        <h2 className='text-header'>Selected Projects</h2><br />
+        <h2 className='text-header'>Selected Projects</h2><br /><br />
 
-        <div className="projects-container">
-          <Link to="/case-study/2">
+        <div className='projects'>
+          <Reveal>
+            <div className='card' >
+              <div className='card-top cardtop'>
+                <img src={VendarCr} className="parallax-bg" />
+              </div>
+              <div className='card-bottom cardbottom'>
+                <h2 className='projects-vendar-h2'>Vendar</h2><br />
+                <p>
+                  An e-commerce platform that increases sales for stores and
+                  small businesses bringing products to online customers.
+                </p><br /><br />
+                <Link to="/case-study/2">
+                  <button className='vendar-cr'>
+                    Read Case Study
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </Reveal><br /><br />
+          <Reveal>
+            <div className='card' >
+              <div className='card-top cardtop'>
+                <img src={pp1} className="parallax-bg" />
+              </div>
+              <div className='card-bottom cardbottom'>
+                <h2 className='p-card1'>Interface Revamp of the Squid App</h2> <br />
+                <p className='p-card1'>
+                  A collective and innovative platform for linking
+                  professional services and consumers in a simple way.
+                </p><br /><br />
+                <Link to="/case-study/1">
+                  <button className='intro-btn'>
+                    Read Case Study
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </Reveal>
+          {/* <Link to="/case-study/2">div className="projects-container"
             <div className='homecard' style={{ border: "1px solid #FFC960" }}>
               <div className='card-top'>
                 <img src={Frame41} className="parallax-bg" /><br />
@@ -136,7 +174,7 @@ const HomeScreen = ({ light }) => {
                 </p>
               </div>
             </div>
-          </Link>
+          </Link> */}
         </div>
         {/* <Slider {...settings}>
           <Link to="/case-study/2">
@@ -183,6 +221,8 @@ const HomeScreen = ({ light }) => {
         </Slider> */}
       </div>
       <div>
+        <img className='band band1' src={band1} />
+        <img className='band band2' src={band2} />
         <h2 className='text-header'>Design Principles</h2><br />
         <div className='principles'>
           <div className='good-design'>

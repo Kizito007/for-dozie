@@ -17,8 +17,8 @@ import VendarScreen from './components/screens/VendarScreen'
 
 function App() {
 
-  const [theme, setTheme] = useState('light');
-  const [light, setLight] = useState(true)
+  const [theme, setTheme] = useState('dark');
+  const [light, setLight] = useState(false)
 
   // The function that toggles between themes
   const toggleTheme = () => {
@@ -26,7 +26,7 @@ function App() {
     if (theme === 'light') {
       setLight(false)
       setTheme('dark');
-    // otherwise, it should be light
+      // otherwise, it should be light
     } else {
       setLight(true)
       setTheme('light');
@@ -41,27 +41,27 @@ function App() {
 
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
-    <GlobalStyles />
-    <Header light={light} toggleTheme={toggleTheme} styles={styles} />
-    <div className="container">
-    <ScrollToTop>
+      <GlobalStyles />
+      <Header light={light} toggleTheme={toggleTheme} styles={styles} />
+      <div className="container">
+        <ScrollToTop>
 
-      <Routes>
-        <Route path="/" element={<HomeScreen light={light} />} />
-        <Route path="about" element={<AboutScreen styles={styles} light={light} />} />
-        <Route path="projects" element={<ProjectScreen styles={styles} light={light} />} />
-        <Route path="faq" element={<FaqScreen />} />
-        <Route path="case-study/1" element={<WebhubScreen styles={styles} light={light}/>} />
-        <Route path="case-study/2" element={<VendarScreen styles={styles} light={light}/>} />
-      </Routes>
-    </ScrollToTop>
-    </div>
-    {/* <Routes>
+          <Routes>
+            <Route path="/" element={<HomeScreen light={light} />} />
+            <Route path="about" element={<AboutScreen styles={styles} light={light} />} />
+            <Route path="projects" element={<ProjectScreen styles={styles} light={light} />} />
+            <Route path="faq" element={<FaqScreen />} />
+            <Route path="case-study/1" element={<WebhubScreen styles={styles} light={light} />} />
+            <Route path="case-study/2" element={<VendarScreen styles={styles} light={light} />} />
+          </Routes>
+        </ScrollToTop>
+      </div>
+      {/* <Routes>
       <Route path="resume" element={<ResumeScreen styles={styles} light={light}/>} />
     </Routes> */}
 
-    {/* <img className='ellipse' src={ellipseGr}/> */}
-    {/* <div className="elllipse"></div> */}
+      {/* <img className='ellipse' src={ellipseGr}/> */}
+      {/* <div className="elllipse"></div> */}
     </ThemeProvider>
   )
 }

@@ -39,6 +39,14 @@ export const GlobalStyles = createGlobalStyle`
     background-color: #00000000;
     width: 100%;
   }
+  .direct {
+    border: 1px solid ${({ theme }) => theme.text};
+    color: ${({ theme }) => theme.text};
+    padding: 5px 15px;
+    padding-right: 18px;
+    top: -60px;
+    font-size: 14px;
+  }
   .loader {
     border: 2px solid ${({ theme }) => theme.body};
     border-top: 2px solid ${({ theme }) => theme.text};
@@ -51,9 +59,13 @@ export const GlobalStyles = createGlobalStyle`
     opacity: 0.7;
   }
   .img-icon {
-    position: ${({ theme }) => theme.position};
-    top: ${({ theme }) => theme.top};
-    right: ${({ theme }) => theme.right};
+    // position: ${({ theme }) => theme.position};
+    // top: ${({ theme }) => theme.top};
+    // right: ${({ theme }) => theme.right};
+    position: fixed;
+    bottom: 35px;
+    left: 20px;
+    // right: 30px;
   }
   ul.slick-dots li button:before {
     color: ${({ theme }) => theme.text};
@@ -64,10 +76,10 @@ export const GlobalStyles = createGlobalStyle`
     bottom: 55px;
   }
   @media screen and (max-width: 925px) {
-    .img-icon {
-      position: unset;
-      top: 0;
-      right: 0;
-    }
+    // .img-icon {
+    //   position: unset;
+    //   top: 0;
+    //   right: 0;
+    // }
   }
 `;
