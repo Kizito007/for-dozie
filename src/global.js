@@ -44,7 +44,8 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.text};
     padding: 5px 15px;
     padding-right: 18px;
-    top: -60px;
+    top: -80px;
+    left: 70%;
     font-size: 14px;
   }
   .loader {
