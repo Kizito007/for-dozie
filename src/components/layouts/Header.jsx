@@ -4,6 +4,8 @@ import darklogo from "../svgs/newlogodark.svg"
 import icon from "../svgs/icon.svg"
 import iconic from "../svgs/iconic.svg"
 import lightbot from "../svgs/iconic.svg"
+import x from "../svgs/x.svg"
+import navicon from "../svgs/navicon.svg"
 import "./layout.css"
 import { Link } from "react-router-dom";
 
@@ -42,8 +44,11 @@ const Header = ({ toggleTheme, light, styles }) => {
         >
           {
             isMobile ?
-              <i className='fas fa-times'></i> :
-              <i className='fas fa-bars'></i>
+              <img src={x} />
+              // <i className='fas fa-times'></i> 
+              :
+              <img src={navicon} style={{ width: "35px" }} />
+            // <i className='fas fa-bars'></i>
           }
         </button><br /><br />
       </nav>

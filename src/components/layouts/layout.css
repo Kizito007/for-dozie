@@ -159,7 +159,7 @@ input[type="search"],
     backdrop-filter: blur(8px);
     border: none;
     outline: none;
-    top: 15px;
+    top: 10px;
     right: 25px;
     width: 10%;
   }

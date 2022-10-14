@@ -65,6 +65,7 @@ export const GlobalStyles = createGlobalStyle`
     position: fixed;
     bottom: 35px;
     left: 20px;
+    z-index: 1;
     // right: 30px;
   }
   ul.slick-dots li button:before {
