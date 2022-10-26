@@ -3,7 +3,7 @@ import ScrollToTop from "react-scroll-to-top";
 import VendarCr from "../images/FrameVendar.png"
 import pp1 from "../images/p1.png"
 import martial from "../images/martial.png"
-import museumpic from "../images/museumpic.png"
+import museumpic from "../images/museumPic.png"
 import outlink from "../svgs/outlink.svg"
 import { Link } from 'react-router-dom'
 import { Reveal } from 'react-reveal';
