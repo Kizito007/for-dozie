@@ -16,7 +16,7 @@ export const BackToHome = () => {
 
 export const Previous = ({ light }) => {
   return (
-    <Link to="/case-study/2" className="squid-home direct" style={{ left: "37%" }}>
+    <Link to="/case-study/2" className="squid-home directPrev">
       <img src={light ? darkleft : left} />
       Previous
     </Link>

@@ -39,14 +39,17 @@ export const GlobalStyles = createGlobalStyle`
     background-color: #00000000;
     width: 100%;
   }
-  .direct {
+  .direct, .directPrev {
     border: 1px solid ${({ theme }) => theme.text};
     color: ${({ theme }) => theme.text};
     padding: 5px 15px;
     padding-right: 18px;
     top: -80px;
-    left: 70%;
+    left: 85%;
     font-size: 14px;
+  }
+  .directPrev {
+    left: 135px;
   }
   .loader {
     border: 2px solid ${({ theme }) => theme.body};
@@ -77,11 +80,9 @@ export const GlobalStyles = createGlobalStyle`
     position: relative;
     bottom: 55px;
   }
-  @media screen and (max-width: 925px) {
-    // .img-icon {
-    //   position: unset;
-    //   top: 0;
-    //   right: 0;
-    // }
+  @media screen and (max-width: 745px) {
+    .direct, .directPrev {
+      left: 42%;
+    }
   }
 `;
