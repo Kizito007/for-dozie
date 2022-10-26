@@ -5,7 +5,7 @@ import dp from "../images/homepic.png"
 // import p1 from "../images/pp1.png"
 // import martial from "../images/martial.png"
 // // import VendarCr from "../images/VendarCr.png"
-// import Frame41 from "../images/Frame41.png"
+import museumpic from "../images/museumpic.png"
 import VendarCr from "../images/FrameVendar.png"
 import pp1 from "../images/p1.png"
 import goodes from "../images/goodDesign.png"
@@ -15,7 +15,7 @@ import hrd from "../svgs/hrd.svg"
 import band1 from "../svgs/band1.svg"
 import band2 from "../svgs/band2.svg"
 import Peace from "../svgs/Peace.svg"
-// import outlink from "../svgs/outlink.svg"
+import outlink from "../svgs/outlink.svg"
 import SendLove from "../svgs/SendLove.svg"
 // import Contact from "./Contact.jsx"
 // import Autoplay from "./Autoplay.jsx"
@@ -109,6 +109,21 @@ const HomeScreen = ({ light }) => {
         <h2 className='text-header'>Selected Projects</h2><br /><br />
 
         <div className='projects'>
+          <Reveal>
+            <div className='card' >
+              <div className='card-top cardtop'>
+                <img src={museumpic} className="parallax-bg" />
+              </div>
+              <div className='card-bottom cardbottom'>
+                <h2 className='projects-vendar-h2'>NCMM Nigeria Website Redesign</h2><br /><br />
+                <a href="https://www.behance.net/gallery/155407133/NCMM-Nigeria-Website-Redesign">
+                  <button className='intro-btn' style={{ width: "255px" }}>
+                    View on behance <img style={{ display: "inline" }} src={outlink} />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </Reveal><br /><br />
           <Reveal>
             <div className='card' >
               <div className='card-top cardtop'>

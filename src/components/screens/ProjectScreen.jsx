@@ -3,6 +3,7 @@ import ScrollToTop from "react-scroll-to-top";
 import VendarCr from "../images/FrameVendar.png"
 import pp1 from "../images/p1.png"
 import martial from "../images/martial.png"
+import museumpic from "../images/museumpic.png"
 import outlink from "../svgs/outlink.svg"
 import { Link } from 'react-router-dom'
 import { Reveal } from 'react-reveal';
@@ -69,6 +70,21 @@ const ProjectScreen = () => {
                 </p><br /><br />
                 <a href="https://www.behance.net/gallery/148532007/Martial-Arts">
                   <button className='martial-btn'>
+                    View <img style={{ display: "inline" }} src={outlink} />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </Reveal>
+          <Reveal><br /><br />
+            <div className='card' >
+              <div className='card-top cardtop'>
+                <img src={museumpic} className="parallax-bg" />
+              </div>
+              <div className='card-bottom cardbottom'>
+                <h2 className='projects-vendar-h2'>NCMM Nigeria Website Redesign</h2><br /><br />
+                <a href="https://www.behance.net/gallery/155407133/NCMM-Nigeria-Website-Redesign">
+                  <button className='intro-btn'>
                     View <img style={{ display: "inline" }} src={outlink} />
                   </button>
                 </a>
