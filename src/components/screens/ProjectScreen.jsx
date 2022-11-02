@@ -84,7 +84,7 @@ const ProjectScreen = () => {
               <div className='card-bottom cardbottom'>
                 <h2 className='projects-vendar-h2'>NCMM Nigeria Website Redesign</h2><br /><br />
                 <a href="https://www.behance.net/gallery/155407133/NCMM-Nigeria-Website-Redesign">
-                  <button className='intro-btn'>
+                  <button className='intro-museum'>
                     View <img style={{ display: "inline" }} src={outlink} />
                   </button>
                 </a>

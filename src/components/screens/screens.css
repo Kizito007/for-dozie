@@ -1,14 +1,14 @@
-@font-face {
+/* @font-face {
   font-family: "Ginkgo";
   src: url("./Ginkgo-Regular.woff");
-}
+} */
 .grad {
   position: absolute;
   width: 174px;
   height: 170px;
   right: 0;
   bottom: 0;
-  background: linear-gradient(180deg, #FEAC31 47.31%, #AE12E4 93.64%);
+  background: linear-gradient(180deg, #feac31 47.31%, #ae12e4 93.64%);
   filter: blur(100px);
 }
 .grad2 {
@@ -17,42 +17,64 @@
   height: 170px;
   left: 0;
   top: 0;
-  background: linear-gradient(180deg, #FEAC31 47.31%, #AE12E4 93.64%);
+  background: linear-gradient(180deg, #feac31 47.31%, #ae12e4 93.64%);
   filter: blur(100px);
 }
 .floating {
   padding: 10px;
-	animation-name: floating;
-	animation-duration: 3s;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;
-	margin-left: 30px;
-	margin-top: 5px;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
 }
 
 @keyframes floating {
-	0% { transform: translate(0, 0px); }
-	50% { transform: translate(0, 55px); }
-	100% { transform: translate(0, -0px); }
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 55px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
 }
 .wave {
   margin: 0 5px;
-  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.5s;        /* Change to speed up or slow down */
-  animation-iteration-count: infinite;  /* Never stop waving :) */
-  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
   display: inline-block;
 }
 
 @keyframes wave-animation {
-    0% { transform: rotate( 0.0deg) }
-   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
-   20% { transform: rotate(-8.0deg) }
-   30% { transform: rotate(14.0deg) }
-   40% { transform: rotate(-4.0deg) }
-   50% { transform: rotate(10.0deg) }
-   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-  100% { transform: rotate( 0.0deg) }
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
 }
 .text-head {
   margin-top: 20px;
@@ -80,13 +102,20 @@
   top: 0;
 }
 .invincible h1 {
-  font-family: "Ginkgo";
+  font-family: "Pacifico", cursive;
   font-style: normal;
   font-weight: 400;
   font-size: 108px;
   line-height: 140px;
   text-align: center;
-  background: linear-gradient(97.57deg, rgba(108, 44, 131, 0.54) 14.91%, #FF6D00 47.63%, #FF6C00 60.89%, rgba(178, 0, 0, 0.54) 93.82%);  background-clip: text;
+  background: linear-gradient(
+    97.57deg,
+    rgba(108, 44, 131, 0.54) 14.91%,
+    #ff6d00 47.63%,
+    #ff6c00 60.89%,
+    rgba(178, 0, 0, 0.54) 93.82%
+  );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -191,13 +220,13 @@
   width: auto;
 }
 .ux {
-  background: linear-gradient(93deg, #EA1B1B 27.26%, #6C2C83 48.26%);
+  background: linear-gradient(93deg, #ea1b1b 27.26%, #6c2c83 48.26%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 .visual {
-  background: linear-gradient(90.98deg, #FFAB2E 57.34%, #FF4202 74.4%);
+  background: linear-gradient(90.98deg, #ffab2e 57.34%, #ff4202 74.4%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -205,7 +234,14 @@
 .footerMail {
   text-decoration: none;
   width: auto;
-  background: linear-gradient(97.57deg, rgba(108, 44, 131, 0.54) 14.91%, #FF6D00 47.63%, #FF6C00 60.89%, rgba(178, 0, 0, 0.54) 93.82%);  -webkit-background-clip: text;
+  background: linear-gradient(
+    97.57deg,
+    rgba(108, 44, 131, 0.54) 14.91%,
+    #ff6d00 47.63%,
+    #ff6c00 60.89%,
+    rgba(178, 0, 0, 0.54) 93.82%
+  );
+  -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -388,6 +424,7 @@
 }
 .card .intro-btn,
 .martial-btn,
+.intro-museum,
 .vendar-cr {
   width: 187px;
   background: #ebebeb;
@@ -396,6 +433,11 @@
 }
 .card .intro-btn:hover {
   background: #893a96;
+  color: #ebebeb;
+  border: none;
+}
+.card .intro-museum:hover {
+  background: #494949;
   color: #ebebeb;
   border: none;
 }
@@ -432,6 +474,7 @@
     margin-bottom: 0;
   }
   .card .intro-btn,
+  .intro-museum,
   .vendar-cr {
     height: 55px;
     width: 255px;
@@ -604,7 +647,7 @@ a {
   margin-top: 90px;
 }
 .vendar-hub .overview-text {
-  color: #FFC960;
+  color: #ffc960;
 }
 .extension {
   display: flex;
