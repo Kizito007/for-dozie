@@ -1,7 +1,9 @@
 import React from 'react'
 import ScrollToTop from "react-scroll-to-top";
 import "./screens.css"
-import dp from "../images/homepic.png"
+// import dp from "../images/homepic.png"
+import drip from "../images/drip.png"
+import driplight from "../images/drip-light.png"
 // import p1 from "../images/pp1.png"
 // import martial from "../images/martial.png"
 // // import VendarCr from "../images/VendarCr.png"
@@ -18,7 +20,7 @@ import Peace from "../svgs/Peace.svg"
 import outlink from "../svgs/outlink.svg"
 import SendLove from "../svgs/SendLove.svg"
 // import Contact from "./Contact.jsx"
-// import Autoplay from "./Autoplay.jsx"
+import Autoplay from "./Autoplay.jsx"
 import Footer from '../layouts/Footer'
 import { Link } from 'react-router-dom'
 import { Reveal } from 'react-reveal';
@@ -73,27 +75,29 @@ const HomeScreen = ({ light }) => {
   return (
 
     <div className='home'>
-      <div className='invincible'>
+      {/* <div className='invincible'>
         <h1>Good design is human-centered.</h1>
         <div className="floating grad"></div>
         <div className="floating grad2"></div>
-      </div>
-      <div className='intro'>
-        <div>
+      </div> */}
+      <div className='intro' style={{ padding: "100px 0" }}>
+        <p className='freelance'>Freelance</p>
+        {/* <div>
           <img src={dp} className="intro-img" />
-        </div>
-        <Reveal>
+        </div> */}
+        {/* <Reveal> */}
           <h2 className='text-head'>
-            Hi, there
-            <span className='wave'>👋</span>
+            UX/PRODUCT DESIGNER
+            <div>
+              <img src={light ? driplight : drip} className="intro-img floating" />
+            </div>
+            {/* <span className='wave'>👋</span> */}
           </h2> <br />
           <p className='intro-text'>
-            Need someone with over 3 years experience conceptualising and
-            crafting day to day digital products, that’s where i come in. <br />
-            Like Vincent Van Gogh said <br />
-            “Great things are done by a series of small things brought together.”
+            Chiedozie Nwaka --- UX designer with over 3
+            years of experience focused on designing simple and human-centered products.
           </p> <br />
-        </Reveal>
+        {/* </Reveal> */}
         <ScrollToTop smooth />
         {/* <button style={{ width: "165px", display: "block", margin: "0 auto" }} className='intro-btn'>
           
@@ -105,6 +109,7 @@ const HomeScreen = ({ light }) => {
           <Autoplay />
         </Zoom>
       </div> */}
+      <Autoplay />
       <div>
         <h2 className='text-header'>Selected Projects</h2><br /><br />
 
