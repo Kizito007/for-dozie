@@ -18,16 +18,16 @@ const Contact = () => {
   const submit = async (e) => {
     e.preventDefault();
     try {
-        setIsLoading(true)
-        const to = "nwakadozie76@gmail.com"
-        const sender = { email, subject, textField, to, fullname };
-        const senderRes = await axios.post(
-          "https://vast-bayou-66131.herokuapp.com/v1/dozie/sendMail",
-          sender 
-        );
-        setIsLoading(false)
-        setResponse(senderRes.data.message)
-        setOpen(true)
+      setIsLoading(true)
+      const to = "nwakadozie76@gmail.com"
+      const sender = { email, subject, textField, to, fullname };
+      const senderRes = await axios.post(
+        "https://precious-yak-jumpsuit.cyclic.app/v1/dozie/sendMail",
+        sender
+      );
+      setIsLoading(false)
+      setResponse(senderRes.data.message)
+      setOpen(true)
     } catch (err) {
       console.log(err)
       setResponse(senderRes.data.message)
@@ -36,63 +36,63 @@ const Contact = () => {
 
   return (
     <div id='contactt' className='contact'>
-        <h2 className='text-header'>Let's create excellent work together!</h2>
-        <p style={{fontSize: "21px", padding: "50px 0"}}>Get in touch for opportunities or just to say hi! 👋</p><br/>
-        
-        {
-          response ?
+      <h2 className='text-header'>Let's create excellent work together!</h2>
+      <p style={{ fontSize: "21px", padding: "50px 0" }}>Get in touch for opportunities or just to say hi! 👋</p><br />
+
+      {
+        response ?
           <Box sx={{ width: '100%' }}>
             <Collapse in={open}>
-            <Alert
+              <Alert
                 action={
-                <IconButton
+                  <IconButton
                     aria-label="close"
                     color="inherit"
                     size="small"
                     onClick={() => {
-                    setOpen(false);
+                      setOpen(false);
                     }}
-                >
+                  >
                     <CloseIcon fontSize="inherit" />
-                </IconButton>
+                  </IconButton>
                 }
                 sx={{ mb: 2 }}
-            >
+              >
                 {response}
-            </Alert>
+              </Alert>
             </Collapse>
-        </Box>
+          </Box>
           : null
-        }
+      }
 
-        <form onSubmit={submit}>
-            <input 
-              type="text" id="fname" 
-              placeholder='Name' name="fname" required
-              onChange={e => setFullname(e.target.value)}
-            /><br/><br/>
-            <input 
-              type="email" id="email" required
-              placeholder='Email Address' name="email"
-              onChange={e => setEmail(e.target.value)}
-            /><br/><br/>
-            <input 
-              type="text" id="subject" required
-              placeholder='Subject' name="subject"
-              onChange={e => setSubject(e.target.value)}
-            /><br/><br/>
-            <textarea 
-              id="w3review" name="w3review" required
-              placeholder='Message' rows="10" cols="70"
-              onChange={e => setText(e.target.value)}
-            ></textarea><br /><br />
-            {
-              isLoading ? <Spinner/> : null
-            }
-            <button className='contact-b'>
-              Submit
-            </button>
-        </form>
+      <form onSubmit={submit}>
+        <input
+          type="text" id="fname"
+          placeholder='Name' name="fname" required
+          onChange={e => setFullname(e.target.value)}
+        /><br /><br />
+        <input
+          type="email" id="email" required
+          placeholder='Email Address' name="email"
+          onChange={e => setEmail(e.target.value)}
+        /><br /><br />
+        <input
+          type="text" id="subject" required
+          placeholder='Subject' name="subject"
+          onChange={e => setSubject(e.target.value)}
+        /><br /><br />
+        <textarea
+          id="w3review" name="w3review" required
+          placeholder='Message' rows="10" cols="70"
+          onChange={e => setText(e.target.value)}
+        ></textarea><br /><br />
+        {
+          isLoading ? <Spinner /> : null
+        }
+        <button className='contact-b'>
+          Submit
+        </button>
+      </form>
     </div>
   )
 }

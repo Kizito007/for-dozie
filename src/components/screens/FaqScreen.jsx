@@ -33,7 +33,7 @@ const ProjectScreen = () => {
       setIsLoading(true)
       const sender = { email, subject, textField, };
       const senderRes = await axios.post(
-        "https://vast-bayou-66131.herokuapp.com/v1/dozie/sendMail",
+        "https://precious-yak-jumpsuit.cyclic.app/v1/dozie/sendMail",
         sender
       );
       setIsLoading(false)
