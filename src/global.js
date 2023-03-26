@@ -80,6 +80,15 @@ export const GlobalStyles = createGlobalStyle`
     position: relative;
     bottom: 55px;
   }
+  .autoplay {
+    color: #F9AF21;
+  }
+  .slick-slide {
+    width: unset;
+  }
+  .slick-list {
+    background: ${({ theme }) => theme.sliderBg};
+  }
   @media screen and (max-width: 745px) {
     .direct, .directPrev {
       left: 42%;

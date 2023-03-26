@@ -3,6 +3,7 @@ import ScrollToTop from "react-scroll-to-top";
 import { Link } from 'react-router-dom';
 import dozie from "../images/LinkedInDp.png"
 import hr from "../svgs/hr.svg"
+import rightarrow from "../svgs/rightarrow.svg"
 import hrd from "../svgs/hrd.svg"
 import art1 from "../images/art1.png"
 import nft1 from "../images/nft1.png"
@@ -21,9 +22,9 @@ const AboutScreen = ({ styles, light }) => {
                     <img style={{ position: "relative", left: "31%", top: "95px", marginBottom: "45px" }} src={dozie} className="intro-img" />
                 </div>
                 <ScrollToTop smooth />
-                <h2 className='myself'>
+                {/* <h2 className='myself'>
                     <span className="ux">UX designer</span> & <span className="visual">Visual artist</span>
-                </h2>
+                </h2> */}
                 <div>
                     <Reveal>
                         <p>
@@ -63,17 +64,17 @@ const AboutScreen = ({ styles, light }) => {
                     </Reveal>
                 </div>
             </div>
+            <h2 style={{ textAlign: "center" }}>Some art works of mine</h2>
+            <br /><br /><br /><br /><br />
             <div className='artworks' style={!light ? { background: styles.backdrop } : null}>
-                <br /><br />
-                <h2 style={{ color: "#f9f9f9", textAlign: "center" }}>Some art works of mine</h2>
-                <br /><br />
                 <div className='artbg'>
-                    <img src={art1} className="art" />
                     <img src={nft1} className="art" />
+                    <img src={art1} className="art" />
                     <a href="https://opensea.io/Doziiie">
-                        <button>
+                        <img src={rightarrow} className="art-arrow" />
+                        {/* <button>
                             View More
-                        </button>
+                        </button> */}
                     </a>
                 </div>
             </div>

@@ -30,48 +30,6 @@ import "slick-carousel/slick/slick-theme.css";
 
 const HomeScreen = ({ light }) => {
 
-  const settings = {
-    dots: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 1930,//1350
-        settings: {
-          slidesToShow: 1.3,
-          slidesToScroll: 1,
-          // infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 1245,//1350
-        settings: {
-          slidesToShow: 1.1,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 1045,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 3
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  };
-
   return (
 
     <div className='home'>
@@ -86,17 +44,17 @@ const HomeScreen = ({ light }) => {
           <img src={dp} className="intro-img" />
         </div> */}
         {/* <Reveal> */}
-          <h2 className='text-head'>
-            UX/PRODUCT DESIGNER
-            <div>
-              <img src={light ? driplight : drip} className="intro-img floating" />
-            </div>
-            {/* <span className='wave'>👋</span> */}
-          </h2> <br />
-          <p className='intro-text'>
-            Chiedozie Nwaka --- UX designer with over 3
-            years of experience focused on designing simple and human-centered products.
-          </p> <br />
+        <h2 className='text-head'>
+          UX/PRODUCT <br /> DESIGNER
+          <div>
+            <img src={light ? driplight : drip} className="intro-img floating" />
+          </div>
+          {/* <span className='wave'>👋</span> */}
+        </h2> <br />
+        <p className='intro-text'>
+          Chiedozie Nwaka --- UX designer with over 3
+          years of experience focused on designing simple and human-centered products.
+        </p> <br /><br /><br /><br /><br />
         {/* </Reveal> */}
         <ScrollToTop smooth />
         {/* <button style={{ width: "165px", display: "block", margin: "0 auto" }} className='intro-btn'>
@@ -109,63 +67,58 @@ const HomeScreen = ({ light }) => {
           <Autoplay />
         </Zoom>
       </div> */}
-      <Autoplay />
+      <Autoplay /><br /><br /><br />
       <div>
         <h2 className='text-header'>Selected Projects</h2><br /><br />
 
         <div className='projects'>
           <Reveal>
-            <div className='card' >
-              <div className='card-top cardtop'>
-                <img src={museumpic} className="parallax-bg" />
+            <Link to="/case-study/2">
+              <div className='card' style={{ margin: "70px 0" }}>
+                <div className='card-top cardtop'>
+                  <img src={VendarCr} className="parallax-bg" />
+                </div>
+                <div className='card-bottom cardbottom'>
+                  <h2 className='projects-vendar-h2'>Vendar</h2><br />
+                  <p>
+                    An e-commerce platform that increases sales for stores and
+                    small businesses bringing products to online customers.
+                  </p><br /><br />
+                </div>
               </div>
-              <div className='card-bottom cardbottom'>
-                <h2 className='projects-vendar-h2'>NCMM Nigeria Website Redesign</h2><br /><br />
-                <a href="https://www.behance.net/gallery/155407133/NCMM-Nigeria-Website-Redesign">
-                  <button className='intro-museum' style={{ width: "255px" }}>
-                    View on behance <img style={{ display: "inline" }} src={outlink} />
-                  </button>
-                </a>
-              </div>
-            </div>
+            </Link>
           </Reveal><br /><br />
           <Reveal>
-            <div className='card' >
-              <div className='card-top cardtop'>
-                <img src={VendarCr} className="parallax-bg" />
+            <Link to="/case-study/2">
+              <div className='card' >
+                <div className='card-top cardtop'>
+                  <img src={VendarCr} className="parallax-bg" />
+                </div>
+                <div className='card-bottom cardbottom'>
+                  <h2 className='projects-vendar-h2'>Squid App Revamp</h2><br />
+                  <p>
+                    A collective and innovative platform for linking professional
+                    services and consumers in a simple way.
+                  </p><br /><br />
+                </div>
               </div>
-              <div className='card-bottom cardbottom'>
-                <h2 className='projects-vendar-h2'>Vendar</h2><br />
-                <p>
-                  An e-commerce platform that increases sales for stores and
-                  small businesses bringing products to online customers.
-                </p><br /><br />
-                <Link to="/case-study/2">
-                  <button className='vendar-cr'>
-                    Read Case Study
-                  </button>
-                </Link>
-              </div>
-            </div>
+            </Link>
           </Reveal><br /><br />
           <Reveal>
-            <div className='card' >
-              <div className='card-top cardtop'>
-                <img src={pp1} className="parallax-bg" />
+            <Link to="/case-study/2">
+              <div className='card' >
+                <div className='card-top cardtop'>
+                  <img src={VendarCr} className="parallax-bg" />
+                </div>
+                <div className='card-bottom cardbottom'>
+                  <h2 className='projects-vendar-h2'>AZAPAY</h2><br />
+                  <p>
+                    Azapay is a P2P payment application that bridges the existing
+                    money transfer gap <br /> between business owners and customers.
+                  </p><br /><br />
+                </div>
               </div>
-              <div className='card-bottom cardbottom'>
-                <h2 className='p-card1'>Interface Revamp of the Squid App</h2> <br />
-                <p className='p-card1'>
-                  A collective and innovative platform for linking
-                  professional services and consumers in a simple way.
-                </p><br /><br />
-                <Link to="/case-study/1">
-                  <button className='intro-btn'>
-                    Read Case Study
-                  </button>
-                </Link>
-              </div>
-            </div>
+            </Link>
           </Reveal>
           {/* <Link to="/case-study/2">div className="projects-container"
             <div className='homecard' style={{ border: "1px solid #FFC960" }}>
@@ -240,7 +193,7 @@ const HomeScreen = ({ light }) => {
           </a>
         </Slider> */}
       </div>
-      <div>
+      {/* <div>
         <img className='band band1' src={band1} />
         <img className='band band2' src={band2} />
         <h2 className='text-header'>Design Principles</h2><br />
@@ -272,20 +225,19 @@ const HomeScreen = ({ light }) => {
             </div>
           </div>
         </div>
-      </div>
-      <br /><br /><br />
-      <img style={{ width: "100%" }} src={light ? hr : hrd} />
+      </div> */}
+      <br /><br /><br /><br /><br /><br />
+      {/* <img style={{ width: "100%" }} src={light ? hr : hrd} /> */}
+      <Autoplay />
       {/* <Contact /> */}
-      <h2 className='text-header'>Let's create excellent work together!</h2>
-      <p style={{ fontSize: "16px", padding: "50px 0", textAlign: "center" }}>Get in touch for opportunities or just to say hi! 👋</p><br />
-      <h1 className='gradientMail' style={{
+      {/* <h1 className='gradientMail' style={{
         textAlign: "center"
       }}
       >
         <a href="mailto:nwakadozie76@gmail.com" className='footerMail'>
           Nwakadozie76@gmail.com
         </a>
-      </h1><br /><br />
+      </h1><br /><br /> */}
       <Footer />
     </div>
   )

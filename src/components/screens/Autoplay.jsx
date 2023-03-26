@@ -13,7 +13,7 @@ import Slider from "react-slick";
 //       />
 //     );
 //   }
-  
+
 //   function SamplePrevArrow(props) {
 //     const { className, style, onClick } = props;
 //     return (
@@ -27,12 +27,12 @@ import Slider from "react-slick";
 const Autoplay = () => {
 
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         slidesToShow: 5,
         slidesToScroll: 5,
         autoplay: true,
-        speed: 7500,
+        speed: 9500,
         autoplaySpeed: 4000,
         cssEase: "linear",
         arrows: false,
@@ -59,10 +59,10 @@ const Autoplay = () => {
             }
         ]
     };
-        
+
     return (
         <Slider {...settings}>
-        {/* <div className='skills'> */}
+            {/* <div className='skills'> */}
             <div> <h3 className='autoplay reds'>UI/UX</h3> </div>
             <div> <h3 className='autoplay greens'>LOGO</h3> </div>
             <div> <h3 className='autoplay purples'>BRAND DESIGN</h3> </div>
@@ -73,7 +73,7 @@ const Autoplay = () => {
             <div> <h3 className='autoplay reds'>UX Design</h3> </div>
             <div> <h3 className='autoplay greens'>User Focus</h3></div>
             <div> <h3 className='autoplay reds'>Prototyping</h3> </div>
-        {/* </div> */}
+            {/* </div> */}
         </Slider>
     )
 }

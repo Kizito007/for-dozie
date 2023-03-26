@@ -11,6 +11,8 @@ export const lightTheme = {
     position: "relative",
     top: "-20px",
     right: "28px",
+    sliderBg: "#e2e2e2",
+    sliderBorder: "1px dashed #e2e2e2",
 }
   
 export const darkTheme = {
@@ -23,4 +25,6 @@ export const darkTheme = {
     position: "relative",
     top: "-9px",
     right: "30px",
+    sliderBg: "#1e1e1e",
+    sliderBorder: "1px dashed #1e1e1e",
 }

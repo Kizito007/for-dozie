@@ -18,7 +18,7 @@ const Header = ({ toggleTheme, light, styles }) => {
   }
   return (
     <>
-      <nav className='header' style={!light ? { background: styles.background } : null}>
+      <nav className='header' style={!light ? { background: "rgba(35, 35, 35, 0.5)" } : null}>
         {/* <Link className="navbar-brand" to="/">
           <div className="logo-image">
             <img src={light ? darklogo : logo} className="img-fluid" />
@@ -55,7 +55,7 @@ const Header = ({ toggleTheme, light, styles }) => {
       <span onClick={toggleTheme}>
         {/* src={iconic} */}
         {/* <button> */}
-          <img src={light ? lightbot : icon} className="img-icon" />
+        <img src={light ? lightbot : icon} className="img-icon" />
         {/* </button> */}
       </span>
     </>
