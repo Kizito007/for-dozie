@@ -29,8 +29,8 @@ const Autoplay = () => {
     const settings = {
         dots: false,
         infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 5,
+        slidesToShow: 7,
+        slidesToScroll: 7,
         autoplay: true,
         speed: 9500,
         autoplaySpeed: 4000,

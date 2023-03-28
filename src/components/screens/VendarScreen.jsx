@@ -53,7 +53,7 @@ const VendarScreen = ({ styles, light }) => {
 
     return (
         <div style={{ margin: "0 3%" }}>
-            <BackToHome />
+            {/* <BackToHome /> */}
             <div className='squid vendar'>
                 {/* <div className='vendar-bg'>
                     <div className='vendar-tablet'>

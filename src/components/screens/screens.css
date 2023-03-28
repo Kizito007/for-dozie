@@ -706,6 +706,7 @@ ul.slick-dots {
   left: 0;
   margin-top: 470px;
   z-index: -1;
+  top: 100px;
 }
 .webhub-overview ul {
   list-style-type: none;
