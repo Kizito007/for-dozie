@@ -44,7 +44,7 @@ const WebhubScreen = ({ styles, light }) => {
 
     return (
         <div style={{ margin: "0 3%" }}>
-            <BackToHome />
+            {/* <BackToHome /> */}
             <div className='squid'>
                 <div>
                     <Reveal>
