@@ -13,12 +13,14 @@ const ProjectScreen = () => {
   return (
     <>
       <div style={{ marginTop: "100px" }}>
-        <h2>Works</h2>
         <ScrollToTop smooth />
-        <p style={{ margin: "24px 0" }}>
-          I’ve worked with start-ups and small companies,
-          and also created some concepts for my personal side projects.
-        </p><br /><br /><br />
+        <div style={{ textAlign: "center" }}>
+          <h2>Works</h2>
+          <p style={{ margin: "24px 0" }}>
+            I’ve worked with start-ups and small companies,
+            and also created some concepts for my personal side projects.
+          </p>
+        </div><br /><br /><br />
         <div className='projects'>
           <Reveal>
             <div className='card' >
@@ -31,11 +33,11 @@ const ProjectScreen = () => {
                   An e-commerce platform that increases sales for stores and
                   small businesses bringing products to online customers.
                 </p><br /><br />
-                <Link to="/case-study/2">
+                {/* <Link to="/case-study/2">
                   <button className='vendar-cr'>
                     Read Case Study
                   </button>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </Reveal><br /><br />
@@ -50,11 +52,11 @@ const ProjectScreen = () => {
                   A collective and innovative platform for linking
                   professional services and consumers in a simple way.
                 </p><br /><br />
-                <Link to="/case-study/1">
+                {/* <Link to="/case-study/1">
                   <button className='intro-btn'>
                     Read Case Study
                   </button>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </Reveal><br /><br />
@@ -68,11 +70,11 @@ const ProjectScreen = () => {
                 <p>
                   A martial art landing page re-design.
                 </p><br /><br />
-                <a href="https://www.behance.net/gallery/148532007/Martial-Arts">
+                {/* <a href="https://www.behance.net/gallery/148532007/Martial-Arts">
                   <button className='martial-btn'>
                     View <img style={{ display: "inline" }} src={outlink} />
                   </button>
-                </a>
+                </a> */}
               </div>
             </div>
           </Reveal>
@@ -83,15 +85,15 @@ const ProjectScreen = () => {
               </div>
               <div className='card-bottom cardbottom'>
                 <h2 className='projects-vendar-h2'>NCMM Nigeria Website Redesign</h2><br /><br />
-                <a href="https://www.behance.net/gallery/155407133/NCMM-Nigeria-Website-Redesign">
+                {/* <a href="https://www.behance.net/gallery/155407133/NCMM-Nigeria-Website-Redesign">
                   <button className='intro-museum'>
                     View <img style={{ display: "inline" }} src={outlink} />
                   </button>
-                </a>
+                </a> */}
               </div>
             </div>
           </Reveal>
-        </div>
+        </div><br /><br /><br /><br />
         <Footer />
       </div>
     </>

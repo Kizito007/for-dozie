@@ -18,20 +18,20 @@ const Header = ({ toggleTheme, light, styles }) => {
   }
   return (
     <>
-      <nav className='header' style={!light ? { background: styles.background } : null}>
-        <Link className="navbar-brand" to="/">
+      <nav className='header' style={!light ? { background: "rgba(35, 35, 35, 0.5)" } : null}>
+        {/* <Link className="navbar-brand" to="/">
           <div className="logo-image">
             <img src={light ? darklogo : logo} className="img-fluid" />
           </div>
-        </Link>
+        </Link> */}
         <ul
           className={isMobile ? "nav-list-mobile" : "nav-list"}
           onClick={() => setMobile(false)}
         // {setTimeout(() => setMobile(false), 1000)}
         >
+          <li><Link to="/" style={!light ? { color: styles.color } : null}>Home</Link></li>
           <li><Link to="/about" style={!light ? { color: styles.color } : null}>About</Link></li>
           <li><Link to="/projects" style={!light ? { color: styles.color } : null}>Works</Link></li>
-          <li><Link to="/faq" style={!light ? { color: styles.color } : null}>FAQ</Link></li>
           <li>
             <a href="mailto:nwakadozie76@gmail.com" style={!light ? { color: styles.color } : null}>
               Contact
@@ -54,9 +54,9 @@ const Header = ({ toggleTheme, light, styles }) => {
       </nav>
       <span onClick={toggleTheme}>
         {/* src={iconic} */}
-        <button>
-          <img src={light ? lightbot : icon} className="img-icon" />
-        </button>
+        {/* <button> */}
+        <img src={light ? lightbot : icon} className="img-icon" />
+        {/* </button> */}
       </span>
     </>
   )
