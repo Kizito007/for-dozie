@@ -52,10 +52,10 @@ const VendarScreen = ({ styles, light }) => {
     // ];
 
     return (
-        <>
+        <div style={{ margin: "0 3%" }}>
             <BackToHome />
             <div className='squid vendar'>
-                <div className='vendar-bg'>
+                {/* <div className='vendar-bg'>
                     <div className='vendar-tablet'>
                         <img className='tablet' src={Tablet} />
                     </div>
@@ -68,7 +68,7 @@ const VendarScreen = ({ styles, light }) => {
                             </p>
                         </div>
                     </Reveal>
-                </div>
+                </div> */}
 
             </div>
             <ScrollToTop smooth />
@@ -313,7 +313,7 @@ const VendarScreen = ({ styles, light }) => {
                 </div>
             </div>
             <Next light />
-        </>
+        </div >
     )
 }
 

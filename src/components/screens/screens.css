@@ -217,6 +217,10 @@
 .projectsTextContainer h2 {
   font-size: 21px;
 }
+.projectsCover {
+  margin: 0 9%;
+  margin-top: 100px;
+}
 .band {
   /* width: 60%; */
   position: absolute;
@@ -670,7 +674,7 @@ ul.slick-dots {
   background-repeat: no-repeat;
 }
 .vendar {
-  background-image: url("../images/vendarect.png");
+  background-image: url("../images/vendarframe.png");
 }
 .tablet {
   width: 450px;
@@ -688,7 +692,7 @@ ul.slick-dots {
   margin-top: 90px;
 }
 .vendar-hub .overview-text {
-  color: #ffc960;
+  color: inherit;
 }
 .extension {
   display: flex;
@@ -872,6 +876,10 @@ ul.slick-dots {
 @media only screen and (max-width: 990px) {
   .parallax-bg {
     width: 100%;
+  }
+  .projectsCover {
+    margin: 0 9%;
+    margin-top: 100px;
   }
 }
 @media only screen and (max-width: 660px) {

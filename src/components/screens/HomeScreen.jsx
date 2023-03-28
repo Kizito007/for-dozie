@@ -10,6 +10,7 @@ import driplight from "../images/drip-light.png"
 import museumpic from "../images/museumPic.png"
 import VendarCr from "../images/FrameVendar.png"
 import pp1 from "../images/p1.png"
+import azapay from "../images/azapay.png"
 import goodes from "../images/goodDesign.png"
 import humandes from "../images/human-design.png"
 import hr from "../svgs/hr.svg"
@@ -89,10 +90,10 @@ const HomeScreen = ({ light }) => {
             </Link>
           </Reveal><br /><br />
           <Reveal>
-            <Link to="/case-study/2">
+            <Link to="/case-study/1">
               <div className='card' >
                 <div className='card-top cardtop'>
-                  <img src={VendarCr} className="parallax-bg" />
+                  <img src={pp1} className="parallax-bg" />
                 </div>
                 <div className='card-bottom cardbottom'>
                   <h2 className='projects-vendar-h2'>Squid App Revamp</h2><br />
@@ -105,10 +106,10 @@ const HomeScreen = ({ light }) => {
             </Link>
           </Reveal><br /><br />
           <Reveal>
-            <Link to="/case-study/2">
+            <a href="https://play.google.com/store/apps/details?id=com.azapay">
               <div className='card' >
                 <div className='card-top cardtop'>
-                  <img src={VendarCr} className="parallax-bg" />
+                  <img src={azapay} className="parallax-bg" />
                 </div>
                 <div className='card-bottom cardbottom'>
                   <h2 className='projects-vendar-h2'>AZAPAY</h2><br />
@@ -118,7 +119,7 @@ const HomeScreen = ({ light }) => {
                   </p><br /><br />
                 </div>
               </div>
-            </Link>
+            </a>
           </Reveal>
           {/* <Link to="/case-study/2">div className="projects-container"
             <div className='homecard' style={{ border: "1px solid #FFC960" }}>

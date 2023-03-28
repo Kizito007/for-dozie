@@ -43,7 +43,7 @@ const WebhubScreen = ({ styles, light }) => {
     // ];
 
     return (
-        <>
+        <div style={{ margin: "0 3%" }}>
             <BackToHome />
             <div className='squid'>
                 <div>
@@ -342,7 +342,7 @@ const WebhubScreen = ({ styles, light }) => {
                 </div>
             </div>
             <Previous light={light} />
-        </>
+        </div>
     )
 }
 
